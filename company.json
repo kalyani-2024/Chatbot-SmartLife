@@ -1,0 +1,265 @@
+{
+  "COMPANY_MENU": {
+    "index": "C.1",
+    "id": "COMPANY_MENU",
+    "question": "Welcome to SmartLife’s corporate engagement portal! How can I assist your company today?",
+    "options": [
+      { "text": "CSR / Sponsorship", "next": "COMPANY_CSR_MENU" },
+      { "text": "Employee Engagement", "next": "COMPANY_EMPLOYEE_MENU" },
+      { "text": "Impact", "next": "COMPANY_IMPACT_MENU" },
+      { "text": "Download Deck", "next": "COMPANY_DOWNLOAD_DECK" },
+      { "text": "Request Meeting", "next": "COMPANY_REQUEST_MEETING" }
+    ]
+  },
+
+  "COMPANY_CSR_MENU": {
+    "index": "C.1.a",
+    "id": "COMPANY_CSR_MENU",
+    "question": "How can your company support SmartLife?",
+    "options": [
+      { "text": "General CSR opportunities", "next": "CSR_GENERAL" },
+      { "text": "Sponsor a specific project", "next": "CSR_PROJECT_SELECTION" },
+      { "text": "Branding & visibility options", "next": "CSR_BRANDING" },
+      { "text": "Employee participation", "next": "CSR_EMPLOYEE_PARTICIPATION" },
+      { "text": "Certificates & recognition", "next": "CSR_CERTIFICATES" },
+      { "text": "Back", "next": "COMPANY_MENU" }
+    ]
+  },
+
+  "CSR_GENERAL": {
+    "index": "C.1.a.1",
+    "id": "CSR_GENERAL",
+    "question": "CSR programs, donation models, and partnership guidance.",
+    "options": [
+      { "text": "Download corporate deck", "next": "COMPANY_DOWNLOAD_DECK" },
+      { "text": "Request meeting", "next": "COMPANY_REQUEST_MEETING" },
+      { "text": "Back", "next": "COMPANY_CSR_MENU" }
+    ]
+  },
+
+  "CSR_PROJECT_SELECTION": {
+    "index": "C.1.a.2",
+    "id": "CSR_PROJECT_SELECTION",
+    "question": "Select project types to sponsor.",
+    "options": [
+      { "text": "Education", "next": "CSR_EDU" },
+      { "text": "Skills & livelihood", "next": "CSR_SKILLS" },
+      { "text": "Health & wellness", "next": "CSR_HEALTH" },
+      { "text": "Back", "next": "COMPANY_CSR_MENU" }
+    ]
+  },
+
+  "CSR_EDU": {
+    "index": "C.1.a.2.1",
+    "id": "CSR_EDU",
+    "question": "Education and digital learning programs.",
+    "options": [
+      { "text": "Download deck", "next": "COMPANY_DOWNLOAD_DECK" },
+      { "text": "Request meeting", "next": "COMPANY_REQUEST_MEETING" },
+      { "text": "Back", "next": "CSR_PROJECT_SELECTION" }
+    ]
+  },
+
+  "CSR_SKILLS": {
+    "index": "C.1.a.2.2",
+    "id": "CSR_SKILLS",
+    "question": "Vocational & livelihood skill development sponsorship.",
+    "options": [
+      { "text": "Back", "next": "CSR_PROJECT_SELECTION" }
+    ]
+  },
+
+  "CSR_HEALTH": {
+    "index": "C.1.a.2.3",
+    "id": "CSR_HEALTH",
+    "question": "Health and wellness initiatives support.",
+    "options": [
+      { "text": "Back", "next": "CSR_PROJECT_SELECTION" }
+    ]
+  },
+
+  "CSR_BRANDING": {
+    "index": "C.1.a.3",
+    "id": "CSR_BRANDING",
+    "question": "Branding visibility in events and communication.",
+    "options": [
+      { "text": "Back", "next": "COMPANY_CSR_MENU" }
+    ]
+  },
+
+  "CSR_EMPLOYEE_PARTICIPATION": {
+    "index": "C.1.a.4",
+    "id": "CSR_EMPLOYEE_PARTICIPATION",
+    "question": "Employee volunteering and engagement opportunities.",
+    "options": [
+      { "text": "Back", "next": "COMPANY_CSR_MENU" }
+    ]
+  },
+
+  "CSR_CERTIFICATES": {
+    "index": "C.1.a.5",
+    "id": "CSR_CERTIFICATES",
+    "question": "CSR recognition and certification support.",
+    "options": [
+      { "text": "Download deck", "next": "COMPANY_DOWNLOAD_DECK" },
+      { "text": "Request meeting", "next": "COMPANY_REQUEST_MEETING" },
+      { "text": "Back", "next": "COMPANY_CSR_MENU" }
+    ]
+  },
+
+  "COMPANY_DOWNLOAD_DECK": {
+    "index": "C.1.b",
+    "id": "COMPANY_DOWNLOAD_DECK",
+    "question": "Corporate decks and sponsorship information.",
+    "options": [
+      { "text": "Download PDF", "next": "COMPANY_DECK_PDF" },
+      { "text": "Customized version", "next": "COMPANY_DECK_CUSTOM" },
+      { "text": "Back", "next": "COMPANY_MENU" }
+    ]
+  },
+
+  "COMPANY_DECK_PDF": {
+    "index": "C.1.b.1",
+    "id": "COMPANY_DECK_PDF",
+    "question": "Corporate deck for CSR approvals and presentations.",
+    "options": [
+      { "text": "Back", "next": "COMPANY_DOWNLOAD_DECK" }
+    ]
+  },
+
+  "COMPANY_DECK_CUSTOM": {
+    "index": "C.1.b.2",
+    "id": "COMPANY_DECK_CUSTOM",
+    "question": "Customized deck creation option.",
+    "options": [
+      { "text": "Back", "next": "COMPANY_DOWNLOAD_DECK" }
+    ]
+  },
+
+  "COMPANY_REQUEST_MEETING": {
+    "index": "C.1.c",
+    "id": "COMPANY_REQUEST_MEETING",
+    "question": "Schedule meetings or CSR discussions.",
+    "options": [
+      { "text": "Request follow-up meeting", "next": "MEETING_FOLLOWUP" },
+      { "text": "Request demo or proposal", "next": "MEETING_DEMO_PROPOSAL" },
+      { "text": "Back", "next": "COMPANY_MENU" }
+    ]
+  },
+
+  "MEETING_FOLLOWUP": {
+    "index": "C.1.c.1",
+    "id": "MEETING_FOLLOWUP",
+    "question": "Follow-up meetings scheduling.",
+    "options": [
+      { "text": "Back", "next": "COMPANY_REQUEST_MEETING" }
+    ]
+  },
+
+  "MEETING_DEMO_PROPOSAL": {
+    "index": "C.1.c.2",
+    "id": "MEETING_DEMO_PROPOSAL",
+    "question": "CSR demo or proposal presentation.",
+    "options": [
+      { "text": "Back", "next": "COMPANY_REQUEST_MEETING" }
+    ]
+  },
+
+  "COMPANY_EMPLOYEE_MENU": {
+    "index": "C.1.d",
+    "id": "COMPANY_EMPLOYEE_MENU",
+    "question": "Employee volunteering and engagement programs.",
+    "options": [
+      { "text": "Employee benefits", "next": "EMPLOYEE_BENEFITS" },
+      { "text": "Scheduling options", "next": "EMPLOYEE_SCHEDULING" },
+      { "text": "Recognition", "next": "EMPLOYEE_RECOGNITION" },
+      { "text": "Back", "next": "COMPANY_MENU" }
+    ]
+  },
+
+  "EMPLOYEE_BENEFITS": {
+    "index": "C.1.d.1",
+    "id": "EMPLOYEE_BENEFITS",
+    "question": "Impact of volunteering on employee engagement.",
+    "options": [
+      { "text": "Back", "next": "COMPANY_EMPLOYEE_MENU" }
+    ]
+  },
+
+  "EMPLOYEE_SCHEDULING": {
+    "index": "C.1.d.2",
+    "id": "EMPLOYEE_SCHEDULING",
+    "question": "Flexible scheduling for employee activities.",
+    "options": [
+      { "text": "Back", "next": "COMPANY_EMPLOYEE_MENU" }
+    ]
+  },
+
+  "EMPLOYEE_RECOGNITION": {
+    "index": "C.1.d.3",
+    "id": "EMPLOYEE_RECOGNITION",
+    "question": "Employee participation certificates and reporting.",
+    "options": [
+      { "text": "Back", "next": "COMPANY_EMPLOYEE_MENU" }
+    ]
+  },
+
+  "COMPANY_IMPACT_MENU": {
+    "index": "C.1.e",
+    "id": "COMPANY_IMPACT_MENU",
+    "question": "Corporate impact statistics and reports.",
+    "options": [
+      { "text": "Overall impact numbers", "next": "IMPACT_NUMBERS" },
+      { "text": "Success stories", "next": "IMPACT_STORIES" },
+      { "text": "Corporate impact report", "next": "IMPACT_ANNUAL_REPORT" },
+      { "text": "Back", "next": "COMPANY_MENU" }
+    ]
+  },
+
+  "IMPACT_NUMBERS": {
+    "index": "C.1.e.1",
+    "id": "IMPACT_NUMBERS",
+    "question": "Over 1M lives impacted with strong volunteer engagement.",
+    "options": [
+      { "text": "Back", "next": "COMPANY_IMPACT_MENU" }
+    ]
+  },
+
+  "IMPACT_STORIES": {
+    "index": "C.1.e.2",
+    "id": "IMPACT_STORIES",
+    "question": "Stories of transformation through corporate partnerships.",
+    "options": [
+      { "text": "Back", "next": "COMPANY_IMPACT_MENU" }
+    ]
+  },
+
+  "IMPACT_ANNUAL_REPORT": {
+    "index": "C.1.e.3",
+    "id": "IMPACT_ANNUAL_REPORT",
+    "question": "Annual CSR and corporate impact reports.",
+    "options": [
+      { "text": "Download latest report", "next": "DOWNLOAD_REPORT_PDF" },
+      { "text": "Request custom report", "next": "DOWNLOAD_CUSTOM_REPORT" },
+      { "text": "Back", "next": "COMPANY_IMPACT_MENU" }
+    ]
+  },
+
+  "DOWNLOAD_REPORT_PDF": {
+    "index": "C.1.e.3.1",
+    "id": "DOWNLOAD_REPORT_PDF",
+    "question": "Latest annual impact report PDF.",
+    "options": [
+      { "text": "Back", "next": "IMPACT_ANNUAL_REPORT" }
+    ]
+  },
+
+  "DOWNLOAD_CUSTOM_REPORT": {
+    "index": "C.1.e.3.2",
+    "id": "DOWNLOAD_CUSTOM_REPORT",
+    "question": "Custom impact report for your company.",
+    "options": [
+      { "text": "Back", "next": "IMPACT_ANNUAL_REPORT" }
+    ]
+  }
+}
