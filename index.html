@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmartLife Chatbot</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: system-ui, -apple-system, sans-serif; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            min-height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            padding: 20px;
+        }
+        .chat { 
+            width: 100%; 
+            max-width: 500px; 
+            height: 700px; 
+            background: white; 
+            border-radius: 24px; 
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); 
+            display: flex; 
+            flex-direction: column; 
+            overflow: hidden;
+        }
+        .header { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            color: white; 
+            padding: 24px; 
+            text-align: center; 
+        }
+        .messages { 
+            flex: 1; 
+            padding: 24px; 
+            overflow-y: auto; 
+            background: #f8f9ff;
+        }
+        .message { 
+            margin-bottom: 16px; 
+            display: flex; 
+        }
+        .bot { justify-content: flex-start; }
+        .user { justify-content: flex-end; margin-bottom: 24px; }
+        .message-content { 
+            max-width: 75%; 
+            padding: 12px 18px; 
+            border-radius: 20px; 
+        }
+        .bot .message-content { 
+            background: white; 
+            border-bottom-left-radius: 6px; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .options { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 10px; 
+            margin-top: 12px; 
+        }
+        .option-btn { 
+            background: #e3f2fd; 
+            color: #1976d2; 
+            border: none; 
+            padding: 10px 20px; 
+            border-radius: 25px; 
+            cursor: pointer; 
+            font-size: 15px; 
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        .option-btn:hover { 
+            background: #1976d2; 
+            color: white; 
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(25,118,210,0.4);
+        }
+        .input-area { 
+            padding: 24px; 
+            background: white; 
+            border-top: 1px solid #e5e7eb;
+        }
+        input { 
+            width: 100%; 
+            padding: 14px 20px; 
+            border: 2px solid #e5e7eb; 
+            border-radius: 25px; 
+            font-size: 16px; 
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        input:focus { 
+            border-color: #667eea; 
+        }
+    </style>
+</head>
+<body>
+    <div class="chat" id="chat">
+        <div class="header">
+            <h1 style="margin: 0 0 4px 0;">SmartLife Assistant</h1>
+            <p style="margin: 0; opacity: 0.9;">Empowering Dubai's workers</p>
+        </div>
+        <div class="messages" id="messages"></div>
+        <div class="input-area">
+            <input type="text" id="input" placeholder="Type 1, 2, 3... or click buttons" />
+        </div>
+    </div>
+
+    <script>
+        const ws = new WebSocket('ws://localhost:3000');
+        const messagesEl = document.getElementById('messages');
+        const inputEl = document.getElementById('input');
+
+        ws.onopen = () => console.log('✅ Connected');
+        ws.onmessage = (event) => {
+            const data = JSON.parse(event.data);
+            addMessage(data.message, 'bot', data.options);
+        };
+
+        inputEl.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                const text = inputEl.value.trim();
+                if (text) {
+                    addMessage(text, 'user');
+                    ws.send(text);
+                    inputEl.value = '';
+                }
+            }
+        });
+
+        function addMessage(text, sender, options = []) {
+            const div = document.createElement('div');
+            div.className = `message ${sender}`;
+            
+            let html = `<div class="message-content">${text}</div>`;
+            if (options.length) {
+                html += '<div class="options">';
+                options.forEach(option => {
+                    html += `<button class="option-btn" onclick="selectOption(${option.index})">${option.text}</button>`;
+                });
+                html += '</div>';
+            }
+            
+            div.innerHTML = html;
+            messagesEl.appendChild(div);
+            messagesEl.scrollTop = messagesEl.scrollHeight;
+        }
+
+        function selectOption(index) {
+            addMessage(index.toString(), 'user');
+            ws.send(index.toString());
+        }
+    </script>
+</body>
+</html>
