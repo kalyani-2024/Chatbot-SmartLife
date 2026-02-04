@@ -93,6 +93,220 @@
         }
       ]
     },
+    "C.1": {
+      "id": "C.1",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Welcome! SmartLife partners with companies to create meaningful CSR impact. How would you like to collaborate?",
+        "ar": "مرحباً! تتعاون سمارت لايف مع الشركات لخلق تأثير مجتمعي هادف. كيف تودون التعاون؟",
+        "hi": "स्वागत है! स्मार्टलाइफ सार्थक सीएसआर प्रभाव बनाने के लिए कंपनियों के साथ भागीदारी करता है। आप कैसे सहयोग करना चाहेंगे?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "CSR Partnership",
+            "ar": "شراكة المسؤولية الاجتماعية",
+            "hi": "सीएसआर साझेदारी"
+          },
+          "next": "C.2.A"
+        },
+        {
+          "text": {
+            "en": "Sponsor an Event",
+            "ar": "رعاية حدث",
+            "hi": "एक कार्यक्रम प्रायोजित करें"
+          },
+          "next": "C.2.B"
+        },
+        {
+          "text": {
+            "en": "Employee Volunteering",
+            "ar": "تطوع الموظفين",
+            "hi": "कर्मचारी स्वयंसेवा"
+          },
+          "next": "C.2.C"
+        },
+        {
+          "text": {
+            "en": "Contact Corporate Team",
+            "ar": "اتصل بفريق الشركات",
+            "hi": "कॉर्पोरेट टीम से संपर्क करें"
+          },
+          "next": "C.3.FORM"
+        },
+        {
+          "text": {
+            "en": "Back to Main Menu",
+            "ar": "العودة للقائمة الرئيسية",
+            "hi": "मुख्य मेनू पर वापस जाएं"
+          },
+          "next": "M.1"
+        }
+      ]
+    },
+    "C.2.A": {
+      "id": "C.2.A",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "CSR Partnerships: We offer tailored programs aligning with your ESG goals. Support education (Smart English), health camps, or vocational training for workers.",
+        "ar": "شراكات المسؤولية الاجتماعية: نقدم برامج مخصصة تتوافق مع أهدافكم البيئية والاجتماعية. ادعموا التعليم (سمارت إنجليش)، المخيمات الطبية، أو التدريب المهني للعمال.",
+        "hi": "सीएसआर साझेदारी: हम आपके ईएसजी लक्ष्यों के अनुरूप अनुरूप कार्यक्रम प्रदान करते हैं। शिक्षा (स्मार्ट इंग्लिश), स्वास्थ्य शिविर, या श्रमिकों के लिए व्यावसायिक प्रशिक्षण का समर्थन करें।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Request a Meeting",
+            "ar": "طلب اجتماع",
+            "hi": "बैठक का अनुरोध करें"
+          },
+          "next": "C.3.FORM"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1"
+        }
+      ]
+    },
+    "C.2.B": {
+      "id": "C.2.B",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "Event Sponsorship: Gain brand visibility by sponsoring our major annual events like 'Smart Idol' (Talent Show) or 'Smart Cup' (Sports), reaching thousands of workers.",
+        "ar": "رعاية الفعاليات: احصلوا على ظهور للعلامة التجارية من خلال رعاية فعالياتنا السنوية الكبرى مثل 'سمارت أيدول' (عرض المواهب) أو 'كأس سمارت' (الرياضة)، للوصول إلى آلاف العمال.",
+        "hi": "इवेंट प्रायोजन: हमारे प्रमुख वार्षिक कार्यक्रमों जैसे 'स्मार्ट आइडल' (टैलेंट शो) या 'स्मार्ट कप' (खेल) को प्रायोजित करके ब्रांड दृश्यता प्राप्त करें, जो हजारों श्रमिकों तक पहुंचता है।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Inquire about Sponsorship",
+            "ar": "استفسر عن الرعاية",
+            "hi": "प्रायोजन के बारे में पूछताछ करें"
+          },
+          "next": "C.3.FORM"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1"
+        }
+      ]
+    },
+    "C.2.C": {
+      "id": "C.2.C",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "Corporate Volunteering: Engage your employees in meaningful team-building. We organize 'Day of Giving' events where your team distributes kits or mentors workers.",
+        "ar": "تطوع الشركات: أشرك موظفيك في بناء فريق هادف. ننظم فعاليات 'يوم العطاء' حيث يقوم فريقك بتوزيع الحقائب أو توجيه العمال.",
+        "hi": "कॉर्पोरेट स्वयंसेवा: अपने कर्मचारियों को सार्थक टीम-बिल्डिंग में संलग्न करें। हम 'डे ऑफ गिविंग' कार्यक्रमों का आयोजन करते हैं जहां आपकी टीम किट वितरित करती है या श्रमिकों को सलाह देती है।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Plan a Volunteer Day",
+            "ar": "خطط ليوم تطوعي",
+            "hi": "एक स्वयंसेवक दिवस की योजना बनाएं"
+          },
+          "next": "C.3.FORM"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1"
+        }
+      ]
+    },
+    "C.3.FORM": {
+      "id": "C.3.FORM",
+      "type": "form",
+      "role": "company",
+      "title": {
+        "en": "Corporate Inquiry",
+        "ar": "استفسار الشركات",
+        "hi": "कॉर्पोरेट पूछताछ"
+      },
+      "message": {
+        "en": "Please provide your details so our Corporate Relations team can contact you:",
+        "ar": "يرجى تقديم تفاصيلكم حتى يتمكن فريق علاقات الشركات لدينا من الاتصال بكم:",
+        "hi": "कृपया अपना विवरण प्रदान करें ताकि हमारी कॉर्पोरेट संबंध टीम आपसे संपर्क कर सके:"
+      },
+      "fields": [
+        {
+          "name": "company_name",
+          "type": "text",
+          "question": {
+            "en": "Company Name:",
+            "ar": "اسم الشركة:",
+            "hi": "कंपनी का नाम:"
+          },
+          "required": true
+        },
+        {
+          "name": "contact_person",
+          "type": "text",
+          "question": {
+            "en": "Contact Person Name:",
+            "ar": "اسم الشخص المسؤول:",
+            "hi": "संपर्क व्यक्ति का नाम:"
+          },
+          "required": true
+        },
+        {
+          "name": "email",
+          "type": "email",
+          "question": {
+            "en": "Official Email Address:",
+            "ar": "البريد الإلكتروني الرسمي:",
+            "hi": "आधिकारिक ईमेल पता:"
+          },
+          "required": true
+        },
+        {
+          "name": "interest",
+          "type": "select",
+          "question": {
+            "en": "Area of Interest:",
+            "ar": "مجال الاهتمام:",
+            "hi": "रुचि का क्षेत्र:"
+          },
+          "choices": [
+            { "value": "csr", "text": { "en": "CSR Partnership", "ar": "شراكة", "hi": "साझेदारी" } },
+            { "value": "sponsorship", "text": { "en": "Event Sponsorship", "ar": "رعاية", "hi": "प्रायोजन" } },
+            { "value": "volunteering", "text": { "en": "Employee Volunteering", "ar": "تطوع", "hi": "स्वयंसेवा" } }
+          ],
+          "required": true
+        }
+      ],
+      "confirmation": {
+        "en": "Thank you. We have received your inquiry for {company_name}. Our team will email you at {email} shortly.",
+        "ar": "شكراً لكم. لقد تلقينا استفساركم عن {company_name}. سيرسل فريقنا بريداً إلكترونياً إلى {email} قريباً.",
+        "hi": "धन्यवाद। हमें {company_name} के लिए आपकी पूछताछ प्राप्त हुई है। हमारी टीम जल्द ही आपको {email} पर ईमेल करेगी।"
+      },
+      "completion_options": [
+        {
+          "text": {
+            "en": "Back to Main Menu",
+            "ar": "العودة للقائمة الرئيسية",
+            "hi": "मुख्य मेनू पर वापस जाएं"
+          },
+          "next": "M.1"
+        }
+      ],
+      "webhook": "/api/company/inquiry"
+    },
     "W.1": {
       "id": "W.1",
       "type": "menu",
