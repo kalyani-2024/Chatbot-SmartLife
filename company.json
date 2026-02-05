@@ -1,3 +1,5 @@
+{
+  "nodes": {
     "C.1": {
       "id": "C.1",
       "type": "menu",
@@ -149,4 +151,640 @@
       ],
       "show_global": true
     },
-  
+    "C.1.a.2": {
+      "id": "C.1.a.2",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Select project types to sponsor.",
+        "ar": "Select project types to sponsor.",
+        "hi": "Select project types to sponsor."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Education",
+            "ar": "Education",
+            "hi": "Education"
+          },
+          "next": "C.1.a.2.1"
+        },
+        {
+          "text": {
+            "en": "Skills & livelihood",
+            "ar": "Skills & livelihood",
+            "hi": "Skills & livelihood"
+          },
+          "next": "C.1.a.2.2"
+        },
+        {
+          "text": {
+            "en": "Health & wellness",
+            "ar": "Health & wellness",
+            "hi": "Health & wellness"
+          },
+          "next": "C.1.a.2.3"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1.a"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.a.2.1": {
+      "id": "C.1.a.2.1",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Education and digital learning programs.",
+        "ar": "Education and digital learning programs.",
+        "hi": "Education and digital learning programs."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Download deck",
+            "ar": "Download deck",
+            "hi": "Download deck"
+          },
+          "next": "C.1.b"
+        },
+        {
+          "text": {
+            "en": "Request meeting",
+            "ar": "Request meeting",
+            "hi": "Request meeting"
+          },
+          "next": "C.1.c"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1.a.2"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.a.2.2": {
+      "id": "C.1.a.2.2",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Vocational & livelihood skill development sponsorship.",
+        "ar": "Vocational & livelihood skill development sponsorship.",
+        "hi": "Vocational & livelihood skill development sponsorship."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1.a.2"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.a.2.3": {
+      "id": "C.1.a.2.3",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Health and wellness initiatives support.",
+        "ar": "Health and wellness initiatives support.",
+        "hi": "Health and wellness initiatives support."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1.a.2"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.a.3": {
+      "id": "C.1.a.3",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Branding visibility in events and communication.",
+        "ar": "Branding visibility in events and communication.",
+        "hi": "Branding visibility in events and communication."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1.a"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.a.4": {
+      "id": "C.1.a.4",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Employee volunteering and engagement opportunities.",
+        "ar": "Employee volunteering and engagement opportunities.",
+        "hi": "Employee volunteering and engagement opportunities."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1.a"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.a.5": {
+      "id": "C.1.a.5",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "CSR recognition and certification support.",
+        "ar": "CSR recognition and certification support.",
+        "hi": "CSR recognition and certification support."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Download deck",
+            "ar": "Download deck",
+            "hi": "Download deck"
+          },
+          "next": "C.1.b"
+        },
+        {
+          "text": {
+            "en": "Request meeting",
+            "ar": "Request meeting",
+            "hi": "Request meeting"
+          },
+          "next": "C.1.c"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1.a"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.b": {
+      "id": "C.1.b",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Corporate decks and sponsorship information.",
+        "ar": "Corporate decks and sponsorship information.",
+        "hi": "Corporate decks and sponsorship information."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Download PDF",
+            "ar": "Download PDF",
+            "hi": "Download PDF"
+          },
+          "next": "C.1.b.1"
+        },
+        {
+          "text": {
+            "en": "Customized version",
+            "ar": "Customized version",
+            "hi": "Customized version"
+          },
+          "next": "C.1.b.2"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.b.1": {
+      "id": "C.1.b.1",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Corporate deck for CSR approvals and presentations.",
+        "ar": "Corporate deck for CSR approvals and presentations.",
+        "hi": "Corporate deck for CSR approvals and presentations."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1.b"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.b.2": {
+      "id": "C.1.b.2",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Customized deck creation option.",
+        "ar": "Customized deck creation option.",
+        "hi": "Customized deck creation option."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1.b"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.c": {
+      "id": "C.1.c",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Schedule meetings or CSR discussions.",
+        "ar": "Schedule meetings or CSR discussions.",
+        "hi": "Schedule meetings or CSR discussions."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Request follow-up meeting",
+            "ar": "Request follow-up meeting",
+            "hi": "Request follow-up meeting"
+          },
+          "next": "C.1.c.1"
+        },
+        {
+          "text": {
+            "en": "Request demo or proposal",
+            "ar": "Request demo or proposal",
+            "hi": "Request demo or proposal"
+          },
+          "next": "C.1.c.2"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.c.1": {
+      "id": "C.1.c.1",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Follow-up meetings scheduling.",
+        "ar": "Follow-up meetings scheduling.",
+        "hi": "Follow-up meetings scheduling."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1.c"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.c.2": {
+      "id": "C.1.c.2",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "CSR demo or proposal presentation.",
+        "ar": "CSR demo or proposal presentation.",
+        "hi": "CSR demo or proposal presentation."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1.c"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.d": {
+      "id": "C.1.d",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Employee volunteering and engagement programs.",
+        "ar": "Employee volunteering and engagement programs.",
+        "hi": "Employee volunteering and engagement programs."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Employee benefits",
+            "ar": "Employee benefits",
+            "hi": "Employee benefits"
+          },
+          "next": "C.1.d.1"
+        },
+        {
+          "text": {
+            "en": "Scheduling options",
+            "ar": "Scheduling options",
+            "hi": "Scheduling options"
+          },
+          "next": "C.1.d.2"
+        },
+        {
+          "text": {
+            "en": "Recognition",
+            "ar": "Recognition",
+            "hi": "Recognition"
+          },
+          "next": "C.1.d.3"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.d.1": {
+      "id": "C.1.d.1",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Impact of volunteering on employee engagement.",
+        "ar": "Impact of volunteering on employee engagement.",
+        "hi": "Impact of volunteering on employee engagement."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1.d"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.d.2": {
+      "id": "C.1.d.2",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Flexible scheduling for employee activities.",
+        "ar": "Flexible scheduling for employee activities.",
+        "hi": "Flexible scheduling for employee activities."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1.d"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.d.3": {
+      "id": "C.1.d.3",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Employee participation certificates and reporting.",
+        "ar": "Employee participation certificates and reporting.",
+        "hi": "Employee participation certificates and reporting."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1.d"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.e": {
+      "id": "C.1.e",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Corporate impact statistics and reports.",
+        "ar": "Corporate impact statistics and reports.",
+        "hi": "Corporate impact statistics and reports."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Overall impact numbers",
+            "ar": "Overall impact numbers",
+            "hi": "Overall impact numbers"
+          },
+          "next": "C.1.e.1"
+        },
+        {
+          "text": {
+            "en": "Success stories",
+            "ar": "Success stories",
+            "hi": "Success stories"
+          },
+          "next": "C.1.e.2"
+        },
+        {
+          "text": {
+            "en": "Corporate impact report",
+            "ar": "Corporate impact report",
+            "hi": "Corporate impact report"
+          },
+          "next": "C.1.e.3"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.e.1": {
+      "id": "C.1.e.1",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Over 1M lives impacted with strong volunteer engagement.",
+        "ar": "Over 1M lives impacted with strong volunteer engagement.",
+        "hi": "Over 1M lives impacted with strong volunteer engagement."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1.e"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.e.2": {
+      "id": "C.1.e.2",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Stories of transformation through corporate partnerships.",
+        "ar": "Stories of transformation through corporate partnerships.",
+        "hi": "Stories of transformation through corporate partnerships."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1.e"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.e.3": {
+      "id": "C.1.e.3",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Annual CSR and corporate impact reports.",
+        "ar": "Annual CSR and corporate impact reports.",
+        "hi": "Annual CSR and corporate impact reports."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Download latest report",
+            "ar": "Download latest report",
+            "hi": "Download latest report"
+          },
+          "next": "C.1.e.3.1"
+        },
+        {
+          "text": {
+            "en": "Request custom report",
+            "ar": "Request custom report",
+            "hi": "Request custom report"
+          },
+          "next": "C.1.e.3.2"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1.e"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.e.3.1": {
+      "id": "C.1.e.3.1",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Latest annual impact report PDF.",
+        "ar": "Latest annual impact report PDF.",
+        "hi": "Latest annual impact report PDF."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1.e.3"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.e.3.2": {
+      "id": "C.1.e.3.2",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Custom impact report for your company.",
+        "ar": "Custom impact report for your company.",
+        "hi": "Custom impact report for your company."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "Back",
+            "hi": "Back"
+          },
+          "next": "C.1.e.3"
+        }
+      ],
+      "show_global": true
+    }
+  }
+}
