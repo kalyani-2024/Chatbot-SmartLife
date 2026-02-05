@@ -1,0 +1,27 @@
+{
+  "name": "chatbot-smartlife",
+  "version": "1.0.0",
+  "description": "=> To Run after downloading the folder, open terminal on VS code and run the following:\r #### npm init -y\r #### npm i express cors ws body-parser",
+  "main": "chatbot-engine.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalyani-2024/Chatbot-SmartLife.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalyani-2024/Chatbot-SmartLife/issues"
+  },
+  "homepage": "https://github.com/kalyani-2024/Chatbot-SmartLife#readme",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "ws": "^8.19.0"
+  }
+}

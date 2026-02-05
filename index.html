@@ -1,99 +1,125 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>SmartLife Chatbot</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: system-ui, -apple-system, sans-serif; 
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-            min-height: 100vh; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 20px;
         }
-        .chat { 
-            width: 100%; 
-            max-width: 500px; 
-            height: 700px; 
-            background: white; 
-            border-radius: 24px; 
-            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); 
-            display: flex; 
-            flex-direction: column; 
+
+        .chat {
+            width: 100%;
+            max-width: 500px;
+            height: 700px;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            display: flex;
+            flex-direction: column;
             overflow: hidden;
         }
-        .header { 
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-            color: white; 
-            padding: 24px; 
-            text-align: center; 
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 24px;
+            text-align: center;
         }
-        .messages { 
-            flex: 1; 
-            padding: 24px; 
-            overflow-y: auto; 
+
+        .messages {
+            flex: 1;
+            padding: 24px;
+            overflow-y: auto;
             background: #f8f9ff;
         }
-        .message { 
-            margin-bottom: 16px; 
-            display: flex; 
+
+        .message {
+            margin-bottom: 16px;
+            display: flex;
         }
-        .bot { justify-content: flex-start; }
-        .user { justify-content: flex-end; margin-bottom: 24px; }
-        .message-content { 
-            max-width: 75%; 
-            padding: 12px 18px; 
-            border-radius: 20px; 
+
+        .bot {
+            justify-content: flex-start;
         }
-        .bot .message-content { 
-            background: white; 
-            border-bottom-left-radius: 6px; 
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+        .user {
+            justify-content: flex-end;
+            margin-bottom: 24px;
         }
-        .options { 
-            display: flex; 
-            flex-wrap: wrap; 
-            gap: 10px; 
-            margin-top: 12px; 
+
+        .message-content {
+            max-width: 75%;
+            padding: 12px 18px;
+            border-radius: 20px;
         }
-        .option-btn { 
-            background: #e3f2fd; 
-            color: #1976d2; 
-            border: none; 
-            padding: 10px 20px; 
-            border-radius: 25px; 
-            cursor: pointer; 
-            font-size: 15px; 
+
+        .bot .message-content {
+            background: white;
+            border-bottom-left-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .option-btn {
+            background: #e3f2fd;
+            color: #1976d2;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 15px;
             font-weight: 500;
             transition: all 0.2s ease;
         }
-        .option-btn:hover { 
-            background: #1976d2; 
-            color: white; 
+
+        .option-btn:hover {
+            background: #1976d2;
+            color: white;
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(25,118,210,0.4);
+            box-shadow: 0 4px 12px rgba(25, 118, 210, 0.4);
         }
-        .input-area { 
-            padding: 24px; 
-            background: white; 
+
+        .input-area {
+            padding: 24px;
+            background: white;
             border-top: 1px solid #e5e7eb;
         }
-        input { 
-            width: 100%; 
-            padding: 14px 20px; 
-            border: 2px solid #e5e7eb; 
-            border-radius: 25px; 
-            font-size: 16px; 
+
+        input {
+            width: 100%;
+            padding: 14px 20px;
+            border: 2px solid #e5e7eb;
+            border-radius: 25px;
+            font-size: 16px;
             outline: none;
             transition: border-color 0.2s;
         }
-        input:focus { 
-            border-color: #667eea; 
+
+        input:focus {
+            border-color: #667eea;
         }
     </style>
 </head>
+
 <body>
     <div class="chat" id="chat">
         <div class="header">
@@ -112,10 +138,6 @@
         const inputEl = document.getElementById('input');
 
         ws.onopen = () => console.log('✅ Connected');
-        ws.onmessage = (event) => {
-            const data = JSON.parse(event.data);
-            addMessage(data.message, 'bot', data.options);
-        };
 
         inputEl.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
@@ -131,7 +153,7 @@
         function addMessage(text, sender, options = []) {
             const div = document.createElement('div');
             div.className = `message ${sender}`;
-            
+
             let html = `<div class="message-content">${text}</div>`;
             if (options.length) {
                 html += '<div class="options">';
@@ -140,7 +162,7 @@
                 });
                 html += '</div>';
             }
-            
+
             div.innerHTML = html;
             messagesEl.appendChild(div);
             messagesEl.scrollTop = messagesEl.scrollHeight;
@@ -150,6 +172,31 @@
             addMessage(index.toString(), 'user');
             ws.send(index.toString());
         }
+
+        // Handle URL actions from bot responses
+        function handleAction(action) {
+            if (!action) return;
+
+            if (action.type === 'open_url' && action.url) {
+                window.open(action.url, '_blank');
+            } else if (action.type === 'open_email' && action.email) {
+                window.location.href = 'mailto:' + action.email;
+            } else if (action.type === 'open_phone' && action.phone) {
+                window.location.href = 'tel:' + action.phone;
+            } else if (action.type === 'open_map' && action.url) {
+                window.open(action.url, '_blank');
+            }
+        }
+
+        ws.onmessage = (event) => {
+            const data = JSON.parse(event.data);
+            addMessage(data.message, 'bot', data.options);
+            if (data.action) {
+                // Delay action by 1.5 seconds so user can see the message first
+                setTimeout(() => handleAction(data.action), 1500);
+            }
+        };
     </script>
 </body>
+
 </html>

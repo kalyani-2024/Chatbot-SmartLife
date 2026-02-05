@@ -245,7 +245,7 @@
       "hi": "सुरक्षित भुगतान गेटवे खोल रहे हैं..."
     },
     "action": "open_payment_link",
-    "url": "https://payment.smartlifefoundation.org/donate",
+    "url": "https://erp.smartlifefoundation.org/web/signup",
     "next": "D.4.RECEIPT"
   },
   "D.4.RECEIPT": {

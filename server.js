@@ -14,7 +14,7 @@ let chatbotData;
 try {
   chatbotData = JSON.parse(fs.readFileSync('./smartlife-chatbot.json', 'utf8'));
   console.log('✅ JSON loaded! Nodes:', Object.keys(chatbotData.nodes).length);
-} catch(e) {
+} catch (e) {
   console.error('❌ smartlife-chatbot.json missing!');
   process.exit(1);
 }
@@ -23,25 +23,25 @@ const clients = new Map();
 
 wss.on('connection', (ws) => {
   console.log('✅ Client connected');
-  
+
   const clientId = Date.now();
-  clients.set(clientId, { 
-    ws, 
-    currentNode: 'L.1', 
+  clients.set(clientId, {
+    ws,
+    currentNode: 'L.1',
     language: 'en',
     history: [],
     formData: {},
     formState: null
   });
-  
+
   sendMessage(clientId);
-  
+
   ws.on('message', (data) => {
     const message = data.toString().trim();
     console.log(`📨 [${clientId}] ${message}`);
     handleMessage(clientId, message);
   });
-  
+
   ws.on('close', () => {
     clients.delete(clientId);
     console.log('❌ Client disconnected');
@@ -51,39 +51,52 @@ wss.on('connection', (ws) => {
 function sendMessage(clientId) {
   const client = clients.get(clientId);
   if (!client) return;
-  
+
   const node = chatbotData.nodes[client.currentNode];
   if (!node) {
     client.ws.send(JSON.stringify({ message: "Node not found", options: [] }));
     return;
   }
-  
+
   let response;
   if (node.type === 'form') {
     response = handleFormNode(client, node);
+  } else if (node.type === 'input') {
+    // Handle simple input nodes (like newsletter subscription)
+    client.inputState = { nodeId: client.currentNode, next: node.next };
+    response = {
+      message: node.message[client.language] || node.message.en || 'Please enter:',
+      options: [],
+      expectInput: true
+    };
   } else {
     response = {
       message: node.message[client.language] || node.message.en || 'Welcome!',
       options: getNodeOptions(client, node)
     };
   }
-  
+
+  // Include action if node has one (for URL redirections)
+  if (node.action) {
+    response.action = node.action;
+  }
+
   client.ws.send(JSON.stringify(response));
   console.log(`📤 [${clientId}] ${client.currentNode}: ${response.message.substring(0, 50)}`);
 }
 
 function getNodeOptions(client, node) {
   let options = [];
-  
+
 
   if (client.currentNode === 'L.1' && node.options) {
     options = node.options.map((opt, index) => ({
       index: index + 1,
-      text: opt.text.en 
+      text: opt.text.en
     }));
     return options;
   }
-  
+
 
   if (node.options) {
     options = node.options.map((opt, index) => ({
@@ -91,7 +104,7 @@ function getNodeOptions(client, node) {
       text: opt.text[client.language] || opt.text.en || Object.values(opt.text)[0]
     }));
   }
-  
+
 
   if (node.back && client.currentNode !== 'L.1') {
     options.push({
@@ -100,7 +113,7 @@ function getNodeOptions(client, node) {
       action: 'back'
     });
   }
-  
+
 
   if (node.show_global && client.currentNode !== 'L.1' && chatbotData.global_options) {
     chatbotData.global_options.forEach(globalOpt => {
@@ -111,14 +124,14 @@ function getNodeOptions(client, node) {
       });
     });
   }
-  
+
   return options;
 }
 
 function getBackText(language) {
   return {
     en: "⬅️ Go Back",
-    ar: "⬅️ رجوع", 
+    ar: "⬅️ رجوع",
     hi: "⬅️ वापस"
   }[language] || "⬅️ Go Back";
 }
@@ -126,36 +139,50 @@ function getBackText(language) {
 function handleMessage(clientId, message) {
   const client = clients.get(clientId);
   if (!client) return;
-  
+
   const node = chatbotData.nodes[client.currentNode];
-  
+
 
   if (client.formState) {
     handleFormInput(clientId, message);
     return;
   }
-  
+
+  // Handle simple input nodes (like newsletter name/email)
+  if (client.inputState) {
+    console.log(`📝 [${clientId}] Input received: ${message}`);
+    // Store the input if needed (for future API calls)
+    if (!client.collectedData) client.collectedData = {};
+    client.collectedData[client.inputState.nodeId] = message;
+
+    // Move to next node
+    client.currentNode = client.inputState.next;
+    client.inputState = null;
+    sendMessage(clientId);
+    return;
+  }
+
   const optionIndex = parseInt(message);
-  
+
 
   if (client.currentNode === 'L.1' && !isNaN(optionIndex) && node.options[optionIndex - 1]) {
     const option = node.options[optionIndex - 1];
-    client.language = option.action.split(':')[1]; 
-    client.currentNode = option.next; 
+    client.language = option.action.split(':')[1];
+    client.currentNode = option.next;
     console.log(`🌐 Language: ${client.language} → ${client.currentNode}`);
     sendMessage(clientId);
     return;
   }
-  
+
 
   if (!isNaN(optionIndex)) {
     let handled = false;
-    
+
 
     if (node.options && node.options[optionIndex - 1]) {
       const option = node.options[optionIndex - 1];
       handled = true;
-      
+
       if (option.action?.startsWith('set_language:')) {
         client.language = option.action.split(':')[1];
       } else if (option.action === 'back' && node.back) {
@@ -164,14 +191,14 @@ function handleMessage(clientId, message) {
         client.currentNode = option.next;
       }
     }
-    
+
 
     if (!handled && chatbotData.global_options) {
       const globalIndex = optionIndex - (node.options?.length || 0);
       if (chatbotData.global_options[globalIndex]) {
         const globalOpt = chatbotData.global_options[globalIndex];
         handled = true;
-        
+
         if (globalOpt.action === 'end') {
           client.ws.send(JSON.stringify({ message: "Thank you! Goodbye! 🙏", options: [] }));
           return;
@@ -180,7 +207,7 @@ function handleMessage(clientId, message) {
         }
       }
     }
-    
+
     if (handled) {
       sendMessage(clientId);
     } else {
@@ -195,7 +222,7 @@ function handleFormNode(client, node) {
   if (!client.formState) {
     client.formState = { nodeId: node.id, step: 0, data: {} };
   }
-  
+
   return {
     message: `${node.message[client.language] || node.message.en}\n\n(Simplified form - type anything to continue)`,
     options: node.completion_options?.map((opt, i) => ({

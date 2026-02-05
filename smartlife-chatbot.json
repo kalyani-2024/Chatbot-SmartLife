@@ -1474,52 +1474,12 @@
       "type": "action",
       "role": "donor",
       "message": {
-        "en": "Opening secure payment gateway...",
-        "ar": "فتح بوابة الدفع الآمنة...",
-        "hi": "सुरक्षित भुगतान गेटवे खोल रहे हैं..."
+        "en": "We’ll now redirect you to SmartLife’s secure portal, where you can log in or sign up to complete your donation.",
+        "ar": "سنقوم الآن بإعادة توجيهك إلى بوابة سمارت لايف الآمنة، حيث يمكنك تسجيل الدخول أو إنشاء حساب لإكمال تبرعك.",
+        "hi": "अब हम आपको स्मार्टलाइफ के सुरक्षित पोर्टल पर ले जाएंगे, जहाँ आप लॉगिन या साइन अप करके अपना दान पूरा कर सकते हैं।"
       },
       "action": "open_payment_link",
-      "url": "https://payment.smartlifefoundation.org/donate",
-      "next": "D.4.RECEIPT"
-    },
-    "D.4.RECEIPT": {
-      "id": "D.4.RECEIPT",
-      "type": "question",
-      "role": "donor",
-      "message": {
-        "en": "Would you like to receive a receipt via email?",
-        "ar": "هل تريد تلقي إيصال عبر البريد الإلكتروني؟",
-        "hi": "क्या आप ईमेल के माध्यम से रसीद प्राप्त करना चाहते हैं?"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Yes",
-            "ar": "نعم",
-            "hi": "हाँ"
-          },
-          "next": "D.4.EMAIL"
-        },
-        {
-          "text": {
-            "en": "No",
-            "ar": "لا",
-            "hi": "नहीं"
-          },
-          "next": "D.4.THANKS"
-        }
-      ]
-    },
-    "D.4.EMAIL": {
-      "id": "D.4.EMAIL",
-      "type": "input",
-      "role": "donor",
-      "message": {
-        "en": "Enter your email for receipt:",
-        "ar": "أدخل بريدك الإلكتروني للإيصال:",
-        "hi": "रसीद के लिए अपना ईमेल दर्ज करें:"
-      },
-      "input_type": "email",
+      "url": "https://erp.smartlifefoundation.org/web/login",
       "next": "D.4.THANKS"
     },
     "D.4.THANKS": {
@@ -3036,6 +2996,1017 @@
             "hi": "प्रश्नों पर वापस जाएं"
           },
           "next": "V.2.I"
+        }
+      ]
+    },
+    "D.1": {
+      "id": "D.1",
+      "type": "menu",
+      "role": "donor",
+      "message": {
+        "en": "Welcome! Thank you for your interest in supporting frontline workers. How can we help you today?",
+        "ar": "مرحباً! شكراً لاهتمامك بدعم عمال الخطوط الأمامية. كيف يمكننا مساعدتك اليوم؟",
+        "hi": "स्वागत है! फ्रंटलाइन कर्मचारियों का समर्थन करने में आपकी रुचि के लिए धन्यवाद। हम आज आपकी कैसे मदद कर सकते हैं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Donate Now",
+            "ar": "تبرع الآن",
+            "hi": "अभी दान करें"
+          },
+          "next": "D.DONATE"
+        },
+        {
+          "text": {
+            "en": "See Projects & Impact",
+            "ar": "شاهد المشاريع والتأثير",
+            "hi": "परियोजनाएं और प्रभाव देखें"
+          },
+          "next": "D.PROJECTS"
+        },
+        {
+          "text": {
+            "en": "Media / Press / Logo Use",
+            "ar": "وسائل الإعلام / الصحافة",
+            "hi": "मीडिया / प्रेस"
+          },
+          "next": "D.MEDIA"
+        },
+        {
+          "text": {
+            "en": "Contact / Visit Us",
+            "ar": "اتصل بنا / زيارة",
+            "hi": "संपर्क करें / हमसे मिलें"
+          },
+          "next": "D.CONTACT"
+        },
+        {
+          "text": {
+            "en": "Newsletter / Updates",
+            "ar": "النشرة الإخبارية",
+            "hi": "न्यूज़लेटर / अपडेट"
+          },
+          "next": "D.NEWSLETTER"
+        },
+        {
+          "text": {
+            "en": "Other Questions",
+            "ar": "أسئلة أخرى",
+            "hi": "अन्य प्रश्न"
+          },
+          "next": "D.FAQ"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "M.1"
+        }
+      ],
+      "show_global": true
+    },
+    "D.DONATE": {
+      "id": "D.DONATE",
+      "type": "action",
+      "role": "donor",
+      "message": {
+        "en": "🎉 Thank you for choosing to donate! You will be redirected to our secure signup page to complete your donation.",
+        "ar": "🎉 شكراً لاختيارك التبرع! سيتم توجيهك إلى صفحة التسجيل الآمنة لإتمام تبرعك.",
+        "hi": "🎉 दान करने का चुनाव करने के लिए धन्यवाद! आपको अपना दान पूरा करने के लिए सुरक्षित साइनअप पेज पर रीडायरेक्ट किया जाएगा।"
+      },
+      "action": {
+        "type": "open_url",
+        "url": "https://erp.smartlifefoundation.org/web/signup"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back to Menu",
+            "ar": "العودة للقائمة",
+            "hi": "मेनू पर वापस"
+          },
+          "next": "D.1"
+        }
+      ]
+    },
+    "D.PROJECTS": {
+      "id": "D.PROJECTS",
+      "type": "action",
+      "role": "donor",
+      "message": {
+        "en": "📋 Opening our Projects page where you can explore all our initiatives including Education, Skills Development, Health & Well-Being, and the Smart Hub Center...",
+        "ar": "📋 فتح صفحة المشاريع حيث يمكنك استكشاف جميع مبادراتنا...",
+        "hi": "📋 हमारा प्रोजेक्ट्स पेज खोल रहे हैं जहां आप शिक्षा, कौशल विकास, स्वास्थ्य और स्मार्ट हब सहित हमारी सभी पहलों का पता लगा सकते हैं..."
+      },
+      "action": {
+        "type": "open_url",
+        "url": "https://www.smartlifefoundation.org/projects"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Donate Now",
+            "ar": "تبرع الآن",
+            "hi": "अभी दान करें"
+          },
+          "next": "D.DONATE"
+        },
+        {
+          "text": {
+            "en": "Back to Menu",
+            "ar": "العودة للقائمة",
+            "hi": "मेनू पर वापस"
+          },
+          "next": "D.1"
+        }
+      ]
+    },
+    "D.PROJ.EDU": {
+      "id": "D.PROJ.EDU",
+      "type": "info",
+      "role": "donor",
+      "message": {
+        "en": "📚 Education: Free English and reading programs to help workers communicate better, gain confidence, and access better opportunities.\n\n• Smart English classes at labor camps\n• 2,000+ beneficiaries\n• 8-12 week programs",
+        "ar": "📚 التعليم: برامج اللغة الإنجليزية والقراءة المجانية لمساعدة العمال على التواصل بشكل أفضل.",
+        "hi": "📚 शिक्षा: कर्मचारियों को बेहतर संवाद करने में मदद करने के लिए मुफ्त अंग्रेजी और पढ़ने के कार्यक्रम।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Donate to Education",
+            "ar": "تبرع للتعليم",
+            "hi": "शिक्षा के लिए दान करें"
+          },
+          "next": "D.DONATE"
+        },
+        {
+          "text": {
+            "en": "Read More on Website",
+            "ar": "اقرأ المزيد",
+            "hi": "वेबसाइट पर और पढ़ें"
+          },
+          "next": "D.PROJ.EDU.VIEW"
+        },
+        {
+          "text": {
+            "en": "Back to Projects",
+            "ar": "العودة للمشاريع",
+            "hi": "प्रोजेक्ट्स पर वापस"
+          },
+          "next": "D.PROJECTS"
+        }
+      ],
+      "back": "D.PROJECTS"
+    },
+    "D.PROJ.SKILLS": {
+      "id": "D.PROJ.SKILLS",
+      "type": "info",
+      "role": "donor",
+      "message": {
+        "en": "🔧 Skills Development: Smart Computer, Smart Skill, and Smart Hands programs provide practical training in computer literacy, vocational skills, and creative entrepreneurship.\n\n• 1,500+ trained in computer skills\n• Vocational training in mechanics, plumbing, HVAC",
+        "ar": "🔧 تطوير المهارات: برامج سمارت كمبيوتر وسمارت سكيل توفر التدريب العملي.",
+        "hi": "🔧 कौशल विकास: स्मार्ट कंप्यूटर और स्मार्ट स्किल कार्यक्रम व्यावहारिक प्रशिक्षण प्रदान करते हैं।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Donate to Skills Development",
+            "ar": "تبرع لتطوير المهارات",
+            "hi": "कौशल विकास के लिए दान करें"
+          },
+          "next": "D.DONATE"
+        },
+        {
+          "text": {
+            "en": "Read More on Website",
+            "ar": "اقرأ المزيد",
+            "hi": "वेबसाइट पर और पढ़ें"
+          },
+          "next": "D.PROJ.SKILLS.VIEW"
+        },
+        {
+          "text": {
+            "en": "Back to Projects",
+            "ar": "العودة للمشاريع",
+            "hi": "प्रोजेक्ट्स पर वापस"
+          },
+          "next": "D.PROJECTS"
+        }
+      ],
+      "back": "D.PROJECTS"
+    },
+    "D.PROJ.HEALTH": {
+      "id": "D.PROJ.HEALTH",
+      "type": "info",
+      "role": "donor",
+      "message": {
+        "en": "🏥 Health & Well-Being: Free health checkups, mental health support, fitness programs, and wellness workshops.\n\n• 3,000+ workers supported\n• Regular medical camps\n• Mental health counseling",
+        "ar": "🏥 الصحة والعافية: فحوصات صحية مجانية ودعم الصحة النفسية وبرامج اللياقة.",
+        "hi": "🏥 स्वास्थ्य और कल्याण: मुफ्त स्वास्थ्य जांच, मानसिक स्वास्थ्य सहायता, फिटनेस कार्यक्रम।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Donate to Health Programs",
+            "ar": "تبرع للبرامج الصحية",
+            "hi": "स्वास्थ्य कार्यक्रमों के लिए दान करें"
+          },
+          "next": "D.DONATE"
+        },
+        {
+          "text": {
+            "en": "Read More on Website",
+            "ar": "اقرأ المزيد",
+            "hi": "वेबसाइट पर और पढ़ें"
+          },
+          "next": "D.PROJ.HEALTH.VIEW"
+        },
+        {
+          "text": {
+            "en": "Back to Projects",
+            "ar": "العودة للمشاريع",
+            "hi": "प्रोजेक्ट्स पर वापस"
+          },
+          "next": "D.PROJECTS"
+        }
+      ],
+      "back": "D.PROJECTS"
+    },
+    "D.PROJ.HUB": {
+      "id": "D.PROJ.HUB",
+      "type": "info",
+      "role": "donor",
+      "message": {
+        "en": "🏢 Smart Hub Community Center: The first-of-its-kind community center dedicated to frontline workers offering learning, sports, and talent activities.\n\n📊 Funding Target: AED 2,000,000\n✅ Secured: 26% (AED 520,000)\n🎯 Impact: 10,000+ workers/year",
+        "ar": "🏢 مركز سمارت هب: أول مركز مجتمعي من نوعه مخصص لعمال الخطوط الأمامية.",
+        "hi": "🏢 स्मार्ट हब सामुदायिक केंद्र: फ्रंटलाइन कर्मचारियों के लिए समर्पित पहला सामुदायिक केंद्र।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Donate to Smart Hub",
+            "ar": "تبرع لـ Smart Hub",
+            "hi": "स्मार्ट हब के लिए दान करें"
+          },
+          "next": "D.DONATE"
+        },
+        {
+          "text": {
+            "en": "Read More on Website",
+            "ar": "اقرأ المزيد",
+            "hi": "वेबसाइट पर और पढ़ें"
+          },
+          "next": "D.PROJ.VIEW"
+        },
+        {
+          "text": {
+            "en": "Back to Projects",
+            "ar": "العودة للمشاريع",
+            "hi": "प्रोजेक्ट्स पर वापस"
+          },
+          "next": "D.PROJECTS"
+        }
+      ],
+      "back": "D.PROJECTS"
+    },
+    "D.PROJ.VIEW": {
+      "id": "D.PROJ.VIEW",
+      "type": "action",
+      "role": "donor",
+      "message": {
+        "en": "Opening our Projects page...",
+        "ar": "فتح صفحة المشاريع...",
+        "hi": "हमारा प्रोजेक्ट्स पेज खोल रहे हैं..."
+      },
+      "action": {
+        "type": "open_url",
+        "url": "https://www.smartlifefoundation.org/projects"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back to Projects",
+            "ar": "العودة للمشاريع",
+            "hi": "प्रोजेक्ट्स पर वापस"
+          },
+          "next": "D.PROJECTS"
+        }
+      ]
+    },
+    "D.PROJ.EDU.VIEW": {
+      "id": "D.PROJ.EDU.VIEW",
+      "type": "action",
+      "role": "donor",
+      "message": {
+        "en": "Opening Skills Development section (Education programs are part of Skills Development)...",
+        "ar": "فتح قسم تطوير المهارات...",
+        "hi": "कौशल विकास अनुभाग खोल रहे हैं..."
+      },
+      "action": {
+        "type": "open_url",
+        "url": "https://www.smartlifefoundation.org/projects#skills-development"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back to Projects",
+            "ar": "العودة للمشاريع",
+            "hi": "प्रोजेक्ट्स पर वापस"
+          },
+          "next": "D.PROJECTS"
+        }
+      ]
+    },
+    "D.PROJ.SKILLS.VIEW": {
+      "id": "D.PROJ.SKILLS.VIEW",
+      "type": "action",
+      "role": "donor",
+      "message": {
+        "en": "Opening Skills Development section...",
+        "ar": "فتح قسم تطوير المهارات...",
+        "hi": "कौशल विकास अनुभाग खोल रहे हैं..."
+      },
+      "action": {
+        "type": "open_url",
+        "url": "https://www.smartlifefoundation.org/projects#skills-development"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back to Projects",
+            "ar": "العودة للمشاريع",
+            "hi": "प्रोजेक्ट्स पर वापस"
+          },
+          "next": "D.PROJECTS"
+        }
+      ]
+    },
+    "D.PROJ.HEALTH.VIEW": {
+      "id": "D.PROJ.HEALTH.VIEW",
+      "type": "action",
+      "role": "donor",
+      "message": {
+        "en": "Opening Health & Well-Being section...",
+        "ar": "فتح قسم الصحة والعافية...",
+        "hi": "स्वास्थ्य और कल्याण अनुभाग खोल रहे हैं..."
+      },
+      "action": {
+        "type": "open_url",
+        "url": "https://www.smartlifefoundation.org/projects#health-well-being"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back to Projects",
+            "ar": "العودة للمشاريع",
+            "hi": "प्रोजेक्ट्स पर वापस"
+          },
+          "next": "D.PROJECTS"
+        }
+      ]
+    },
+    "D.MEDIA": {
+      "id": "D.MEDIA",
+      "type": "menu",
+      "role": "donor",
+      "message": {
+        "en": "What do you need help with?",
+        "ar": "بماذا يمكننا مساعدتك؟",
+        "hi": "आपको किस चीज़ में मदद चाहिए?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Press & Logo Usage Info",
+            "ar": "معلومات الشعار والصحافة",
+            "hi": "प्रेस और लोगो उपयोग जानकारी"
+          },
+          "next": "D.MEDIA.IP"
+        },
+        {
+          "text": {
+            "en": "Official Info & Facts",
+            "ar": "معلومات رسمية وحقائق",
+            "hi": "आधिकारिक जानकारी और तथ्य"
+          },
+          "next": "D.MEDIA.FACTS"
+        },
+        {
+          "text": {
+            "en": "Media / Communications Contact",
+            "ar": "اتصال الوسائط",
+            "hi": "मीडिया / संचार संपर्क"
+          },
+          "next": "D.MEDIA.CONTACT"
+        },
+        {
+          "text": {
+            "en": "Back to Donor Menu",
+            "ar": "العودة لقائمة المتبرعين",
+            "hi": "दाता मेनू पर वापस"
+          },
+          "next": "D.1"
+        }
+      ],
+      "back": "D.1"
+    },
+    "D.MEDIA.IP": {
+      "id": "D.MEDIA.IP",
+      "type": "action",
+      "role": "donor",
+      "message": {
+        "en": "You can find our logo and media-use guidelines on our Intellectual Property page.",
+        "ar": "يمكنك العثور على شعارنا وإرشادات استخدام الوسائط في صفحة الملكية الفكرية.",
+        "hi": "आप हमारे लोगो और मीडिया-उपयोग दिशानिर्देश हमारे बौद्धिक संपदा पृष्ठ पर पा सकते हैं।"
+      },
+      "action": {
+        "type": "open_url",
+        "url": "https://www.smartlifefoundation.org/intellectual"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back to Media Menu",
+            "ar": "العودة لقائمة الوسائط",
+            "hi": "मीडिया मेनू पर वापस"
+          },
+          "next": "D.MEDIA"
+        }
+      ]
+    },
+    "D.MEDIA.FACTS": {
+      "id": "D.MEDIA.FACTS",
+      "type": "info",
+      "role": "donor",
+      "message": {
+        "en": "📋 About SmartLife Foundation:\n\nSmartLife is an NPO/NGO registered with the Community Development Authority of Dubai. We empower blue-collar and frontline workers through:\n\n• Education programs (Smart English)\n• Skills training (Smart Computer, Smart Skill)\n• Health initiatives\n• Community building\n\n🏆 Awards: CDA Ethraa Award, Dubai Lynx, Effie Awards\n👥 Lives touched: 5,000+\n📍 Based in Al Quoz, Dubai",
+        "ar": "📋 عن مؤسسة سمارت لايف: نحن منظمة غير ربحية مسجلة في هيئة تنمية المجتمع بدبي.",
+        "hi": "📋 स्मार्टलाइफ फाउंडेशन के बारे में: हम दुबई के सीडीए में पंजीकृत एनपीओ/एनजीओ हैं।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Visit About Page",
+            "ar": "زيارة صفحة عنا",
+            "hi": "अबाउट पेज देखें"
+          },
+          "next": "D.MEDIA.ABOUT"
+        },
+        {
+          "text": {
+            "en": "Back to Media Menu",
+            "ar": "العودة لقائمة الوسائط",
+            "hi": "मीडिया मेनू पर वापस"
+          },
+          "next": "D.MEDIA"
+        },
+        {
+          "text": {
+            "en": "Back to Donor Menu",
+            "ar": "العودة لقائمة المتبرعين",
+            "hi": "दाता मेनू पर वापस"
+          },
+          "next": "D.1"
+        }
+      ]
+    },
+    "D.MEDIA.ABOUT": {
+      "id": "D.MEDIA.ABOUT",
+      "type": "action",
+      "role": "donor",
+      "message": {
+        "en": "Opening our About page...",
+        "ar": "فتح صفحة عنا...",
+        "hi": "हमारा अबाउट पेज खोल रहे हैं..."
+      },
+      "action": {
+        "type": "open_url",
+        "url": "https://www.smartlifefoundation.org/about"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back to Media Menu",
+            "ar": "العودة لقائمة الوسائط",
+            "hi": "मीडिया मेनू पर वापस"
+          },
+          "next": "D.MEDIA"
+        }
+      ]
+    },
+    "D.MEDIA.CONTACT": {
+      "id": "D.MEDIA.CONTACT",
+      "type": "info",
+      "role": "donor",
+      "message": {
+        "en": "📞 For press and media enquiries, please contact:\n\n📧 Email: admin@smartlifefoundation.org\n📱 Phone: +971 600 578 600",
+        "ar": "📞 للاستفسارات الإعلامية، يرجى الاتصال:\n\n📧 البريد: admin@smartlifefoundation.org\n📱 الهاتف: +971 600 578 600",
+        "hi": "📞 प्रेस और मीडिया पूछताछ के लिए, कृपया संपर्क करें:\n\n📧 ईमेल: admin@smartlifefoundation.org\n📱 फोन: +971 600 578 600"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Send Email",
+            "ar": "إرسال بريد",
+            "hi": "ईमेल भेजें"
+          },
+          "next": "D.MEDIA.EMAIL"
+        },
+        {
+          "text": {
+            "en": "Call Now",
+            "ar": "اتصل الآن",
+            "hi": "अभी कॉल करें"
+          },
+          "next": "D.MEDIA.CALL"
+        },
+        {
+          "text": {
+            "en": "Back to Media Menu",
+            "ar": "العودة لقائمة الوسائط",
+            "hi": "मीडिया मेनू पर वापस"
+          },
+          "next": "D.MEDIA"
+        }
+      ]
+    },
+    "D.MEDIA.EMAIL": {
+      "id": "D.MEDIA.EMAIL",
+      "type": "action",
+      "role": "donor",
+      "message": {
+        "en": "Opening email client...",
+        "ar": "فتح عميل البريد الإلكتروني...",
+        "hi": "ईमेल क्लाइंट खोल रहे हैं..."
+      },
+      "action": {
+        "type": "open_email",
+        "email": "admin@smartlifefoundation.org"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back to Media Menu",
+            "ar": "العودة لقائمة الوسائط",
+            "hi": "मीडिया मेनू पर वापस"
+          },
+          "next": "D.MEDIA"
+        }
+      ]
+    },
+    "D.MEDIA.CALL": {
+      "id": "D.MEDIA.CALL",
+      "type": "action",
+      "role": "donor",
+      "message": {
+        "en": "Initiating call...",
+        "ar": "بدء المكالمة...",
+        "hi": "कॉल शुरू कर रहे हैं..."
+      },
+      "action": {
+        "type": "open_phone",
+        "phone": "+971600578600"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back to Media Menu",
+            "ar": "العودة لقائمة الوسائط",
+            "hi": "मीडिया मेनू पर वापस"
+          },
+          "next": "D.MEDIA"
+        }
+      ]
+    },
+    "D.CONTACT": {
+      "id": "D.CONTACT",
+      "type": "info",
+      "role": "donor",
+      "message": {
+        "en": "📍 You can reach us here:\n\n🏢 Address: 2nd Floor, Office No 204, Farooqi Gym Building, Al Quoz, Dubai\n📱 Phone: +971 600 578 600\n📧 Email: admin@smartlifefoundation.org\n🕐 Hours: All days, 9:00 AM – 6:00 PM",
+        "ar": "📍 يمكنك الوصول إلينا هنا:\n\n🏢 العنوان: الطابق الثاني، مكتب 204، مبنى فاروقي جيم، القوز، دبي\n📱 الهاتف: +971 600 578 600\n📧 البريد: admin@smartlifefoundation.org\n🕐 ساعات العمل: جميع الأيام، 9:00 صباحاً - 6:00 مساءً",
+        "hi": "📍 आप यहां हमसे संपर्क कर सकते हैं:\n\n🏢 पता: दूसरी मंजिल, कार्यालय 204, फारूकी जिम बिल्डिंग, अल कोज़, दुबई\n📱 फोन: +971 600 578 600\n📧 ईमेल: admin@smartlifefoundation.org\n🕐 समय: सभी दिन, 9:00 AM - 6:00 PM"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Open Map / Directions",
+            "ar": "فتح الخريطة / الاتجاهات",
+            "hi": "मैप / दिशानिर्देश खोलें"
+          },
+          "next": "D.CONTACT.MAP"
+        },
+        {
+          "text": {
+            "en": "Send a Message",
+            "ar": "إرسال رسالة",
+            "hi": "संदेश भेजें"
+          },
+          "next": "D.CONTACT.MSG"
+        },
+        {
+          "text": {
+            "en": "Talk about CSR / Sponsorship",
+            "ar": "تحدث عن المسؤولية الاجتماعية",
+            "hi": "CSR / प्रायोजन के बारे में बात करें"
+          },
+          "next": "C.1"
+        },
+        {
+          "text": {
+            "en": "I want to Volunteer",
+            "ar": "أريد التطوع",
+            "hi": "मैं स्वयंसेवक बनना चाहता हूं"
+          },
+          "next": "V.1"
+        },
+        {
+          "text": {
+            "en": "Back to Donor Menu",
+            "ar": "العودة لقائمة المتبرعين",
+            "hi": "दाता मेनू पर वापस"
+          },
+          "next": "D.1"
+        }
+      ],
+      "back": "D.1"
+    },
+    "D.CONTACT.MAP": {
+      "id": "D.CONTACT.MAP",
+      "type": "action",
+      "role": "donor",
+      "message": {
+        "en": "Opening Google Maps with directions...",
+        "ar": "فتح خرائط جوجل مع الاتجاهات...",
+        "hi": "दिशानिर्देशों के साथ गूगल मैप्स खोल रहे हैं..."
+      },
+      "action": {
+        "type": "open_map",
+        "url": "https://maps.google.com/?q=Farooqi+Gym+Building+Al+Quoz+Dubai"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back to Contact",
+            "ar": "العودة للاتصال",
+            "hi": "संपर्क पर वापस"
+          },
+          "next": "D.CONTACT"
+        }
+      ]
+    },
+    "D.CONTACT.MSG": {
+      "id": "D.CONTACT.MSG",
+      "type": "action",
+      "role": "donor",
+      "message": {
+        "en": "Opening our Contact page where you can send us a message...",
+        "ar": "فتح صفحة الاتصال لإرسال رسالة...",
+        "hi": "हमारा संपर्क पेज खोल रहे हैं जहां आप हमें संदेश भेज सकते हैं..."
+      },
+      "action": {
+        "type": "open_url",
+        "url": "https://www.smartlifefoundation.org/contact"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back to Contact",
+            "ar": "العودة للاتصال",
+            "hi": "संपर्क पर वापस"
+          },
+          "next": "D.CONTACT"
+        }
+      ]
+    },
+    "D.NEWSLETTER": {
+      "id": "D.NEWSLETTER",
+      "type": "action",
+      "role": "donor",
+      "message": {
+        "en": "📰 Opening our Newsletters page where you can view project news, impact stories, and event updates...",
+        "ar": "📰 فتح صفحة النشرات الإخبارية حيث يمكنك عرض أخبار المشاريع وقصص التأثير...",
+        "hi": "📰 हमारा न्यूज़लेटर पेज खोल रहे हैं जहां आप प्रोजेक्ट समाचार और प्रभाव कहानियां देख सकते हैं..."
+      },
+      "action": {
+        "type": "open_url",
+        "url": "https://www.smartlifefoundation.org/newsletters"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back to Menu",
+            "ar": "العودة للقائمة",
+            "hi": "मेनू पर वापस"
+          },
+          "next": "D.1"
+        }
+      ]
+    },
+    "D.NEWS.NAME": {
+      "id": "D.NEWS.NAME",
+      "type": "input",
+      "role": "donor",
+      "message": {
+        "en": "Please type your name:",
+        "ar": "يرجى كتابة اسمك:",
+        "hi": "कृपया अपना नाम टाइप करें:"
+      },
+      "input_type": "text",
+      "next": "D.NEWS.EMAIL"
+    },
+    "D.NEWS.EMAIL": {
+      "id": "D.NEWS.EMAIL",
+      "type": "input",
+      "role": "donor",
+      "message": {
+        "en": "Please type your email address:",
+        "ar": "يرجى كتابة عنوان بريدك الإلكتروني:",
+        "hi": "कृपया अपना ईमेल पता टाइप करें:"
+      },
+      "input_type": "email",
+      "next": "D.NEWS.CONFIRM"
+    },
+    "D.NEWS.CONFIRM": {
+      "id": "D.NEWS.CONFIRM",
+      "type": "message",
+      "role": "donor",
+      "message": {
+        "en": "✅ Thank you! You'll start receiving updates from SmartLife Foundation.",
+        "ar": "✅ شكراً لك! ستبدأ في تلقي التحديثات من مؤسسة سمارت لايف.",
+        "hi": "✅ धन्यवाद! आपको स्मार्टलाइफ फाउंडेशन से अपडेट मिलना शुरू हो जाएगा।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back to Donor Menu",
+            "ar": "العودة لقائمة المتبرعين",
+            "hi": "दाता मेनू पर वापस"
+          },
+          "next": "D.1"
+        }
+      ]
+    },
+    "D.NEWS.VIEW": {
+      "id": "D.NEWS.VIEW",
+      "type": "action",
+      "role": "donor",
+      "message": {
+        "en": "Opening our Newsletters page...",
+        "ar": "فتح صفحة النشرات الإخبارية...",
+        "hi": "हमारा न्यूज़लेटर पेज खोल रहे हैं..."
+      },
+      "action": {
+        "type": "open_url",
+        "url": "https://www.smartlifefoundation.org/newsletters"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back to Newsletter Menu",
+            "ar": "العودة لقائمة النشرة",
+            "hi": "न्यूज़लेटर मेनू पर वापस"
+          },
+          "next": "D.NEWSLETTER"
+        }
+      ]
+    },
+    "D.FAQ": {
+      "id": "D.FAQ",
+      "type": "menu",
+      "role": "donor",
+      "message": {
+        "en": "What would you like to know?",
+        "ar": "ماذا تريد أن تعرف؟",
+        "hi": "आप क्या जानना चाहेंगे?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Is it safe to donate on your site?",
+            "ar": "هل التبرع آمن على موقعكم؟",
+            "hi": "क्या आपकी साइट पर दान करना सुरक्षित है?"
+          },
+          "next": "D.FAQ.SECURITY"
+        },
+        {
+          "text": {
+            "en": "Do you give tax receipts?",
+            "ar": "هل تقدمون إيصالات ضريبية؟",
+            "hi": "क्या आप टैक्स रसीद देते हैं?"
+          },
+          "next": "D.FAQ.TAX"
+        },
+        {
+          "text": {
+            "en": "How many people have you helped?",
+            "ar": "كم شخص ساعدتم؟",
+            "hi": "आपने कितने लोगों की मदद की है?"
+          },
+          "next": "D.FAQ.IMPACT"
+        },
+        {
+          "text": {
+            "en": "Which UN SDGs do you align with?",
+            "ar": "ما هي أهداف التنمية المستدامة؟",
+            "hi": "आप किन UN SDG के साथ संरेखित हैं?"
+          },
+          "next": "D.FAQ.SDG"
+        },
+        {
+          "text": {
+            "en": "Other Question",
+            "ar": "سؤال آخر",
+            "hi": "अन्य प्रश्न"
+          },
+          "next": "D.FAQ.OTHER"
+        },
+        {
+          "text": {
+            "en": "Back to Donor Menu",
+            "ar": "العودة لقائمة المتبرعين",
+            "hi": "दाता मेनू पर वापस"
+          },
+          "next": "D.1"
+        }
+      ],
+      "back": "D.1"
+    },
+    "D.FAQ.SECURITY": {
+      "id": "D.FAQ.SECURITY",
+      "type": "info",
+      "role": "donor",
+      "message": {
+        "en": "🔒 Yes, donating on our site is completely safe!\n\nWe use secure payment gateways through our ERP system. Your information is protected with encryption. You can view our Privacy Policy on the website for more details.",
+        "ar": "🔒 نعم، التبرع على موقعنا آمن تماماً! نستخدم بوابات دفع آمنة.",
+        "hi": "🔒 हां, हमारी साइट पर दान करना पूरी तरह से सुरक्षित है! हम सुरक्षित भुगतान गेटवे का उपयोग करते हैं।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Donate Now",
+            "ar": "تبرع الآن",
+            "hi": "अभी दान करें"
+          },
+          "next": "D.DONATE"
+        },
+        {
+          "text": {
+            "en": "Back to FAQ",
+            "ar": "العودة للأسئلة",
+            "hi": "FAQ पर वापस"
+          },
+          "next": "D.FAQ"
+        }
+      ]
+    },
+    "D.FAQ.TAX": {
+      "id": "D.FAQ.TAX",
+      "type": "info",
+      "role": "donor",
+      "message": {
+        "en": "🧾 SmartLife Foundation is a registered NPO with the Community Development Authority of Dubai. For tax-related enquiries and receipts, please contact us directly at admin@smartlifefoundation.org.",
+        "ar": "🧾 مؤسسة سمارت لايف هي منظمة غير ربحية مسجلة في هيئة تنمية المجتمع بدبي. للاستفسارات الضريبية، يرجى الاتصال بنا.",
+        "hi": "🧾 स्मार्टलाइफ फाउंडेशन दुबई के CDA में पंजीकृत NPO है। टैक्स संबंधी पूछताछ के लिए, कृपया हमसे संपर्क करें।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Contact Us",
+            "ar": "اتصل بنا",
+            "hi": "हमसे संपर्क करें"
+          },
+          "next": "D.CONTACT"
+        },
+        {
+          "text": {
+            "en": "Back to FAQ",
+            "ar": "العودة للأسئلة",
+            "hi": "FAQ पर वापस"
+          },
+          "next": "D.FAQ"
+        }
+      ]
+    },
+    "D.FAQ.IMPACT": {
+      "id": "D.FAQ.IMPACT",
+      "type": "info",
+      "role": "donor",
+      "message": {
+        "en": "💪 Our Impact So Far:\n\n👥 5,000+ lives touched\n🎓 2,000+ educated through Smart English\n💼 1,500+ trained in computer skills\n🏥 3,000+ received health support\n🏢 Multiple labor camps served\n🤝 100+ corporate partners",
+        "ar": "💪 تأثيرنا حتى الآن:\n\n👥 5000+ حياة تأثرت\n🎓 2000+ تعلموا من خلال Smart English",
+        "hi": "💪 अब तक हमारा प्रभाव:\n\n👥 5,000+ जीवन प्रभावित\n🎓 2,000+ स्मार्ट इंग्लिश के माध्यम से शिक्षित"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Donate Now",
+            "ar": "تبرع الآن",
+            "hi": "अभी दान करें"
+          },
+          "next": "D.DONATE"
+        },
+        {
+          "text": {
+            "en": "Back to FAQ",
+            "ar": "العودة للأسئلة",
+            "hi": "FAQ पर वापस"
+          },
+          "next": "D.FAQ"
+        }
+      ]
+    },
+    "D.FAQ.SDG": {
+      "id": "D.FAQ.SDG",
+      "type": "info",
+      "role": "donor",
+      "message": {
+        "en": "🌍 SmartLife aligns with UN Sustainable Development Goals:\n\n📚 SDG 4: Quality Education\n💼 SDG 8: Decent Work and Economic Growth\n🏥 SDG 3: Good Health and Well-being\n⚖️ SDG 10: Reduced Inequalities\n🤝 SDG 17: Partnerships for the Goals",
+        "ar": "🌍 سمارت لايف تتوافق مع أهداف التنمية المستدامة للأمم المتحدة",
+        "hi": "🌍 स्मार्टलाइफ UN सतत विकास लक्ष्यों के साथ संरेखित है"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Learn More About Us",
+            "ar": "تعرف علينا أكثر",
+            "hi": "हमारे बारे में और जानें"
+          },
+          "next": "D.MEDIA.ABOUT"
+        },
+        {
+          "text": {
+            "en": "Back to FAQ",
+            "ar": "العودة للأسئلة",
+            "hi": "FAQ पर वापस"
+          },
+          "next": "D.FAQ"
+        }
+      ]
+    },
+    "D.FAQ.OTHER": {
+      "id": "D.FAQ.OTHER",
+      "type": "info",
+      "role": "donor",
+      "message": {
+        "en": "🤔 I may not have the exact answer to that. Would you like me to connect you to the team or share our contact details?",
+        "ar": "🤔 قد لا يكون لدي الإجابة الدقيقة. هل تريد أن أوصلك بالفريق أو أشارك تفاصيل الاتصال؟",
+        "hi": "🤔 मेरे पास इसका सही जवाब नहीं हो सकता। क्या आप चाहते हैं कि मैं आपको टीम से जोड़ूं या संपर्क विवरण साझा करूं?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Share Contact Details",
+            "ar": "مشاركة تفاصيل الاتصال",
+            "hi": "संपर्क विवरण साझा करें"
+          },
+          "next": "D.CONTACT"
+        },
+        {
+          "text": {
+            "en": "Never Mind",
+            "ar": "لا بأس",
+            "hi": "कोई बात नहीं"
+          },
+          "next": "D.1"
+        }
+      ]
+    },
+    "CONTACT.1": {
+      "id": "CONTACT.1",
+      "type": "info",
+      "message": {
+        "en": "📍 SmartLife Foundation Contact:\n\n🏢 2nd Floor, Office No 204, Farooqi Gym Building, Al Quoz, Dubai\n📱 +971 600 578 600\n📧 admin@smartlifefoundation.org\n🕐 All days: 9:00 AM - 6:00 PM",
+        "ar": "📍 اتصال مؤسسة سمارت لايف:\n\n🏢 الطابق الثاني، مكتب 204، مبنى فاروقي جيم، القوز، دبي\n📱 +971 600 578 600\n📧 admin@smartlifefoundation.org",
+        "hi": "📍 स्मार्टलाइफ फाउंडेशन संपर्क:\n\n🏢 दूसरी मंजिल, कार्यालय 204, फारूकी जिम बिल्डिंग, अल कोज़, दुबई\n📱 +971 600 578 600\n📧 admin@smartlifefoundation.org"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Open Map",
+            "ar": "فتح الخريطة",
+            "hi": "मैप खोलें"
+          },
+          "next": "D.CONTACT.MAP"
+        },
+        {
+          "text": {
+            "en": "Send Email",
+            "ar": "إرسال بريد",
+            "hi": "ईमेल भेजें"
+          },
+          "next": "D.MEDIA.EMAIL"
+        },
+        {
+          "text": {
+            "en": "Back to Menu",
+            "ar": "العودة للقائمة",
+            "hi": "मेनू पर वापस"
+          },
+          "next": "M.1"
         }
       ]
     }
