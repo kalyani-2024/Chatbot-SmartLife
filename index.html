@@ -33,7 +33,7 @@
         }
 
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #061b79 0%, #120321 100%);
             color: white;
             padding: 24px;
             text-align: center;
@@ -61,15 +61,24 @@
         }
 
         .message-content {
-            max-width: 75%;
+            width: 100%;
+            max-width: 100%;
             padding: 12px 18px;
             border-radius: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
         }
 
         .bot .message-content {
             background: white;
             border-bottom-left-radius: 6px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            text-align: left;
+        }
+
+        .user .message-content {
+            background: #DCF8C6;
+            border-bottom-right-radius: 6px;
+            text-align: right;
         }
 
         .options {
@@ -77,6 +86,9 @@
             flex-wrap: wrap;
             gap: 10px;
             margin-top: 12px;
+            width: 100%;
+            padding: 0 6px 6px 6px;
+            box-sizing: border-box;
         }
 
         .option-btn {
@@ -89,6 +101,8 @@
             font-size: 15px;
             font-weight: 500;
             transition: all 0.2s ease;
+            flex: 1 1 140px;
+            text-align: center;
         }
 
         .option-btn:hover {
@@ -124,7 +138,7 @@
     <div class="chat" id="chat">
         <div class="header">
             <h1 style="margin: 0 0 4px 0;">SmartLife Assistant</h1>
-            <p style="margin: 0; opacity: 0.9;">Empowering Dubai's workers</p>
+            <p style="margin: 0; opacity: 0.9;">Feel free to use the chatbot to learn more about SmartLife</p> 
         </div>
         <div class="messages" id="messages"></div>
         <div class="input-area">
@@ -154,18 +168,30 @@
             const div = document.createElement('div');
             div.className = `message ${sender}`;
 
-            let html = `<div class="message-content">${text}</div>`;
+            // Create message text block
+            const msgBlock = document.createElement('div');
+            msgBlock.className = 'message-content';
+            msgBlock.innerText = text;
+            div.appendChild(msgBlock);
+
+            // If there are options, create a separate options block below the message
             if (options.length) {
-                html += '<div class="options">';
+                const opts = document.createElement('div');
+                opts.className = 'options';
                 options.forEach(option => {
-                    html += `<button class="option-btn" onclick="selectOption(${option.index})">${option.text}</button>`;
+                    const btn = document.createElement('button');
+                    btn.className = 'option-btn';
+                    btn.innerText = option.text;
+                    btn.onclick = () => selectOption(option.index);
+                    opts.appendChild(btn);
                 });
-                html += '</div>';
+                div.appendChild(opts);
             }
 
-            div.innerHTML = html;
             messagesEl.appendChild(div);
-            messagesEl.scrollTop = messagesEl.scrollHeight;
+            // Scroll to the start of the newly added message
+            const targetTop = Math.max(0, div.offsetTop - 8);
+            messagesEl.scrollTop = targetTop;
         }
 
         function selectOption(index) {
