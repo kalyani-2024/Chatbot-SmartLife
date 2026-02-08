@@ -360,6 +360,88 @@
       ],
       "show_global": true
     },
+    "W.2.C": {
+      "id": "W.2.C",
+      "type": "menu",
+      "role": "worker",
+      "message": {
+        "en": "Welcome to SmartJobs! We help you find better job opportunities and improve your skills.",
+        "ar": "مرحباً بك في سمارت جوبز! نحن نساعدك في العثور على فرص عمل أفضل وتحسين مهاراتك.",
+        "hi": "स्मार्टजॉब्स में आपका स्वागत है! हम आपको बेहतर नौकरी के अवसर खोजने और अपने कौशल में सुधार करने में मदद करते हैं।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Find a Job (Download App)",
+            "ar": "ابحث عن وظيفة (حمل التطبيق)",
+            "hi": "नौकरी खोजें (ऐप डाउनलोड करें)"
+          },
+          "action": "link:https://smart-jobs.org/app",
+          "next": "W.1"
+        },
+        {
+          "text": {
+            "en": "SmartJobs Helpline",
+            "ar": "خط مساعدة سمارت جوبز",
+            "hi": "स्मार्टजॉब्स हेल्पलाइन"
+          },
+          "action": "call:+971509292079",
+          "next": "W.1"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "W.1"
+        }
+      ]
+    },
+    "W.2.D": {
+      "id": "W.2.D",
+      "type": "menu",
+      "role": "worker",
+      "message": {
+        "en": "Join us for fun and talent! Here are our upcoming events for 2026.",
+        "ar": "انضم إلينا للمرح والموهبة! إليك فعالياتنا القادمة لعام 2026.",
+        "hi": "मौज-मस्ती और प्रतिभा के लिए हमसे जुड़ें! 2026 के लिए हमारे आगामी कार्यक्रम यहां दिए गए हैं।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Smart Idol (March 21)",
+            "ar": "سمارت أيدول (21 مارس)",
+            "hi": "स्मार्ट आइडल (21 मार्च)"
+          },
+          "next": "W.1"
+        },
+        {
+          "text": {
+            "en": "Smart Chef (June 07)",
+            "ar": "سمارت شيف (07 يونيو)",
+            "hi": "स्मार्ट शेफ (07 जून)"
+          },
+          "next": "W.1"
+        },
+        {
+          "text": {
+            "en": "Smart Cup (Nov 14)",
+            "ar": "كأس سمارت (14 نوفمبر)",
+            "hi": "स्मार्ट कप (14 नवंबर)"
+          },
+          "next": "W.1"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "W.1"
+        }
+      ]
+    },
     "W.2.A": {
       "id": "W.2.A",
       "type": "menu",
@@ -414,68 +496,6 @@
       "show_global": true,
       "back": "W.1"
     },
-    "W.2.B": {
-      "id": "W.2.B",
-      "type": "menu",
-      "role": "worker",
-      "message": {
-        "en": "What kind of help do you need?",
-        "ar": "ما نوع المساعدة التي تحتاجها؟",
-        "hi": "आपको किस प्रकार की सहायता चाहिए?"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Emergency help (urgent)",
-            "ar": "مساعدة طارئة (عاجلة)",
-            "hi": "आपातकालीन सहायता (तत्काल)"
-          },
-          "next": "W.3.B.1"
-        },
-        {
-          "text": {
-            "en": "Health or medical problem",
-            "ar": "مشكلة صحية أو طبية",
-            "hi": "स्वास्थ्य या चिकित्सा समस्या"
-          },
-          "next": "W.3.B.2"
-        },
-        {
-          "text": {
-            "en": "Problem at work",
-            "ar": "مشكلة في العمل",
-            "hi": "काम पर समस्या"
-          },
-          "next": "W.3.B.3"
-        },
-        {
-          "text": {
-            "en": "Need money advice",
-            "ar": "أحتاج إلى نصيحة مالية",
-            "hi": "पैसे की सलाह चाहिए"
-          },
-          "next": "W.3.B.4"
-        },
-        {
-          "text": {
-            "en": "Feeling sad or stressed (mental health)",
-            "ar": "أشعر بالحزن أو التوتر (الصحة النفسية)",
-            "hi": "उदास या तनावग्रस्त महसूस कर रहे हैं (मानसिक स्वास्थ्य)"
-          },
-          "next": "W.3.B.5"
-        },
-        {
-          "text": {
-            "en": "Other problem",
-            "ar": "مشكلة أخرى",
-            "hi": "अन्य समस्या"
-          },
-          "next": "W.3.B.6"
-        }
-      ],
-      "show_global": true,
-      "back": "W.1"
-    },
     "W.3.A.1": {
       "id": "W.3.A.1",
       "type": "menu",
@@ -521,6 +541,446 @@
       ],
       "show_global": true,
       "back": "W.2.A"
+    },
+    "W.3.A.2": {
+      "id": "W.3.A.2",
+      "type": "menu",
+      "role": "worker",
+      "message": {
+        "en": "Which health initiative would you like to know more about?",
+        "ar": "أي مبادرة صحية تود معرفة المزيد عنها؟",
+        "hi": "आप किस स्वास्थ्य पहल के बारे में अधिक जानना चाहेंगे?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Medical Check-ups",
+            "ar": "الفحوصات الطبية",
+            "hi": "चिकित्सा जांच"
+          },
+          "next": "W.4.B.2.c"
+        },
+        {
+          "text": {
+            "en": "Mental Health Support",
+            "ar": "دعم الصحة النفسية",
+            "hi": "मानसिक स्वास्थ्य सहायता"
+          },
+          "next": "W.3.B.5"
+        },
+        {
+          "text": {
+            "en": "Fitness Programs",
+            "ar": "برامج اللياقة البدنية",
+            "hi": "फिटनेस कार्यक्रम"
+          },
+          "next": "W.3.A.5"
+        },
+        {
+          "text": {
+            "en": "Go back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "W.2.A"
+        }
+      ]
+    },
+    "W.3.A.3": {
+      "id": "W.3.A.3",
+      "type": "menu",
+      "role": "worker",
+      "message": {
+        "en": "Which initiative would you like to know more about?",
+        "ar": "أي مبادرة تود معرفة المزيد عنها؟",
+        "hi": "आप किस पहल के बारे में अधिक जानना चाहेंगे?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Educational Support",
+            "ar": "الدعم التعليمي",
+            "hi": "शैक्षिक सहायता"
+          },
+          "next": "W.4.A.3.a"
+        },
+        {
+          "text": {
+            "en": "Camp Visits",
+            "ar": "زيارات المخيم",
+            "hi": "कैंप का दौरा"
+          },
+          "next": "W.4.A.3.b"
+        },
+        {
+          "text": {
+            "en": "Recreational Activities",
+            "ar": "الأنشطة الترفيهية",
+            "hi": "मनोरंजक गतिविधियां"
+          },
+          "next": "W.4.A.3.c"
+        },
+        {
+          "text": {
+            "en": "Financial Literacy",
+            "ar": "محو الأمية المالية",
+            "hi": "वित्तीय साक्षरता"
+          },
+          "next": "W.4.A.3.d"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "W.2.A"
+        }
+      ]
+    },
+    "W.4.A.3.a": {
+      "id": "W.4.A.3.a",
+      "type": "info",
+      "role": "worker",
+      "message": {
+        "en": "We support children of blue-collar workers with scholarships and educational materials.",
+        "ar": "نحن ندعم أطفال العمال ذوي الياقات الزرقاء بالمنح الدراسية والمواد التعليمية.",
+        "hi": "हम स्कॉलरशिप और शैक्षिक सामग्री के साथ श्रमिकों के बच्चों का समर्थन करते हैं."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "W.3.A.3"
+        }
+      ]
+    },
+    "W.4.A.3.b": {
+      "id": "W.4.A.3.b",
+      "type": "info",
+      "role": "worker",
+      "message": {
+        "en": "Our team visits labor camps regularly to distribute hygiene kits and food supplies.",
+        "ar": "يقوم فريقنا بزيارة مخيمات العمال بانتظام لتوزيع مستلزمات النظافة والمواد الغذائية.",
+        "hi": "हमारी टीम स्वच्छता किट और खाद्य आपूर्ति वितरित करने के लिए नियमित रूप से लेबर कैंपों का दौरा करती है."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "W.3.A.3"
+        }
+      ]
+    },
+    "W.4.A.3.c": {
+      "id": "W.4.A.3.c",
+      "type": "info",
+      "role": "worker",
+      "message": {
+        "en": "We organize movie nights, yoga sessions, and picnics for workers.",
+        "ar": "ننظم ليالي سينمائية وجلسات يوغا ونزهات للعمال.",
+        "hi": "हम श्रमिकों के लिए मूवी नाइट्स, योग सत्र और पिकनिक का आयोजन करते हैं."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "W.3.A.3"
+        }
+      ]
+    },
+    "W.4.A.3.d": {
+      "id": "W.4.A.3.d",
+      "type": "info",
+      "role": "worker",
+      "message": {
+        "en": "Learn how to save money and avoid debt through our financial literacy workshops.",
+        "ar": "تعلم كيفية توفير المال وتجنب الديون من خلال ورش عمل محو الأمية المالية لدينا.",
+        "hi": "हमारी वित्तीय साक्षरता कार्यशालाओं के माध्यम से पैसे बचाने और कर्ज से बचने का तरीका जानें."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "W.3.A.3"
+        }
+      ]
+    },
+    "W.3.A.4": {
+      "id": "W.3.A.4",
+      "type": "menu",
+      "role": "worker",
+      "message": {
+        "en": "Which focused group would you like to know more about?",
+        "ar": "أي مجموعة مركزة تود معرفة المزيد عنها؟",
+        "hi": "आप किस विशेष समूह के बारे में अधिक जानना चाहेंगे?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Smart Senior Citizen and Single Parent",
+            "ar": "كبار السن والآباء العازبين",
+            "hi": "वरिष्ठ नागरिक और एकल माता-पिता"
+          },
+          "next": "W.4.A.4.a"
+        },
+        {
+          "text": {
+            "en": "Smart Buddy",
+            "ar": "الرفيق الذكي",
+            "hi": "स्मार्ट बडी"
+          },
+          "next": "W.4.A.4.b"
+        },
+        {
+          "text": {
+            "en": "Smart Elder",
+            "ar": "الشيخ الذكي",
+            "hi": "स्मार्ट एल्डर"
+          },
+          "next": "W.4.A.4.c"
+        },
+        {
+          "text": {
+            "en": "Family Support",
+            "ar": "دعم الأسرة",
+            "hi": "पारिवारिक सहायता"
+          },
+          "next": "W.4.A.4.d"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "W.2.A"
+        }
+      ]
+    },
+    "W.4.A.4.a": {
+      "id": "W.4.A.4.a",
+      "type": "info",
+      "role": "worker",
+      "message": {
+        "en": "Special support programs for senior workers and single parents including medical aid.",
+        "ar": "برامج دعم خاصة للعمال المسنين والآباء العازبين تشمل المساعدة الطبية.",
+        "hi": "वरिष्ठ श्रमिकों और एकल माता-पिता के लिए चिकित्सा सहायता सहित विशेष सहायता कार्यक्रम."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "W.3.A.4"
+        }
+      ]
+    },
+    "W.4.A.4.b": {
+      "id": "W.4.A.4.b",
+      "type": "info",
+      "role": "worker",
+      "message": {
+        "en": "Smart Buddy pairs workers with mentors for guidance and support.",
+        "ar": "يجمع برنامج الرفيق الذكي بين العمال والموجهين للتوجيه والدعم.",
+        "hi": "स्मार्ट बडी मार्गदर्शन और सहायता के लिए श्रमिकों को मेंटर्स के साथ जोड़ता है."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "W.3.A.4"
+        }
+      ]
+    },
+    "W.4.A.4.c": {
+      "id": "W.4.A.4.c",
+      "type": "info",
+      "role": "worker",
+      "message": {
+        "en": "A program dedicated to the well-being and respect of elderly workers in camps.",
+        "ar": "برنامج مخصص لرفاهية واحترام العمال المسنين في المخيمات.",
+        "hi": "शिविरों में बुजुर्ग श्रमिकों की भलाई और सम्मान के लिए समर्पित एक कार्यक्रम."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "W.3.A.4"
+        }
+      ]
+    },
+    "W.4.A.4.d": {
+      "id": "W.4.A.4.d",
+      "type": "info",
+      "role": "worker",
+      "message": {
+        "en": "Assistance for workers facing family emergencies back home.",
+        "ar": "مساعدة العمال الذين يواجهون حالات طوارئ عائلية في وطنهم.",
+        "hi": "घर वापस पारिवारिक आपात स्थिति का सामना कर रहे श्रमिकों के लिए सहायता."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "W.3.A.4"
+        }
+      ]
+    },
+    "W.3.A.5": {
+      "id": "W.3.A.5",
+      "type": "menu",
+      "role": "worker",
+      "message": {
+        "en": "Which annual event would you like to know more about?",
+        "ar": "أي حدث سنوي تود معرفة المزيد عنه؟",
+        "hi": "आप किस वार्षिक कार्यक्रम के बारे में अधिक जानना चाहेंगे?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "SmartLife Idol",
+            "ar": "سمارت لايف أيدول",
+            "hi": "स्मार्टलाइफ आइडल"
+          },
+          "next": "W.4.A.5.a"
+        },
+        {
+          "text": {
+            "en": "Sports Tournaments",
+            "ar": "البطولات الرياضية",
+            "hi": "खेल टूर्नामेंट"
+          },
+          "next": "W.4.A.5.b"
+        },
+        {
+          "text": {
+            "en": "Cultural Celebrations",
+            "ar": "الاحتفالات الثقافية",
+            "hi": "सांस्कृतिक उत्सव"
+          },
+          "next": "W.4.A.5.c"
+        },
+        {
+          "text": {
+            "en": "Recognition Ceremonies",
+            "ar": "حفلات التكريم",
+            "hi": "सम्मान समारोह"
+          },
+          "next": "W.4.A.5.d"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "W.2.A"
+        }
+      ]
+    },
+    "W.4.A.5.a": {
+      "id": "W.4.A.5.a",
+      "type": "info",
+      "role": "worker",
+      "message": {
+        "en": "SmartLife Idol is our biggest talent hunt for singing and dancing. Next event: March 21, 2026.",
+        "ar": "سمارت لايف أيدول هو أكبر بحث عن المواهب في الغناء والرقص. الحدث القادم: 21 مارس 2026.",
+        "hi": "स्मार्टलाइफ आइडल गायन और नृत्य के लिए हमारा सबसे बड़ा टैलेंट हंट है। अगला कार्यक्रम: 21 मार्च, 2026."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "W.3.A.5"
+        }
+      ]
+    },
+    "W.4.A.5.b": {
+      "id": "W.4.A.5.b",
+      "type": "info",
+      "role": "worker",
+      "message": {
+        "en": "We host cricket, football, and volleyball tournaments throughout the year.",
+        "ar": "نستضيف بطولات الكريكيت وكرة القدم والكرة الطائرة على مدار العام.",
+        "hi": "हम साल भर क्रिकेट, फुटबॉल और वॉलीबॉल टूर्नामेंट आयोजित करते हैं."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "W.3.A.5"
+        }
+      ]
+    },
+    "W.4.A.5.c": {
+      "id": "W.4.A.5.c",
+      "type": "info",
+      "role": "worker",
+      "message": {
+        "en": "Celebrating festivals like Eid, Diwali, and Christmas together.",
+        "ar": "الاحتفال بالمهرجانات مثل العيد وديوالي وعيد الميلاد معاً.",
+        "hi": "ईद, दिवाली और क्रिसमस जैसे त्योहार एक साथ मनाना."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "W.3.A.5"
+        }
+      ]
+    },
+    "W.4.A.5.d": {
+      "id": "W.4.A.5.d",
+      "type": "info",
+      "role": "worker",
+      "message": {
+        "en": "Awards to recognize hardworking and inspiring workers in the community.",
+        "ar": "جوائز لتكريم العمال المجتهدين والملهمين في المجتمع.",
+        "hi": "समुदाय में मेहनती और प्रेरक श्रमिकों को पहचानने के लिए पुरस्कार."
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "W.3.A.5"
+        }
+      ]
     },
     "W.4.A.1.a": {
       "id": "W.4.A.1.a",
@@ -1156,6 +1616,68 @@
       "show_global": true,
       "back": "W.3.A.1"
     },
+    "W.2.B": {
+      "id": "W.2.B",
+      "type": "menu",
+      "role": "worker",
+      "message": {
+        "en": "What kind of help do you need?",
+        "ar": "ما نوع المساعدة التي تحتاجها؟",
+        "hi": "आपको किस प्रकार की सहायता चाहिए?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Emergency help (urgent)",
+            "ar": "مساعدة طارئة (عاجلة)",
+            "hi": "आपातकालीन सहायता (तत्काल)"
+          },
+          "next": "W.3.B.1"
+        },
+        {
+          "text": {
+            "en": "Health or medical problem",
+            "ar": "مشكلة صحية أو طبية",
+            "hi": "स्वास्थ्य या चिकित्सा समस्या"
+          },
+          "next": "W.3.B.2"
+        },
+        {
+          "text": {
+            "en": "Problem at work",
+            "ar": "مشكلة في العمل",
+            "hi": "काम पर समस्या"
+          },
+          "next": "W.3.B.3"
+        },
+        {
+          "text": {
+            "en": "Need money advice",
+            "ar": "أحتاج إلى نصيحة مالية",
+            "hi": "पैसे की सलाह चाहिए"
+          },
+          "next": "W.3.B.4"
+        },
+        {
+          "text": {
+            "en": "Feeling sad or stressed (mental health)",
+            "ar": "أشعر بالحزن أو التوتر (الصحة النفسية)",
+            "hi": "उदास या तनावग्रस्त महसूस कर रहे हैं (मानसिक स्वास्थ्य)"
+          },
+          "next": "W.3.B.5"
+        },
+        {
+          "text": {
+            "en": "Other problem",
+            "ar": "مشكلة أخرى",
+            "hi": "अन्य समस्या"
+          },
+          "next": "W.3.B.6"
+        }
+      ],
+      "show_global": true,
+      "back": "W.1"
+    },
     "W.3.B.1": {
       "id": "W.3.B.1",
       "type": "action",
@@ -1185,6 +1707,48 @@
       ],
       "show_global": true,
       "back": "W.2.B"
+    },
+    "W.4.B.1.a": {
+      "id": "W.4.B.1.a",
+      "type": "form",
+      "role": "worker",
+      "title": {
+        "en": "Request Callback",
+        "ar": "طلب مكالمة",
+        "hi": "कॉल बैक अनुरोध"
+      },
+      "message": {
+        "en": "Please leave your number, and we will call you back urgently.",
+        "ar": "يرجى ترك رقمك، وسنعاود الاتصال بك بشكل عاجل.",
+        "hi": "कृपया अपना नंबर छोड़ें, और हम आपको तत्काल वापस कॉल करेंगे।"
+      },
+      "fields": [
+        {
+          "name": "mobile",
+          "type": "phone",
+          "question": {
+            "en": "Mobile Number:",
+            "ar": "رقم الهاتف المحمول:",
+            "hi": "मोबाइल नंबर:"
+          },
+          "required": true
+        }
+      ],
+      "confirmation": {
+        "en": "Received. We will call {mobile} shortly.",
+        "ar": "تم الاستلام. سنتصل بـ {mobile} قريباً.",
+        "hi": "प्राप्त हुआ। हम जल्द ही {mobile} पर कॉल करेंगे।"
+      },
+      "completion_options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "W.1"
+        }
+      ]
     },
     "W.3.B.2": {
       "id": "W.3.B.2",
@@ -1296,6 +1860,34 @@
         }
       ],
       "webhook": "/api/worker/support/medical"
+    },
+    "W.3.B.3": {
+      "id": "W.3.B.3",
+      "type": "info",
+      "role": "worker",
+      "message": {
+        "en": "If you are facing issues at work, we can guide you to the correct legal authorities or support channels.",
+        "ar": "إذا كنت تواجه مشاكل في العمل، يمكننا توجيهك إلى السلطات القانونية أو قنوات الدعم الصحيحة.",
+        "hi": "यदि आप काम पर समस्याओं का सामना कर रहे हैं, तो हम आपको सही कानूनी अधिकारियों या सहायता चैनलों के लिए मार्गदर्शन कर सकते हैं।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Request a callback",
+            "ar": "طلب معاودة الاتصال",
+            "hi": "कॉल बैक का अनुरोध करें"
+          },
+          "next": "W.4.B.1.a"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "W.2.B"
+        }
+      ]
     },
     "W.3.B.4": {
       "id": "W.3.B.4",
@@ -1433,6 +2025,59 @@
         "en": "A counselor will call {mobile} at {call_time}. All conversations are 100% confidential.",
         "ar": "سيتصل المستشار بـ {mobile} في {call_time}. جميع المحادثات سرية بنسبة 100٪.",
         "hi": "एक परामर्शदाता {call_time} पर {mobile} पर कॉल करेंगे। सभी बातचीत 100% गोपनीय हैं।"
+      },
+      "completion_options": [
+        {
+          "text": {
+            "en": "Back to main menu",
+            "ar": "العودة إلى القائمة الرئيسية",
+            "hi": "मुख्य मेनू पर वापस जाएं"
+          },
+          "next": "W.1"
+        }
+      ],
+      "webhook": "/api/worker/support/counseling"
+    },
+    "W.3.B.6": {
+      "id": "W.3.B.6",
+      "type": "form",
+      "role": "worker",
+      "title": {
+        "en": "General Support",
+        "ar": "دعم عام",
+        "hi": "सामान्य सहायता"
+      },
+      "message": {
+        "en": "Please describe your issue so we can help you:",
+        "ar": "يرجى وصف مشكلتك حتى نتمكن من مساعدتك:",
+        "hi": "कृपया अपनी समस्या का वर्णन करें ताकि हम आपकी सहायता कर सकें:"
+      },
+      "fields": [
+        {
+          "name": "issue_description",
+          "type": "textarea",
+          "question": {
+            "en": "What is the problem?",
+            "ar": "ما هي المشكلة؟",
+            "hi": "क्या समस्या है?"
+          },
+          "required": true
+        },
+        {
+          "name": "mobile",
+          "type": "phone",
+          "question": {
+            "en": "Your mobile number?",
+            "ar": "رقم هاتفك المحمول؟",
+            "hi": "आपका मोबाइल नंबर?"
+          },
+          "required": true
+        }
+      ],
+      "confirmation": {
+        "en": "Thank you. We will contact you at {mobile} soon.",
+        "ar": "شكراً لك. سنتصل بك على {mobile} قريباً.",
+        "hi": "धन्यवाद। हम जल्द ही आपसे {mobile} पर संपर्क करेंगे।"
       },
       "completion_options": [
         {
@@ -4252,3 +4897,4 @@
     }
   ]
 }
+
