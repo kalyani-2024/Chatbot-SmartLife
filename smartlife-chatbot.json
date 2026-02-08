@@ -109,7 +109,7 @@
             "ar": "المسؤولية المجتمعية / الرعاية",
             "hi": "सीएसआर / प्रायोजन"
           },
-          "next": "C.CSR_MENU"
+          "next": "C.1.A"
         },
         {
           "text": {
@@ -117,7 +117,7 @@
             "ar": "مشاركة الموظفين",
             "hi": "कर्मचारी सहभागिता"
           },
-          "next": "C.EMPLOYEE_MENU"
+          "next": "C.1.B"
         },
         {
           "text": {
@@ -125,7 +125,7 @@
             "ar": "التأثير",
             "hi": "प्रभाव"
           },
-          "next": "C.IMPACT_MENU"
+          "next": "C.1.C"
         },
         {
           "text": {
@@ -133,7 +133,7 @@
             "ar": "تحميل العرض",
             "hi": "डेक डाउनलोड करें"
           },
-          "next": "C.DOWNLOAD_DECK"
+          "next": "C.1.D"
         },
         {
           "text": {
@@ -141,7 +141,7 @@
             "ar": "طلب اجتماع",
             "hi": "बैठक का अनुरोध करें"
           },
-          "next": "C.REQUEST_MEETING"
+          "next": "C.1.E"
         },
         {
           "text": {
@@ -150,1280 +150,6 @@
             "hi": "मुख्य मेनू पर वापस जाएं"
           },
           "next": "M.1"
-        }
-      ],
-      "show_global": true
-    },
-    "C.CSR_MENU": {
-      "id": "C.CSR_MENU",
-      "type": "menu",
-      "role": "company",
-      "message": {
-        "en": "How can your company support SmartLife? Here are some questions to guide you.",
-        "ar": "كيف يمكن لشركتكم دعم سمارت لايف؟",
-        "hi": "आपकी कंपनी स्मार्टलाइफ का समर्थन कैसे कर सकती है?"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "General CSR opportunities",
-            "ar": "فرص المسؤولية المجتمعية العامة",
-            "hi": "सामान्य सीएसआर अवसर"
-          },
-          "next": "C.CSR_GENERAL"
-        },
-        {
-          "text": {
-            "en": "Sponsor a specific project",
-            "ar": "رعاية مشروع محدد",
-            "hi": "एक विशिष्ट परियोजना प्रायोजित करें"
-          },
-          "next": "C.CSR_PROJECT"
-        },
-        {
-          "text": {
-            "en": "Branding & visibility options",
-            "ar": "خيارات العلامة التجارية والظهور",
-            "hi": "ब्रांडिंग और दृश्यता विकल्प"
-          },
-          "next": "C.CSR_BRANDING"
-        },
-        {
-          "text": {
-            "en": "Employee participation",
-            "ar": "مشاركة الموظفين",
-            "hi": "कर्मचारी भागीदारी"
-          },
-          "next": "C.CSR_EMPLOYEE"
-        },
-        {
-          "text": {
-            "en": "Certificates & recognition",
-            "ar": "الشهادات والتقدير",
-            "hi": "प्रमाणपत्र और मान्यता"
-          },
-          "next": "C.CSR_CERTIFICATES"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.1"
-        }
-      ],
-      "show_global": true
-    },
-    "C.EMPLOYEE_MENU": {
-      "id": "C.EMPLOYEE_MENU",
-      "type": "menu",
-      "role": "company",
-      "message": {
-        "en": "Employee Engagement - Select a question:",
-        "ar": "مشاركة الموظفين - اختر سؤالاً:",
-        "hi": "कर्मचारी सहभागिता - एक प्रश्न चुनें:"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "How can employees participate in volunteering or workshops?",
-            "ar": "كيف يمكن للموظفين المشاركة في التطوع أو ورش العمل؟",
-            "hi": "कर्मचारी स्वयंसेवा या कार्यशालाओं में कैसे भाग ले सकते हैं?"
-          },
-          "next": "C.EMPLOYEE_MENU"
-        },
-        {
-          "text": {
-            "en": "Are team-based activities available?",
-            "ar": "هل الأنشطة الجماعية متاحة؟",
-            "hi": "क्या टीम आधारित गतिविधियाँ उपलब्ध हैं?"
-          },
-          "next": "C.EMPLOYEE_MENU"
-        },
-        {
-          "text": {
-            "en": "Can activities be scheduled on weekdays or weekends?",
-            "ar": "هل يمكن جدولة الأنشطة في أيام الأسبوع أو عطلات نهاية الأسبوع؟",
-            "hi": "क्या सप्ताह के दिनों या सप्ताहांत में गतिविधियों को शेड्यूल किया जा सकता है?"
-          },
-          "next": "C.EMPLOYEE_MENU"
-        },
-        {
-          "text": {
-            "en": "Are remote employees included?",
-            "ar": "هل الموظفون عن بُعد مشمولون؟",
-            "hi": "क्या दूरस्थ कर्मचारी शामिल हैं?"
-          },
-          "next": "C.EMPLOYEE_MENU"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.1"
-        }
-      ],
-      "show_global": true
-    },
-    "C.IMPACT_MENU": {
-      "id": "C.IMPACT_MENU",
-      "type": "menu",
-      "role": "company",
-      "message": {
-        "en": "SmartLife Impact - Select a question:",
-        "ar": "تأثير سمارت لايف - اختر سؤالاً:",
-        "hi": "स्मार्टलाइफ प्रभाव - एक प्रश्न चुनें:"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "How many people have been impacted by SmartLife?",
-            "ar": "كم عدد الأشخاص الذين تأثروا بسمارت لايف؟",
-            "hi": "स्मार्टलाइफ से कितने लोग प्रभावित हुए हैं?"
-          },
-          "next": "C.IMPACT_MENU"
-        },
-        {
-          "text": {
-            "en": "Can we see success stories of corporate partnerships?",
-            "ar": "هل يمكننا رؤية قصص نجاح الشراكات المؤسسية؟",
-            "hi": "क्या हम कॉर्पोरेट साझेदारी की सफलता की कहानियां देख सकते हैं?"
-          },
-          "next": "C.IMPACT_MENU"
-        },
-        {
-          "text": {
-            "en": "Can we download the annual corporate impact report?",
-            "ar": "هل يمكننا تنزيل التقرير السنوي للتأثير المؤسسي؟",
-            "hi": "क्या हम वार्षिक कॉर्पोरेट प्रभाव रिपोर्ट डाउनलोड कर सकते हैं?"
-          },
-          "next": "C.IMPACT_MENU"
-        },
-        {
-          "text": {
-            "en": "Can a custom report show our company's contributions?",
-            "ar": "هل يمكن لتقرير مخصص إظهار مساهمات شركتنا؟",
-            "hi": "क्या एक कस्टम रिपोर्ट हमारी कंपनी के योगदान को दिखा सकती है?"
-          },
-          "next": "C.IMPACT_MENU"
-        },
-        {
-          "text": {
-            "en": "Are impact numbers verified and tracked?",
-            "ar": "هل يتم التحقق من أرقام التأثير وتتبعها؟",
-            "hi": "क्या प्रभाव संख्याओं की पुष्टि और ट्रैकिंग की जाती है?"
-          },
-          "next": "C.IMPACT_MENU"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.1"
-        }
-      ],
-      "show_global": true
-    },
-    "C.CSR_GENERAL": {
-      "id": "C.CSR_GENERAL",
-      "type": "menu",
-      "role": "company",
-      "message": {
-        "en": "General CSR Opportunities - Select a question:",
-        "ar": "فرص المسؤولية المجتمعية العامة - اختر سؤالاً:",
-        "hi": "सामान्य सीएसआर अवसर - एक प्रश्न चुनें:"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "What types of CSR programs can we participate in?",
-            "ar": "ما أنواع برامج المسؤولية المجتمعية؟",
-            "hi": "हम किस प्रकार के सीएसआर कार्यक्रमों में भाग ले सकते हैं?"
-          },
-          "next": "C.CSR_GENERAL"
-        },
-        {
-          "text": {
-            "en": "Can we do a one-time donation or long-term partnership?",
-            "ar": "هل يمكننا التبرع مرة واحدة أو الشراكة طويلة الأمد؟",
-            "hi": "क्या हम एकमुश्त दान या दीर्घकालिक साझेदारी कर सकते हैं?"
-          },
-          "next": "C.CSR_GENERAL"
-        },
-        {
-          "text": {
-            "en": "Are CSR programs suitable for small or medium companies?",
-            "ar": "هل البرامج مناسبة للشركات الصغيرة والمتوسطة؟",
-            "hi": "क्या सीएसआर कार्यक्रम छोटी या मध्यम कंपनियों के लिए उपयुक्त हैं?"
-          },
-          "next": "C.CSR_GENERAL"
-        },
-        {
-          "text": {
-            "en": "How do we decide which CSR program fits our company goals?",
-            "ar": "كيف نقرر أي برنامج يناسب أهدافنا؟",
-            "hi": "हम कैसे तय करें कि कौन सा सीएसआर कार्यक्रम हमारी कंपनी के लक्ष्यों के अनुरूप है?"
-          },
-          "next": "C.CSR_GENERAL"
-        },
-        {
-          "text": {
-            "en": "Can we get guidance on where our contribution is most needed?",
-            "ar": "هل يمكننا الحصول على إرشادات؟",
-            "hi": "क्या हमें मार्गदर्शन मिल सकता है?"
-          },
-          "next": "C.CSR_GENERAL"
-        },
-        {
-          "text": {
-            "en": "Download corporate deck",
-            "ar": "تحميل العرض المؤسسي",
-            "hi": "कॉर्पोरेट डेक डाउनलोड करें"
-          },
-          "next": "C.DOWNLOAD_DECK"
-        },
-        {
-          "text": {
-            "en": "Request a meeting",
-            "ar": "طلب اجتماع",
-            "hi": "बैठक का अनुरोध करें"
-          },
-          "next": "C.REQUEST_MEETING"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.CSR_MENU"
-        }
-      ],
-      "show_global": true
-    },
-    "C.CSR_PROJECT": {
-      "id": "C.CSR_PROJECT",
-      "type": "menu",
-      "role": "company",
-      "message": {
-        "en": "Sponsor a Specific Project - Select a question or project type:",
-        "ar": "رعاية مشروع محدد - اختر سؤالاً أو نوع المشروع:",
-        "hi": "एक विशिष्ट परियोजना प्रायोजित करें - एक प्रश्न या परियोजना प्रकार चुनें:"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Can we sponsor education programs only?",
-            "ar": "هل يمكننا رعاية برامج التعليم فقط؟",
-            "hi": "क्या हम केवल शिक्षा कार्यक्रमों को प्रायोजित कर सकते हैं?"
-          },
-          "next": "C.CSR_PROJECT"
-        },
-        {
-          "text": {
-            "en": "Are skill development or livelihood programs available?",
-            "ar": "هل برامج تطوير المهارات متاحة؟",
-            "hi": "क्या कौशल विकास कार्यक्रम उपलब्ध हैं?"
-          },
-          "next": "C.CSR_PROJECT"
-        },
-        {
-          "text": {
-            "en": "Can we fund health and wellness initiatives?",
-            "ar": "هل يمكننا تمويل مبادرات الصحة؟",
-            "hi": "क्या हम स्वास्थ्य पहल को वित्तपोषित कर सकते हैं?"
-          },
-          "next": "C.CSR_PROJECT"
-        },
-        {
-          "text": {
-            "en": "Is it possible to sponsor the Smart Hub community center?",
-            "ar": "هل يمكن رعاية مركز سمارت هاب؟",
-            "hi": "क्या स्मार्ट हब सामुदायिक केंद्र को प्रायोजित करना संभव है?"
-          },
-          "next": "C.CSR_PROJECT"
-        },
-        {
-          "text": {
-            "en": "Can we choose multiple projects at the same time?",
-            "ar": "هل يمكننا اختيار عدة مشاريع؟",
-            "hi": "क्या हम एक साथ कई परियोजनाएं चुन सकते हैं?"
-          },
-          "next": "C.CSR_PROJECT"
-        },
-        {
-          "text": {
-            "en": "Education Programs",
-            "ar": "برامج التعليم",
-            "hi": "शिक्षा कार्यक्रम"
-          },
-          "next": "C.CSR_EDU"
-        },
-        {
-          "text": {
-            "en": "Skills & livelihood Programs",
-            "ar": "برامج المهارات وسبل العيش",
-            "hi": "कौशल और आजीविका कार्यक्रम"
-          },
-          "next": "C.CSR_SKILLS"
-        },
-        {
-          "text": {
-            "en": "Health & wellness Programs",
-            "ar": "برامج الصحة والعافية",
-            "hi": "स्वास्थ्य और कल्याण कार्यक्रम"
-          },
-          "next": "C.CSR_HEALTH"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.CSR_MENU"
-        }
-      ],
-      "show_global": true
-    },
-    "C.CSR_EDU": {
-      "id": "C.CSR_EDU",
-      "type": "menu",
-      "role": "company",
-      "message": {
-        "en": "Education Programs - Select a question:",
-        "ar": "برامج التعليم - اختر سؤالاً:",
-        "hi": "शिक्षा कार्यक्रम - एक प्रश्न चुनें:"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "What programs are included under education?",
-            "ar": "ما البرامج المشمولة تحت التعليم؟",
-            "hi": "शिक्षा के तहत कौन से कार्यक्रम शामिल हैं?"
-          },
-          "next": "C.CSR_EDU"
-        },
-        {
-          "text": {
-            "en": "Can we support specific skill development workshops?",
-            "ar": "هل يمكننا دعم ورش عمل محددة؟",
-            "hi": "क्या हम विशिष्ट कौशल विकास कार्यशालाओं का समर्थन कर सकते हैं?"
-          },
-          "next": "C.CSR_EDU"
-        },
-        {
-          "text": {
-            "en": "Are there options for digital learning support?",
-            "ar": "هل هناك خيارات لدعم التعلم الرقمي؟",
-            "hi": "क्या डिजिटल लर्निंग सपोर्ट के विकल्प हैं?"
-          },
-          "next": "C.CSR_EDU"
-        },
-        {
-          "text": {
-            "en": "Can employees participate in education programs?",
-            "ar": "هل يمكن للموظفين المشاركة في برامج التعليم؟",
-            "hi": "क्या कर्मचारी शिक्षा कार्यक्रमों में भाग ले सकते हैं?"
-          },
-          "next": "C.CSR_EDU"
-        },
-        {
-          "text": {
-            "en": "Download deck",
-            "ar": "تحميل العرض",
-            "hi": "डेक डाउनलोड करें"
-          },
-          "next": "C.DOWNLOAD_DECK"
-        },
-        {
-          "text": {
-            "en": "Request meeting",
-            "ar": "طلب اجتماع",
-            "hi": "बैठक का अनुरोध करें"
-          },
-          "next": "C.REQUEST_MEETING"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.CSR_PROJECT"
-        }
-      ],
-      "show_global": true
-    },
-    "C.CSR_SKILLS": {
-      "id": "C.CSR_SKILLS",
-      "type": "menu",
-      "role": "company",
-      "message": {
-        "en": "Skills & Livelihood Programs - Select a question:",
-        "ar": "برامج المهارات وسبل العيش - اختر سؤالاً:",
-        "hi": "कौशल और आजीविका कार्यक्रम - एक प्रश्न चुनें:"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Which skills are offered in vocational programs?",
-            "ar": "ما المهارات المقدمة في البرامج المهنية؟",
-            "hi": "व्यावसायिक कार्यक्रमों में कौन से कौशल दिए जाते हैं?"
-          },
-          "next": "C.CSR_SKILLS"
-        },
-        {
-          "text": {
-            "en": "Can our company fund training for construction, welding, or HVAC?",
-            "ar": "هل يمكننا تمويل التدريب على البناء واللحام؟",
-            "hi": "क्या हम निर्माण, वेल्डिंग या HVAC के लिए प्रशिक्षण का वित्तपोषण कर सकते हैं?"
-          },
-          "next": "C.CSR_SKILLS"
-        },
-        {
-          "text": {
-            "en": "Are programs open for long-term or one-time support?",
-            "ar": "هل البرامج مفتوحة للدعم طويل الأمد أو لمرة واحدة؟",
-            "hi": "क्या कार्यक्रम दीर्घकालिक या एकमुश्त समर्थन के लिए खुले हैं?"
-          },
-          "next": "C.CSR_SKILLS"
-        },
-        {
-          "text": {
-            "en": "Can employees engage as mentors or trainers?",
-            "ar": "هل يمكن للموظفين المشاركة كموجهين أو مدربين؟",
-            "hi": "क्या कर्मचारी मेंटर या ट्रेनर के रूप में भाग ले सकते हैं?"
-          },
-          "next": "C.CSR_SKILLS"
-        },
-        {
-          "text": {
-            "en": "Download deck",
-            "ar": "تحميل العرض",
-            "hi": "डेक डाउनलोड करें"
-          },
-          "next": "C.DOWNLOAD_DECK"
-        },
-        {
-          "text": {
-            "en": "Request meeting",
-            "ar": "طلب اجتماع",
-            "hi": "बैठक का अनुरोध करें"
-          },
-          "next": "C.REQUEST_MEETING"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.CSR_PROJECT"
-        }
-      ],
-      "show_global": true
-    },
-    "C.CSR_HEALTH": {
-      "id": "C.CSR_HEALTH",
-      "type": "menu",
-      "role": "company",
-      "message": {
-        "en": "Health & Wellness Programs - Select a question:",
-        "ar": "برامج الصحة والعافية - اختر سؤالاً:",
-        "hi": "स्वास्थ्य और कल्याण कार्यक्रम - एक प्रश्न चुनें:"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "What health and wellness programs can we sponsor?",
-            "ar": "ما برامج الصحة والعافية التي يمكننا رعايتها؟",
-            "hi": "हम किन स्वास्थ्य और कल्याण कार्यक्रमों को प्रायोजित कर सकते हैं?"
-          },
-          "next": "C.CSR_HEALTH"
-        },
-        {
-          "text": {
-            "en": "Are mental health workshops included?",
-            "ar": "هل تشمل ورش الصحة النفسية؟",
-            "hi": "क्या मानसिक स्वास्थ्य कार्यशालाएं शामिल हैं?"
-          },
-          "next": "C.CSR_HEALTH"
-        },
-        {
-          "text": {
-            "en": "Can we support health camps for employees or beneficiaries?",
-            "ar": "هل يمكننا دعم المخيمات الصحية؟",
-            "hi": "क्या हम कर्मचारियों या लाभार्थियों के लिए स्वास्थ्य शिविर का समर्थन कर सकते हैं?"
-          },
-          "next": "C.CSR_HEALTH"
-        },
-        {
-          "text": {
-            "en": "Can employees volunteer during wellness programs?",
-            "ar": "هل يمكن للموظفين التطوع خلال برامج العافية؟",
-            "hi": "क्या कर्मचारी कल्याण कार्यक्रमों के दौरान स्वयंसेवा कर सकते हैं?"
-          },
-          "next": "C.CSR_HEALTH"
-        },
-        {
-          "text": {
-            "en": "Download deck",
-            "ar": "تحميل العرض",
-            "hi": "डेक डाउनलोड करें"
-          },
-          "next": "C.DOWNLOAD_DECK"
-        },
-        {
-          "text": {
-            "en": "Request meeting",
-            "ar": "طلب اجتماع",
-            "hi": "बैठक का अनुरोध करें"
-          },
-          "next": "C.REQUEST_MEETING"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.CSR_PROJECT"
-        }
-      ],
-      "show_global": true
-    },
-    "C.CSR_BRANDING": {
-      "id": "C.CSR_BRANDING",
-      "type": "menu",
-      "role": "company",
-      "message": {
-        "en": "Branding & Visibility - Select a question:",
-        "ar": "العلامة التجارية والظهور - اختر سؤالاً:",
-        "hi": "ब्रांडिंग और दृश्यता - एक प्रश्न चुनें:"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Can our company logo appear on digital communication, events?",
-            "ar": "هل يمكن لشعار شركتنا الظهور على الاتصالات الرقمية؟",
-            "hi": "क्या हमारी कंपनी का लोगो डिजिटल संचार, कार्यक्रमों पर दिखाई दे सकता है?"
-          },
-          "next": "C.CSR_BRANDING"
-        },
-        {
-          "text": {
-            "en": "Will branding be visible in workshops and campaigns?",
-            "ar": "هل ستكون العلامة التجارية مرئية في ورش العمل؟",
-            "hi": "क्या कार्यशालाओं और अभियानों में ब्रांडिंग दिखाई देगी?"
-          },
-          "next": "C.CSR_BRANDING"
-        },
-        {
-          "text": {
-            "en": "Can our story appear in newsletters or reports?",
-            "ar": "هل يمكن لقصتنا الظهور في النشرات أو التقارير؟",
-            "hi": "क्या हमारी कहानी न्यूज़लेटर या रिपोर्ट में दिखाई दे सकती है?"
-          },
-          "next": "C.CSR_BRANDING"
-        },
-        {
-          "text": {
-            "en": "Are there digital visibility options for our brand?",
-            "ar": "هل هناك خيارات ظهور رقمي لعلامتنا التجارية؟",
-            "hi": "क्या हमारे ब्रांड के लिए डिजिटल दृश्यता विकल्प हैं?"
-          },
-          "next": "C.CSR_BRANDING"
-        },
-        {
-          "text": {
-            "en": "Download deck",
-            "ar": "تحميل العرض",
-            "hi": "डेक डाउनलोड करें"
-          },
-          "next": "C.DOWNLOAD_DECK"
-        },
-        {
-          "text": {
-            "en": "Request meeting",
-            "ar": "طلب اجتماع",
-            "hi": "बैठक का अनुरोध करें"
-          },
-          "next": "C.REQUEST_MEETING"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.CSR_MENU"
-        }
-      ],
-      "show_global": true
-    },
-    "C.CSR_EMPLOYEE": {
-      "id": "C.CSR_EMPLOYEE",
-      "type": "menu",
-      "role": "company",
-      "message": {
-        "en": "Employee Participation in CSR - Select a question:",
-        "ar": "مشاركة الموظفين في المسؤولية المجتمعية - اختر سؤالاً:",
-        "hi": "सीएसआर में कर्मचारी भागीदारी - एक प्रश्न चुनें:"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Can employees volunteer as teams?",
-            "ar": "هل يمكن للموظفين التطوع كفرق؟",
-            "hi": "क्या कर्मचारी टीम के रूप में स्वयंसेवा कर सकते हैं?"
-          },
-          "next": "C.CSR_EMPLOYEE"
-        },
-        {
-          "text": {
-            "en": "Are workshops available for employee skill-building?",
-            "ar": "هل هناك ورش عمل لبناء مهارات الموظفين؟",
-            "hi": "क्या कर्मचारी कौशल-निर्माण के लिए कार्यशालाएं उपलब्ध हैं?"
-          },
-          "next": "C.CSR_EMPLOYEE"
-        },
-        {
-          "text": {
-            "en": "Can team-building activities be scheduled through SmartLife?",
-            "ar": "هل يمكن جدولة أنشطة بناء الفريق من خلال سمارت لايف؟",
-            "hi": "क्या स्मार्टलाइफ के माध्यम से टीम-बिल्डिंग गतिविधियां शेड्यूल की जा सकती हैं?"
-          },
-          "next": "C.CSR_EMPLOYEE"
-        },
-        {
-          "text": {
-            "en": "Can remote or international employees participate?",
-            "ar": "هل يمكن للموظفين البعيدين أو الدوليين المشاركة؟",
-            "hi": "क्या दूरस्थ या अंतर्राष्ट्रीय कर्मचारी भाग ले सकते हैं?"
-          },
-          "next": "C.CSR_EMPLOYEE"
-        },
-        {
-          "text": {
-            "en": "Download deck",
-            "ar": "تحميل العرض",
-            "hi": "डेक डाउनलोड करें"
-          },
-          "next": "C.DOWNLOAD_DECK"
-        },
-        {
-          "text": {
-            "en": "Request meeting",
-            "ar": "طلب اجتماع",
-            "hi": "बैठक का अनुरोध करें"
-          },
-          "next": "C.REQUEST_MEETING"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.CSR_MENU"
-        }
-      ],
-      "show_global": true
-    },
-    "C.CSR_CERTIFICATES": {
-      "id": "C.CSR_CERTIFICATES",
-      "type": "menu",
-      "role": "company",
-      "message": {
-        "en": "Certificates & Recognition - Select a question:",
-        "ar": "الشهادات والتقدير - اختر سؤالاً:",
-        "hi": "प्रमाणपत्र और मान्यता - एक प्रश्न चुनें:"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Do you provide recognition certificates for CSR contributions?",
-            "ar": "هل تقدمون شهادات تقدير لمساهمات المسؤولية المجتمعية؟",
-            "hi": "क्या आप सीएसआर योगदान के लिए मान्यता प्रमाणपत्र प्रदान करते हैं?"
-          },
-          "next": "C.CSR_CERTIFICATES"
-        },
-        {
-          "text": {
-            "en": "Are certificates issued for sponsoring specific programs?",
-            "ar": "هل تُصدر شهادات لرعاية برامج محددة؟",
-            "hi": "क्या विशिष्ट कार्यक्रमों को प्रायोजित करने के लिए प्रमाणपत्र जारी किए जाते हैं?"
-          },
-          "next": "C.CSR_CERTIFICATES"
-        },
-        {
-          "text": {
-            "en": "Are employees' volunteering hours certified?",
-            "ar": "هل يتم توثيق ساعات تطوع الموظفين؟",
-            "hi": "क्या कर्मचारियों के स्वयंसेवी घंटे प्रमाणित हैं?"
-          },
-          "next": "C.CSR_CERTIFICATES"
-        },
-        {
-          "text": {
-            "en": "Can certificates be used for internal reporting?",
-            "ar": "هل يمكن استخدام الشهادات للتقارير الداخلية؟",
-            "hi": "क्या प्रमाणपत्र आंतरिक रिपोर्टिंग के लिए उपयोग किए जा सकते हैं?"
-          },
-          "next": "C.CSR_CERTIFICATES"
-        },
-        {
-          "text": {
-            "en": "Are digital versions of certificates available?",
-            "ar": "هل النسخ الرقمية من الشهادات متاحة؟",
-            "hi": "क्या प्रमाणपत्रों के डिजिटल संस्करण उपलब्ध हैं?"
-          },
-          "next": "C.CSR_CERTIFICATES"
-        },
-        {
-          "text": {
-            "en": "Download deck",
-            "ar": "تحميل العرض",
-            "hi": "डेक डाउनलोड करें"
-          },
-          "next": "C.DOWNLOAD_DECK"
-        },
-        {
-          "text": {
-            "en": "Request meeting",
-            "ar": "طلب اجتماع",
-            "hi": "बैठक का अनुरोध करें"
-          },
-          "next": "C.REQUEST_MEETING"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.CSR_MENU"
-        }
-      ],
-      "show_global": true
-    },
-    "C.DOWNLOAD_DECK": {
-      "id": "C.DOWNLOAD_DECK",
-      "type": "menu",
-      "role": "company",
-      "message": {
-        "en": "Corporate Deck - Select an option:",
-        "ar": "العرض المؤسسي - اختر خياراً:",
-        "hi": "कॉर्पोरेट डेक - एक विकल्प चुनें:"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Does the deck include past CSR impact data?",
-            "ar": "هل يتضمن العرض بيانات التأثير السابقة؟",
-            "hi": "क्या डेक में पिछले सीएसआर प्रभाव डेटा शामिल है?"
-          },
-          "next": "C.DOWNLOAD_DECK"
-        },
-        {
-          "text": {
-            "en": "Are sponsorship models explained in the deck?",
-            "ar": "هل نماذج الرعاية موضحة في العرض؟",
-            "hi": "क्या प्रायोजन मॉडल डेक में समझाए गए हैं?"
-          },
-          "next": "C.DOWNLOAD_DECK"
-        },
-        {
-          "text": {
-            "en": "Can we request a customized version?",
-            "ar": "هل يمكننا طلب نسخة مخصصة؟",
-            "hi": "क्या हम अनुकूलित संस्करण का अनुरोध कर सकते हैं?"
-          },
-          "next": "C.DOWNLOAD_DECK"
-        },
-        {
-          "text": {
-            "en": "Is there visual content or case studies?",
-            "ar": "هل يوجد محتوى مرئي أو دراسات حالة؟",
-            "hi": "क्या दृश्य सामग्री या केस स्टडी हैं?"
-          },
-          "next": "C.DOWNLOAD_DECK"
-        },
-        {
-          "text": {
-            "en": "Download PDF",
-            "ar": "تحميل PDF",
-            "hi": "PDF डाउनलोड करें"
-          },
-          "next": "C.DECK_PDF"
-        },
-        {
-          "text": {
-            "en": "Customized version",
-            "ar": "نسخة مخصصة",
-            "hi": "अनुकूलित संस्करण"
-          },
-          "next": "C.DECK_CUSTOM"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.1"
-        }
-      ],
-      "show_global": true
-    },
-    "C.DECK_PDF": {
-      "id": "C.DECK_PDF",
-      "type": "info",
-      "role": "company",
-      "message": {
-        "en": "Here's the corporate deck. Suitable for CSR committee reviews or management approvals.",
-        "ar": "إليكم العرض المؤسسي. مناسب لمراجعات لجنة المسؤولية المجتمعية.",
-        "hi": "यहां कॉर्पोरेट डेक है। सीएसआर समिति की समीक्षा के लिए उपयुक्त।"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.DOWNLOAD_DECK"
-        }
-      ],
-      "show_global": true
-    },
-    "C.DECK_CUSTOM": {
-      "id": "C.DECK_CUSTOM",
-      "type": "info",
-      "role": "company",
-      "message": {
-        "en": "Our team can create a tailored version highlighting specific programs or impact areas.",
-        "ar": "يمكن لفريقنا إنشاء نسخة مخصصة تسلط الضوء على برامج محددة.",
-        "hi": "हमारी टीम विशिष्ट कार्यक्रमों को उजागर करते हुए एक अनुकूलित संस्करण बना सकती है।"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Request meeting",
-            "ar": "طلب اجتماع",
-            "hi": "बैठक का अनुरोध करें"
-          },
-          "next": "C.REQUEST_MEETING"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.DOWNLOAD_DECK"
-        }
-      ],
-      "show_global": true
-    },
-    "C.REQUEST_MEETING": {
-      "id": "C.REQUEST_MEETING",
-      "type": "menu",
-      "role": "company",
-      "message": {
-        "en": "Meeting & Inquiries - Select a topic:",
-        "ar": "الاجتماعات والاستفسارات - اختر موضوعاً:",
-        "hi": "बैठक और पूछताछ - एक विषय चुनें:"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Can we schedule a meeting with your CSR team?",
-            "ar": "هل يمكننا جدولة اجتماع مع فريق المسؤولية المجتمعية؟",
-            "hi": "क्या हम आपकी सीएसआर टीम के साथ मीटिंग शेड्यूल कर सकते हैं?"
-          },
-          "next": "C.REQUEST_MEETING"
-        },
-        {
-          "text": {
-            "en": "Is it possible to include multiple programs in one session?",
-            "ar": "هل يمكن تضمين عدة برامج في جلسة واحدة؟",
-            "hi": "क्या एक सत्र में कई कार्यक्रम शामिल करना संभव है?"
-          },
-          "next": "C.REQUEST_MEETING"
-        },
-        {
-          "text": {
-            "en": "How many people can join from our company?",
-            "ar": "كم عدد الأشخاص الذين يمكنهم الانضمام من شركتنا؟",
-            "hi": "हमारी कंपनी से कितने लोग जुड़ सकते हैं?"
-          },
-          "next": "C.REQUEST_MEETING"
-        },
-        {
-          "text": {
-            "en": "Can the meeting be virtual if we're outside UAE?",
-            "ar": "هل يمكن أن يكون الاجتماع افتراضياً؟",
-            "hi": "क्या बैठक आभासी हो सकती है?"
-          },
-          "next": "C.REQUEST_MEETING"
-        },
-        {
-          "text": {
-            "en": "Can you provide a demo or proposal presentation?",
-            "ar": "هل يمكنكم تقديم عرض توضيحي أو مقترح؟",
-            "hi": "क्या आप डेमो या प्रस्ताव प्रस्तुति प्रदान कर सकते हैं?"
-          },
-          "next": "C.REQUEST_MEETING"
-        },
-        {
-          "text": {
-            "en": "Proceed to Request Form",
-            "ar": "المتابعة لنموذج الطلب",
-            "hi": "अनुरोध प्रपत्र पर आगे बढ़ें"
-          },
-          "next": "C.MEETING_FORM"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.1"
-        }
-      ],
-      "show_global": true
-    },
-    "C.MEETING_FORM": {
-      "id": "C.MEETING_FORM",
-      "type": "form",
-      "role": "company",
-      "title": {
-        "en": "Request Meeting",
-        "ar": "طلب اجتماع",
-        "hi": "बैठक का अनुरोध"
-      },
-      "message": {
-        "en": "Please provide your details to request a meeting:",
-        "ar": "يرجى تقديم تفاصيلكم لطلب اجتماع:",
-        "hi": "कृपया बैठक का अनुरोध करने के लिए अपना विवरण प्रदान करें:"
-      },
-      "fields": [
-        {
-          "name": "company_name",
-          "type": "text",
-          "question": {
-            "en": "Company name:",
-            "ar": "اسم الشركة:",
-            "hi": "कंपनी का नाम:"
-          },
-          "required": true
-        },
-        {
-          "name": "contact_person",
-          "type": "text",
-          "question": {
-            "en": "Contact person name:",
-            "ar": "اسم المسؤول:",
-            "hi": "संपर्क व्यक्ति का नाम:"
-          },
-          "required": true
-        },
-        {
-          "name": "email",
-          "type": "email",
-          "question": {
-            "en": "Email:",
-            "ar": "البريد الإلكتروني:",
-            "hi": "ईमेल:"
-          },
-          "required": true
-        },
-        {
-          "name": "preferred_date",
-          "type": "text",
-          "question": {
-            "en": "Preferred date & time:",
-            "ar": "التاريخ والوقت المفضل:",
-            "hi": "पसंदीदा तिथि और समय:"
-          },
-          "required": true
-        },
-        {
-          "name": "attendees",
-          "type": "text",
-          "question": {
-            "en": "Number of attendees:",
-            "ar": "عدد الحضور:",
-            "hi": "उपस्थित लोगों की संख्या:"
-          },
-          "required": true
-        },
-        {
-          "name": "timezone",
-          "type": "text",
-          "question": {
-            "en": "Time zone (if outside UAE):",
-            "ar": "المنطقة الزمنية:",
-            "hi": "समय क्षेत्र:"
-          },
-          "required": false
-        }
-      ],
-      "confirmation": {
-        "en": "Thank you! We have received your meeting request. Our team will contact you shortly.",
-        "ar": "شكراً! تم استلام طلب الاجتماع.",
-        "hi": "धन्यवाद! आपका मीटिंग अनुरोध प्राप्त हुआ।"
-      },
-      "completion_options": [
-        {
-          "text": {
-            "en": "Back to Company Menu",
-            "ar": "العودة لقائمة الشركات",
-            "hi": "कंपनी मेनू पर वापस जाएं"
-          },
-          "next": "C.1"
-        }
-      ],
-      "webhook": "/api/company/meeting"
-    },
-    "C.MEETING_FOLLOWUP": {
-      "id": "C.MEETING_FOLLOWUP",
-      "type": "info",
-      "role": "company",
-      "message": {
-        "en": "Follow-up meetings can be scheduled as needed.",
-        "ar": "يمكن جدولة اجتماعات المتابعة حسب الحاجة.",
-        "hi": "आवश्यकतानुसार अनुवर्ती बैठकें निर्धारित की जा सकती हैं।"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.REQUEST_MEETING"
-        }
-      ],
-      "show_global": true
-    },
-    "C.MEETING_DEMO": {
-      "id": "C.MEETING_DEMO",
-      "type": "info",
-      "role": "company",
-      "message": {
-        "en": "We can provide a virtual demo or present a detailed proposal aligned with your CSR goals.",
-        "ar": "يمكننا تقديم عرض توضيحي افتراضي.",
-        "hi": "हम आपके सीएसआर लक्ष्यों के अनुरूप एक वर्चुअल डेमो प्रस्तुत कर सकते हैं।"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.REQUEST_MEETING"
-        }
-      ],
-      "show_global": true
-    },
-    "C.EMPLOYEE_BENEFITS": {
-      "id": "C.EMPLOYEE_BENEFITS",
-      "type": "info",
-      "role": "company",
-      "message": {
-        "en": "Employee Benefits:\n\n• How does engagement improve employee satisfaction?\n• Can CSR participation enhance teamwork?\n• Will employee engagement improve brand visibility?\n• Does volunteering impact corporate social responsibility scores?\n• Can we track measurable employee impact?",
-        "ar": "فوائد الموظفين",
-        "hi": "कर्मचारी लाभ"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.EMPLOYEE_MENU"
-        }
-      ],
-      "show_global": true
-    },
-    "C.EMPLOYEE_SCHEDULING": {
-      "id": "C.EMPLOYEE_SCHEDULING",
-      "type": "info",
-      "role": "company",
-      "message": {
-        "en": "Scheduling Options:\n\n• Can activities be scheduled flexibly on weekdays?\n• Are weekend activities available for employees?\n• Can we organize sessions during company events?\n• Are remote or international employees included?\n• Can activities be customized based on company needs?",
-        "ar": "خيارات الجدولة",
-        "hi": "शेड्यूलिंग विकल्प"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.EMPLOYEE_MENU"
-        }
-      ],
-      "show_global": true
-    },
-    "C.EMPLOYEE_RECOGNITION": {
-      "id": "C.EMPLOYEE_RECOGNITION",
-      "type": "info",
-      "role": "company",
-      "message": {
-        "en": "Employee Recognition:\n\n• Are certificates provided for employee participation?\n• Are volunteering hours documented?\n• Can we get measurable impact reports?\n• Are digital certificates available?\n• Can recognition be shared in company internal newsletters?",
-        "ar": "تقدير الموظفين",
-        "hi": "कर्मचारी मान्यता"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.EMPLOYEE_MENU"
-        }
-      ],
-      "show_global": true
-    },
-    "C.IMPACT_NUMBERS": {
-      "id": "C.IMPACT_NUMBERS",
-      "type": "info",
-      "role": "company",
-      "message": {
-        "en": "Over 1 million lives touched, 5,000+ transformed, 20,000+ volunteers engaged.",
-        "ar": "أكثر من مليون حياة تأثرت، 5000+ تحولوا، 20000+ متطوع.",
-        "hi": "10 लाख से अधिक जीवन प्रभावित, 5,000+ रूपांतरित, 20,000+ स्वयंसेवक।"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.IMPACT_MENU"
-        }
-      ],
-      "show_global": true
-    },
-    "C.IMPACT_STORIES": {
-      "id": "C.IMPACT_STORIES",
-      "type": "info",
-      "role": "company",
-      "message": {
-        "en": "Success stories highlight how corporate partners and volunteers have created meaningful change.",
-        "ar": "تسلط قصص النجاح الضوء على التغيير الهادف.",
-        "hi": "सफलता की कहानियां सार्थक बदलाव दर्शाती हैं।"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.IMPACT_MENU"
-        }
-      ],
-      "show_global": true
-    },
-    "C.IMPACT_REPORT": {
-      "id": "C.IMPACT_REPORT",
-      "type": "menu",
-      "role": "company",
-      "message": {
-        "en": "Annual Report:\n\n• Can we download the latest annual report PDF?\n• Is the report suitable for CSR audits?\n• Can a custom report be prepared for our company?\n• Are older reports available for download?",
-        "ar": "التقرير السنوي",
-        "hi": "वार्षिक रिपोर्ट"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Download latest report",
-            "ar": "تحميل أحدث تقرير",
-            "hi": "नवीनतम रिपोर्ट डाउनलोड करें"
-          },
-          "next": "C.REPORT_PDF"
-        },
-        {
-          "text": {
-            "en": "Request custom report for my company",
-            "ar": "طلب تقرير مخصص",
-            "hi": "मेरी कंपनी के लिए कस्टम रिपोर्ट"
-          },
-          "next": "C.REPORT_CUSTOM"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.IMPACT_MENU"
-        }
-      ],
-      "show_global": true
-    },
-    "C.REPORT_PDF": {
-      "id": "C.REPORT_PDF",
-      "type": "info",
-      "role": "company",
-      "message": {
-        "en": "Here's the latest annual report PDF. Suitable for CSR audits and internal presentations.",
-        "ar": "إليكم أحدث تقرير سنوي PDF.",
-        "hi": "यहां नवीनतम वार्षिक रिपोर्ट PDF है।"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.IMPACT_REPORT"
-        }
-      ],
-      "show_global": true
-    },
-    "C.REPORT_CUSTOM": {
-      "id": "C.REPORT_CUSTOM",
-      "type": "info",
-      "role": "company",
-      "message": {
-        "en": "We can provide a custom report highlighting your company's contributions and specific impact.",
-        "ar": "يمكننا تقديم تقرير مخصص.",
-        "hi": "हम आपकी कंपनी के योगदान को उजागर करती एक कस्टम रिपोर्ट प्रदान कर सकते हैं।"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Request meeting",
-            "ar": "طلب اجتماع",
-            "hi": "बैठक का अनुरोध करें"
-          },
-          "next": "C.REQUEST_MEETING"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "C.IMPACT_REPORT"
         }
       ],
       "show_global": true
@@ -5285,8 +4011,1282 @@
         }
       ]
     },
-    "C.QUESTION_NOTED": {
-      "id": "C.QUESTION_NOTED",
+    "C.1.A": {
+      "id": "C.1.A",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "How can your company support SmartLife? Here are some questions to guide you.",
+        "ar": "كيف يمكن لشركتكم دعم سمارت لايف؟",
+        "hi": "आपकी कंपनी स्मार्टलाइफ का समर्थन कैसे कर सकती है?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "General CSR opportunities",
+            "ar": "فرص المسؤولية المجتمعية العامة",
+            "hi": "सामान्य सीएसआर अवसर"
+          },
+          "next": "C.1.A.1"
+        },
+        {
+          "text": {
+            "en": "Sponsor a specific project",
+            "ar": "رعاية مشروع محدد",
+            "hi": "एक विशिष्ट परियोजना प्रायोजित करें"
+          },
+          "next": "C.1.A.2"
+        },
+        {
+          "text": {
+            "en": "Branding & visibility options",
+            "ar": "خيارات العلامة التجارية والظهور",
+            "hi": "ब्रांडिंग और दृश्यता विकल्प"
+          },
+          "next": "C.1.A.3"
+        },
+        {
+          "text": {
+            "en": "Employee participation",
+            "ar": "مشاركة الموظفين",
+            "hi": "कर्मचारी भागीदारी"
+          },
+          "next": "C.1.A.4"
+        },
+        {
+          "text": {
+            "en": "Certificates & recognition",
+            "ar": "الشهادات والتقدير",
+            "hi": "प्रमाणपत्र और मान्यता"
+          },
+          "next": "C.1.A.5"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.B": {
+      "id": "C.1.B",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Employee Engagement - Select a question:",
+        "ar": "مشاركة الموظفين - اختر سؤالاً:",
+        "hi": "कर्मचारी सहभागिता - एक प्रश्न चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "How can employees participate in volunteering or workshops?",
+            "ar": "كيف يمكن للموظفين المشاركة في التطوع أو ورش العمل؟",
+            "hi": "कर्मचारी स्वयंसेवा या कार्यशालाओं में कैसे भाग ले सकते हैं?"
+          },
+          "next": "C.1.B"
+        },
+        {
+          "text": {
+            "en": "Are team-based activities available?",
+            "ar": "هل الأنشطة الجماعية متاحة؟",
+            "hi": "क्या टीम आधारित गतिविधियाँ उपलब्ध हैं?"
+          },
+          "next": "C.1.B"
+        },
+        {
+          "text": {
+            "en": "Can activities be scheduled on weekdays or weekends?",
+            "ar": "هل يمكن جدولة الأنشطة في أيام الأسبوع أو عطلات نهاية الأسبوع؟",
+            "hi": "क्या सप्ताह के दिनों या सप्ताहांत में गतिविधियों को शेड्यूल किया जा सकता है?"
+          },
+          "next": "C.1.B"
+        },
+        {
+          "text": {
+            "en": "Are remote employees included?",
+            "ar": "هل الموظفون عن بُعد مشمولون؟",
+            "hi": "क्या दूरस्थ कर्मचारी शामिल हैं?"
+          },
+          "next": "C.1.B"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.C": {
+      "id": "C.1.C",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "SmartLife Impact - Select a question:",
+        "ar": "تأثير سمارت لايف - اختر سؤالاً:",
+        "hi": "स्मार्टलाइफ प्रभाव - एक प्रश्न चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "How many people have been impacted by SmartLife?",
+            "ar": "كم عدد الأشخاص الذين تأثروا بسمارت لايف؟",
+            "hi": "स्मार्टलाइफ से कितने लोग प्रभावित हुए हैं?"
+          },
+          "next": "C.1.C"
+        },
+        {
+          "text": {
+            "en": "Can we see success stories of corporate partnerships?",
+            "ar": "هل يمكننا رؤية قصص نجاح الشراكات المؤسسية؟",
+            "hi": "क्या हम कॉर्पोरेट साझेदारी की सफलता की कहानियां देख सकते हैं?"
+          },
+          "next": "C.1.C"
+        },
+        {
+          "text": {
+            "en": "Can we download the annual corporate impact report?",
+            "ar": "هل يمكننا تنزيل التقرير السنوي للتأثير المؤسسي؟",
+            "hi": "क्या हम वार्षिक कॉर्पोरेट प्रभाव रिपोर्ट डाउनलोड कर सकते हैं?"
+          },
+          "next": "C.1.C"
+        },
+        {
+          "text": {
+            "en": "Can a custom report show our company's contributions?",
+            "ar": "هل يمكن لتقرير مخصص إظهار مساهمات شركتنا؟",
+            "hi": "क्या एक कस्टम रिपोर्ट हमारी कंपनी के योगदान को दिखा सकती है?"
+          },
+          "next": "C.1.C"
+        },
+        {
+          "text": {
+            "en": "Are impact numbers verified and tracked?",
+            "ar": "هل يتم التحقق من أرقام التأثير وتتبعها؟",
+            "hi": "क्या प्रभाव संख्याओं की पुष्टि और ट्रैकिंग की जाती है?"
+          },
+          "next": "C.1.C"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.A.1": {
+      "id": "C.1.A.1",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "General CSR Opportunities - Select a question:",
+        "ar": "فرص المسؤولية المجتمعية العامة - اختر سؤالاً:",
+        "hi": "सामान्य सीएसआर अवसर - एक प्रश्न चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "What types of CSR programs can we participate in?",
+            "ar": "ما أنواع برامج المسؤولية المجتمعية؟",
+            "hi": "हम किस प्रकार के सीएसआर कार्यक्रमों में भाग ले सकते हैं?"
+          },
+          "next": "C.1.A.1"
+        },
+        {
+          "text": {
+            "en": "Can we do a one-time donation or long-term partnership?",
+            "ar": "هل يمكننا التبرع مرة واحدة أو الشراكة طويلة الأمد؟",
+            "hi": "क्या हम एकमुश्त दान या दीर्घकालिक साझेदारी कर सकते हैं?"
+          },
+          "next": "C.1.A.1"
+        },
+        {
+          "text": {
+            "en": "Are CSR programs suitable for small or medium companies?",
+            "ar": "هل البرامج مناسبة للشركات الصغيرة والمتوسطة؟",
+            "hi": "क्या सीएसआर कार्यक्रम छोटी या मध्यम कंपनियों के लिए उपयुक्त हैं?"
+          },
+          "next": "C.1.A.1"
+        },
+        {
+          "text": {
+            "en": "How do we decide which CSR program fits our company goals?",
+            "ar": "كيف نقرر أي برنامج يناسب أهدافنا؟",
+            "hi": "हम कैसे तय करें कि कौन सा सीएसआर कार्यक्रम हमारी कंपनी के लक्ष्यों के अनुरूप है?"
+          },
+          "next": "C.1.A.1"
+        },
+        {
+          "text": {
+            "en": "Can we get guidance on where our contribution is most needed?",
+            "ar": "هل يمكننا الحصول على إرشادات؟",
+            "hi": "क्या हमें मार्गदर्शन मिल सकता है?"
+          },
+          "next": "C.1.A.1"
+        },
+        {
+          "text": {
+            "en": "Download corporate deck",
+            "ar": "تحميل العرض المؤسسي",
+            "hi": "कॉर्पोरेट डेक डाउनलोड करें"
+          },
+          "next": "C.1.D"
+        },
+        {
+          "text": {
+            "en": "Request a meeting",
+            "ar": "طلب اجتماع",
+            "hi": "बैठक का अनुरोध करें"
+          },
+          "next": "C.1.E"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1.A"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.A.2": {
+      "id": "C.1.A.2",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Sponsor a Specific Project - Select a question or project type:",
+        "ar": "رعاية مشروع محدد - اختر سؤالاً أو نوع المشروع:",
+        "hi": "एक विशिष्ट परियोजना प्रायोजित करें - एक प्रश्न या परियोजना प्रकार चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Can we sponsor education programs only?",
+            "ar": "هل يمكننا رعاية برامج التعليم فقط؟",
+            "hi": "क्या हम केवल शिक्षा कार्यक्रमों को प्रायोजित कर सकते हैं?"
+          },
+          "next": "C.1.A.2"
+        },
+        {
+          "text": {
+            "en": "Are skill development or livelihood programs available?",
+            "ar": "هل برامج تطوير المهارات متاحة؟",
+            "hi": "क्या कौशल विकास कार्यक्रम उपलब्ध हैं?"
+          },
+          "next": "C.1.A.2"
+        },
+        {
+          "text": {
+            "en": "Can we fund health and wellness initiatives?",
+            "ar": "هل يمكننا تمويل مبادرات الصحة؟",
+            "hi": "क्या हम स्वास्थ्य पहल को वित्तपोषित कर सकते हैं?"
+          },
+          "next": "C.1.A.2"
+        },
+        {
+          "text": {
+            "en": "Is it possible to sponsor the Smart Hub community center?",
+            "ar": "هل يمكن رعاية مركز سمارت هاب؟",
+            "hi": "क्या स्मार्ट हब सामुदायिक केंद्र को प्रायोजित करना संभव है?"
+          },
+          "next": "C.1.A.2"
+        },
+        {
+          "text": {
+            "en": "Can we choose multiple projects at the same time?",
+            "ar": "هل يمكننا اختيار عدة مشاريع؟",
+            "hi": "क्या हम एक साथ कई परियोजनाएं चुन सकते हैं?"
+          },
+          "next": "C.1.A.2"
+        },
+        {
+          "text": {
+            "en": "Education Programs",
+            "ar": "برامج التعليم",
+            "hi": "शिक्षा कार्यक्रम"
+          },
+          "next": "C.1.A.2.a"
+        },
+        {
+          "text": {
+            "en": "Skills & livelihood Programs",
+            "ar": "برامج المهارات وسبل العيش",
+            "hi": "कौशल और आजीविका कार्यक्रम"
+          },
+          "next": "C.1.A.2.b"
+        },
+        {
+          "text": {
+            "en": "Health & wellness Programs",
+            "ar": "برامج الصحة والعافية",
+            "hi": "स्वास्थ्य और कल्याण कार्यक्रम"
+          },
+          "next": "C.1.A.2.c"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1.A"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.A.2.a": {
+      "id": "C.1.A.2.a",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Education Programs - Select a question:",
+        "ar": "برامج التعليم - اختر سؤالاً:",
+        "hi": "शिक्षा कार्यक्रम - एक प्रश्न चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "What programs are included under education?",
+            "ar": "ما البرامج المشمولة تحت التعليم؟",
+            "hi": "शिक्षा के तहत कौन से कार्यक्रम शामिल हैं?"
+          },
+          "next": "C.1.A.2.a"
+        },
+        {
+          "text": {
+            "en": "Can we support specific skill development workshops?",
+            "ar": "هل يمكننا دعم ورش عمل محددة؟",
+            "hi": "क्या हम विशिष्ट कौशल विकास कार्यशालाओं का समर्थन कर सकते हैं?"
+          },
+          "next": "C.1.A.2.a"
+        },
+        {
+          "text": {
+            "en": "Are there options for digital learning support?",
+            "ar": "هل هناك خيارات لدعم التعلم الرقمي؟",
+            "hi": "क्या डिजिटल लर्निंग सपोर्ट के विकल्प हैं?"
+          },
+          "next": "C.1.A.2.a"
+        },
+        {
+          "text": {
+            "en": "Can employees participate in education programs?",
+            "ar": "هل يمكن للموظفين المشاركة في برامج التعليم؟",
+            "hi": "क्या कर्मचारी शिक्षा कार्यक्रमों में भाग ले सकते हैं?"
+          },
+          "next": "C.1.A.2.a"
+        },
+        {
+          "text": {
+            "en": "Download deck",
+            "ar": "تحميل العرض",
+            "hi": "डेक डाउनलोड करें"
+          },
+          "next": "C.1.D"
+        },
+        {
+          "text": {
+            "en": "Request meeting",
+            "ar": "طلب اجتماع",
+            "hi": "बैठक का अनुरोध करें"
+          },
+          "next": "C.1.E"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1.A.2"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.A.2.b": {
+      "id": "C.1.A.2.b",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Skills & Livelihood Programs - Select a question:",
+        "ar": "برامج المهارات وسبل العيش - اختر سؤالاً:",
+        "hi": "कौशल और आजीविका कार्यक्रम - एक प्रश्न चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Which skills are offered in vocational programs?",
+            "ar": "ما المهارات المقدمة في البرامج المهنية؟",
+            "hi": "व्यावसायिक कार्यक्रमों में कौन से कौशल दिए जाते हैं?"
+          },
+          "next": "C.1.A.2.b"
+        },
+        {
+          "text": {
+            "en": "Can our company fund training for construction, welding, or HVAC?",
+            "ar": "هل يمكننا تمويل التدريب على البناء واللحام؟",
+            "hi": "क्या हम निर्माण, वेल्डिंग या HVAC के लिए प्रशिक्षण का वित्तपोषण कर सकते हैं?"
+          },
+          "next": "C.1.A.2.b"
+        },
+        {
+          "text": {
+            "en": "Are programs open for long-term or one-time support?",
+            "ar": "هل البرامج مفتوحة للدعم طويل الأمد أو لمرة واحدة؟",
+            "hi": "क्या कार्यक्रम दीर्घकालिक या एकमुश्त समर्थन के लिए खुले हैं?"
+          },
+          "next": "C.1.A.2.b"
+        },
+        {
+          "text": {
+            "en": "Can employees engage as mentors or trainers?",
+            "ar": "هل يمكن للموظفين المشاركة كموجهين أو مدربين؟",
+            "hi": "क्या कर्मचारी मेंटर या ट्रेनर के रूप में भाग ले सकते हैं?"
+          },
+          "next": "C.1.A.2.b"
+        },
+        {
+          "text": {
+            "en": "Download deck",
+            "ar": "تحميل العرض",
+            "hi": "डेक डाउनलोड करें"
+          },
+          "next": "C.1.D"
+        },
+        {
+          "text": {
+            "en": "Request meeting",
+            "ar": "طلب اجتماع",
+            "hi": "बैठक का अनुरोध करें"
+          },
+          "next": "C.1.E"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1.A.2"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.A.2.c": {
+      "id": "C.1.A.2.c",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Health & Wellness Programs - Select a question:",
+        "ar": "برامج الصحة والعافية - اختر سؤالاً:",
+        "hi": "स्वास्थ्य और कल्याण कार्यक्रम - एक प्रश्न चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "What health and wellness programs can we sponsor?",
+            "ar": "ما برامج الصحة والعافية التي يمكننا رعايتها؟",
+            "hi": "हम किन स्वास्थ्य और कल्याण कार्यक्रमों को प्रायोजित कर सकते हैं?"
+          },
+          "next": "C.1.A.2.c"
+        },
+        {
+          "text": {
+            "en": "Are mental health workshops included?",
+            "ar": "هل تشمل ورش الصحة النفسية؟",
+            "hi": "क्या मानसिक स्वास्थ्य कार्यशालाएं शामिल हैं?"
+          },
+          "next": "C.1.A.2.c"
+        },
+        {
+          "text": {
+            "en": "Can we support health camps for employees or beneficiaries?",
+            "ar": "هل يمكننا دعم المخيمات الصحية؟",
+            "hi": "क्या हम कर्मचारियों या लाभार्थियों के लिए स्वास्थ्य शिविर का समर्थन कर सकते हैं?"
+          },
+          "next": "C.1.A.2.c"
+        },
+        {
+          "text": {
+            "en": "Can employees volunteer during wellness programs?",
+            "ar": "هل يمكن للموظفين التطوع خلال برامج العافية؟",
+            "hi": "क्या कर्मचारी कल्याण कार्यक्रमों के दौरान स्वयंसेवा कर सकते हैं?"
+          },
+          "next": "C.1.A.2.c"
+        },
+        {
+          "text": {
+            "en": "Download deck",
+            "ar": "تحميل العرض",
+            "hi": "डेक डाउनलोड करें"
+          },
+          "next": "C.1.D"
+        },
+        {
+          "text": {
+            "en": "Request meeting",
+            "ar": "طلب اجتماع",
+            "hi": "बैठक का अनुरोध करें"
+          },
+          "next": "C.1.E"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1.A.2"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.A.3": {
+      "id": "C.1.A.3",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Branding & Visibility - Select a question:",
+        "ar": "العلامة التجارية والظهور - اختر سؤالاً:",
+        "hi": "ब्रांडिंग और दृश्यता - एक प्रश्न चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Can our company logo appear on digital communication, events?",
+            "ar": "هل يمكن لشعار شركتنا الظهور على الاتصالات الرقمية؟",
+            "hi": "क्या हमारी कंपनी का लोगो डिजिटल संचार, कार्यक्रमों पर दिखाई दे सकता है?"
+          },
+          "next": "C.1.A.3"
+        },
+        {
+          "text": {
+            "en": "Will branding be visible in workshops and campaigns?",
+            "ar": "هل ستكون العلامة التجارية مرئية في ورش العمل؟",
+            "hi": "क्या कार्यशालाओं और अभियानों में ब्रांडिंग दिखाई देगी?"
+          },
+          "next": "C.1.A.3"
+        },
+        {
+          "text": {
+            "en": "Can our story appear in newsletters or reports?",
+            "ar": "هل يمكن لقصتنا الظهور في النشرات أو التقارير؟",
+            "hi": "क्या हमारी कहानी न्यूज़लेटर या रिपोर्ट में दिखाई दे सकती है?"
+          },
+          "next": "C.1.A.3"
+        },
+        {
+          "text": {
+            "en": "Are there digital visibility options for our brand?",
+            "ar": "هل هناك خيارات ظهور رقمي لعلامتنا التجارية؟",
+            "hi": "क्या हमारे ब्रांड के लिए डिजिटल दृश्यता विकल्प हैं?"
+          },
+          "next": "C.1.A.3"
+        },
+        {
+          "text": {
+            "en": "Download deck",
+            "ar": "تحميل العرض",
+            "hi": "डेक डाउनलोड करें"
+          },
+          "next": "C.1.D"
+        },
+        {
+          "text": {
+            "en": "Request meeting",
+            "ar": "طلب اجتماع",
+            "hi": "बैठक का अनुरोध करें"
+          },
+          "next": "C.1.E"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1.A"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.A.4": {
+      "id": "C.1.A.4",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Employee Participation in CSR - Select a question:",
+        "ar": "مشاركة الموظفين في المسؤولية المجتمعية - اختر سؤالاً:",
+        "hi": "सीएसआर में कर्मचारी भागीदारी - एक प्रश्न चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Can employees volunteer as teams?",
+            "ar": "هل يمكن للموظفين التطوع كفرق؟",
+            "hi": "क्या कर्मचारी टीम के रूप में स्वयंसेवा कर सकते हैं?"
+          },
+          "next": "C.1.A.4"
+        },
+        {
+          "text": {
+            "en": "Are workshops available for employee skill-building?",
+            "ar": "هل هناك ورش عمل لبناء مهارات الموظفين؟",
+            "hi": "क्या कर्मचारी कौशल-निर्माण के लिए कार्यशालाएं उपलब्ध हैं?"
+          },
+          "next": "C.1.A.4"
+        },
+        {
+          "text": {
+            "en": "Can team-building activities be scheduled through SmartLife?",
+            "ar": "هل يمكن جدولة أنشطة بناء الفريق من خلال سمارت لايف؟",
+            "hi": "क्या स्मार्टलाइफ के माध्यम से टीम-बिल्डिंग गतिविधियां शेड्यूल की जा सकती हैं?"
+          },
+          "next": "C.1.A.4"
+        },
+        {
+          "text": {
+            "en": "Can remote or international employees participate?",
+            "ar": "هل يمكن للموظفين البعيدين أو الدوليين المشاركة؟",
+            "hi": "क्या दूरस्थ या अंतर्राष्ट्रीय कर्मचारी भाग ले सकते हैं?"
+          },
+          "next": "C.1.A.4"
+        },
+        {
+          "text": {
+            "en": "Download deck",
+            "ar": "تحميل العرض",
+            "hi": "डेक डाउनलोड करें"
+          },
+          "next": "C.1.D"
+        },
+        {
+          "text": {
+            "en": "Request meeting",
+            "ar": "طلب اجتماع",
+            "hi": "बैठक का अनुरोध करें"
+          },
+          "next": "C.1.E"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1.A"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.A.5": {
+      "id": "C.1.A.5",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Certificates & Recognition - Select a question:",
+        "ar": "الشهادات والتقدير - اختر سؤالاً:",
+        "hi": "प्रमाणपत्र और मान्यता - एक प्रश्न चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Do you provide recognition certificates for CSR contributions?",
+            "ar": "هل تقدمون شهادات تقدير لمساهمات المسؤولية المجتمعية؟",
+            "hi": "क्या आप सीएसआर योगदान के लिए मान्यता प्रमाणपत्र प्रदान करते हैं?"
+          },
+          "next": "C.1.A.5"
+        },
+        {
+          "text": {
+            "en": "Are certificates issued for sponsoring specific programs?",
+            "ar": "هل تُصدر شهادات لرعاية برامج محددة؟",
+            "hi": "क्या विशिष्ट कार्यक्रमों को प्रायोजित करने के लिए प्रमाणपत्र जारी किए जाते हैं?"
+          },
+          "next": "C.1.A.5"
+        },
+        {
+          "text": {
+            "en": "Are employees' volunteering hours certified?",
+            "ar": "هل يتم توثيق ساعات تطوع الموظفين؟",
+            "hi": "क्या कर्मचारियों के स्वयंसेवी घंटे प्रमाणित हैं?"
+          },
+          "next": "C.1.A.5"
+        },
+        {
+          "text": {
+            "en": "Can certificates be used for internal reporting?",
+            "ar": "هل يمكن استخدام الشهادات للتقارير الداخلية؟",
+            "hi": "क्या प्रमाणपत्र आंतरिक रिपोर्टिंग के लिए उपयोग किए जा सकते हैं?"
+          },
+          "next": "C.1.A.5"
+        },
+        {
+          "text": {
+            "en": "Are digital versions of certificates available?",
+            "ar": "هل النسخ الرقمية من الشهادات متاحة؟",
+            "hi": "क्या प्रमाणपत्रों के डिजिटल संस्करण उपलब्ध हैं?"
+          },
+          "next": "C.1.A.5"
+        },
+        {
+          "text": {
+            "en": "Download deck",
+            "ar": "تحميل العرض",
+            "hi": "डेक डाउनलोड करें"
+          },
+          "next": "C.1.D"
+        },
+        {
+          "text": {
+            "en": "Request meeting",
+            "ar": "طلب اجتماع",
+            "hi": "बैठक का अनुरोध करें"
+          },
+          "next": "C.1.E"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1.A"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.D": {
+      "id": "C.1.D",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Corporate Deck - Select an option:",
+        "ar": "العرض المؤسسي - اختر خياراً:",
+        "hi": "कॉर्पोरेट डेक - एक विकल्प चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Does the deck include past CSR impact data?",
+            "ar": "هل يتضمن العرض بيانات التأثير السابقة؟",
+            "hi": "क्या डेक में पिछले सीएसआर प्रभाव डेटा शामिल है?"
+          },
+          "next": "C.1.D"
+        },
+        {
+          "text": {
+            "en": "Are sponsorship models explained in the deck?",
+            "ar": "هل نماذج الرعاية موضحة في العرض؟",
+            "hi": "क्या प्रायोजन मॉडल डेक में समझाए गए हैं?"
+          },
+          "next": "C.1.D"
+        },
+        {
+          "text": {
+            "en": "Can we request a customized version?",
+            "ar": "هل يمكننا طلب نسخة مخصصة؟",
+            "hi": "क्या हम अनुकूलित संस्करण का अनुरोध कर सकते हैं?"
+          },
+          "next": "C.1.D"
+        },
+        {
+          "text": {
+            "en": "Is there visual content or case studies?",
+            "ar": "هل يوجد محتوى مرئي أو دراسات حالة؟",
+            "hi": "क्या दृश्य सामग्री या केस स्टडी हैं?"
+          },
+          "next": "C.1.D"
+        },
+        {
+          "text": {
+            "en": "Download PDF",
+            "ar": "تحميل PDF",
+            "hi": "PDF डाउनलोड करें"
+          },
+          "next": "C.1.D.1"
+        },
+        {
+          "text": {
+            "en": "Customized version",
+            "ar": "نسخة مخصصة",
+            "hi": "अनुकूलित संस्करण"
+          },
+          "next": "C.1.D.2"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.D.1": {
+      "id": "C.1.D.1",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "Here's the corporate deck. Suitable for CSR committee reviews or management approvals.",
+        "ar": "إليكم العرض المؤسسي. مناسب لمراجعات لجنة المسؤولية المجتمعية.",
+        "hi": "यहां कॉर्पोरेट डेक है। सीएसआर समिति की समीक्षा के लिए उपयुक्त।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1.D"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.D.2": {
+      "id": "C.1.D.2",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "Our team can create a tailored version highlighting specific programs or impact areas.",
+        "ar": "يمكن لفريقنا إنشاء نسخة مخصصة تسلط الضوء على برامج محددة.",
+        "hi": "हमारी टीम विशिष्ट कार्यक्रमों को उजागर करते हुए एक अनुकूलित संस्करण बना सकती है।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Request meeting",
+            "ar": "طلب اجتماع",
+            "hi": "बैठक का अनुरोध करें"
+          },
+          "next": "C.1.E"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1.D"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.E": {
+      "id": "C.1.E",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Meeting & Inquiries - Select a topic:",
+        "ar": "الاجتماعات والاستفسارات - اختر موضوعاً:",
+        "hi": "बैठक और पूछताछ - एक विषय चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Can we schedule a meeting with your CSR team?",
+            "ar": "هل يمكننا جدولة اجتماع مع فريق المسؤولية المجتمعية؟",
+            "hi": "क्या हम आपकी सीएसआर टीम के साथ मीटिंग शेड्यूल कर सकते हैं?"
+          },
+          "next": "C.1.E"
+        },
+        {
+          "text": {
+            "en": "Is it possible to include multiple programs in one session?",
+            "ar": "هل يمكن تضمين عدة برامج في جلسة واحدة؟",
+            "hi": "क्या एक सत्र में कई कार्यक्रम शामिल करना संभव है?"
+          },
+          "next": "C.1.E"
+        },
+        {
+          "text": {
+            "en": "How many people can join from our company?",
+            "ar": "كم عدد الأشخاص الذين يمكنهم الانضمام من شركتنا؟",
+            "hi": "हमारी कंपनी से कितने लोग जुड़ सकते हैं?"
+          },
+          "next": "C.1.E"
+        },
+        {
+          "text": {
+            "en": "Can the meeting be virtual if we're outside UAE?",
+            "ar": "هل يمكن أن يكون الاجتماع افتراضياً؟",
+            "hi": "क्या बैठक आभासी हो सकती है?"
+          },
+          "next": "C.1.E"
+        },
+        {
+          "text": {
+            "en": "Can you provide a demo or proposal presentation?",
+            "ar": "هل يمكنكم تقديم عرض توضيحي أو مقترح؟",
+            "hi": "क्या आप डेमो या प्रस्ताव प्रस्तुति प्रदान कर सकते हैं?"
+          },
+          "next": "C.1.E"
+        },
+        {
+          "text": {
+            "en": "Proceed to Request Form",
+            "ar": "المتابعة لنموذج الطلب",
+            "hi": "अनुरोध प्रपत्र पर आगे बढ़ें"
+          },
+          "next": "C.1.E.1"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.E.1": {
+      "id": "C.1.E.1",
+      "type": "form",
+      "role": "company",
+      "title": {
+        "en": "Request Meeting",
+        "ar": "طلب اجتماع",
+        "hi": "बैठक का अनुरोध"
+      },
+      "message": {
+        "en": "Please provide your details to request a meeting:",
+        "ar": "يرجى تقديم تفاصيلكم لطلب اجتماع:",
+        "hi": "कृपया बैठक का अनुरोध करने के लिए अपना विवरण प्रदान करें:"
+      },
+      "fields": [
+        {
+          "name": "company_name",
+          "type": "text",
+          "question": {
+            "en": "Company name:",
+            "ar": "اسم الشركة:",
+            "hi": "कंपनी का नाम:"
+          },
+          "required": true
+        },
+        {
+          "name": "contact_person",
+          "type": "text",
+          "question": {
+            "en": "Contact person name:",
+            "ar": "اسم المسؤول:",
+            "hi": "संपर्क व्यक्ति का नाम:"
+          },
+          "required": true
+        },
+        {
+          "name": "email",
+          "type": "email",
+          "question": {
+            "en": "Email:",
+            "ar": "البريد الإلكتروني:",
+            "hi": "ईमेल:"
+          },
+          "required": true
+        },
+        {
+          "name": "preferred_date",
+          "type": "text",
+          "question": {
+            "en": "Preferred date & time:",
+            "ar": "التاريخ والوقت المفضل:",
+            "hi": "पसंदीदा तिथि और समय:"
+          },
+          "required": true
+        },
+        {
+          "name": "attendees",
+          "type": "text",
+          "question": {
+            "en": "Number of attendees:",
+            "ar": "عدد الحضور:",
+            "hi": "उपस्थित लोगों की संख्या:"
+          },
+          "required": true
+        },
+        {
+          "name": "timezone",
+          "type": "text",
+          "question": {
+            "en": "Time zone (if outside UAE):",
+            "ar": "المنطقة الزمنية:",
+            "hi": "समय क्षेत्र:"
+          },
+          "required": false
+        }
+      ],
+      "confirmation": {
+        "en": "Thank you! We have received your meeting request. Our team will contact you shortly.",
+        "ar": "شكراً! تم استلام طلب الاجتماع.",
+        "hi": "धन्यवाद! आपका मीटिंग अनुरोध प्राप्त हुआ।"
+      },
+      "completion_options": [
+        {
+          "text": {
+            "en": "Back to Company Menu",
+            "ar": "العودة لقائمة الشركات",
+            "hi": "कंपनी मेनू पर वापस जाएं"
+          },
+          "next": "C.1"
+        }
+      ],
+      "webhook": "/api/company/meeting"
+    },
+    "C.1.E.2": {
+      "id": "C.1.E.2",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "Follow-up meetings can be scheduled as needed.",
+        "ar": "يمكن جدولة اجتماعات المتابعة حسب الحاجة.",
+        "hi": "आवश्यकतानुसार अनुवर्ती बैठकें निर्धारित की जा सकती हैं।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1.E"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.E.3": {
+      "id": "C.1.E.3",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "We can provide a virtual demo or present a detailed proposal aligned with your CSR goals.",
+        "ar": "يمكننا تقديم عرض توضيحي افتراضي.",
+        "hi": "हम आपके सीएसआर लक्ष्यों के अनुरूप एक वर्चुअल डेमो प्रस्तुत कर सकते हैं।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1.E"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.B.1": {
+      "id": "C.1.B.1",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "Employee Benefits:\n\n• How does engagement improve employee satisfaction?\n• Can CSR participation enhance teamwork?\n• Will employee engagement improve brand visibility?\n• Does volunteering impact corporate social responsibility scores?\n• Can we track measurable employee impact?",
+        "ar": "فوائد الموظفين",
+        "hi": "कर्मचारी लाभ"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1.B"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.B.2": {
+      "id": "C.1.B.2",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "Scheduling Options:\n\n• Can activities be scheduled flexibly on weekdays?\n• Are weekend activities available for employees?\n• Can we organize sessions during company events?\n• Are remote or international employees included?\n• Can activities be customized based on company needs?",
+        "ar": "خيارات الجدولة",
+        "hi": "शेड्यूलिंग विकल्प"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1.B"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.B.3": {
+      "id": "C.1.B.3",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "Employee Recognition:\n\n• Are certificates provided for employee participation?\n• Are volunteering hours documented?\n• Can we get measurable impact reports?\n• Are digital certificates available?\n• Can recognition be shared in company internal newsletters?",
+        "ar": "تقدير الموظفين",
+        "hi": "कर्मचारी मान्यता"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1.B"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.C.1": {
+      "id": "C.1.C.1",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "Over 1 million lives touched, 5,000+ transformed, 20,000+ volunteers engaged.",
+        "ar": "أكثر من مليون حياة تأثرت، 5000+ تحولوا، 20000+ متطوع.",
+        "hi": "10 लाख से अधिक जीवन प्रभावित, 5,000+ रूपांतरित, 20,000+ स्वयंसेवक।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1.C"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.C.2": {
+      "id": "C.1.C.2",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "Success stories highlight how corporate partners and volunteers have created meaningful change.",
+        "ar": "تسلط قصص النجاح الضوء على التغيير الهادف.",
+        "hi": "सफलता की कहानियां सार्थक बदलाव दर्शाती हैं।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1.C"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.C.3": {
+      "id": "C.1.C.3",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Annual Report:\n\n• Can we download the latest annual report PDF?\n• Is the report suitable for CSR audits?\n• Can a custom report be prepared for our company?\n• Are older reports available for download?",
+        "ar": "التقرير السنوي",
+        "hi": "वार्षिक रिपोर्ट"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Download latest report",
+            "ar": "تحميل أحدث تقرير",
+            "hi": "नवीनतम रिपोर्ट डाउनलोड करें"
+          },
+          "next": "C.1.C.3.a"
+        },
+        {
+          "text": {
+            "en": "Request custom report for my company",
+            "ar": "طلب تقرير مخصص",
+            "hi": "मेरी कंपनी के लिए कस्टम रिपोर्ट"
+          },
+          "next": "C.1.C.3.b"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1.C"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.C.3.a": {
+      "id": "C.1.C.3.a",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "Here's the latest annual report PDF. Suitable for CSR audits and internal presentations.",
+        "ar": "إليكم أحدث تقرير سنوي PDF.",
+        "hi": "यहां नवीनतम वार्षिक रिपोर्ट PDF है।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1.C.3"
+        }
+      ],
+      "show_global": true
+    },
+    "C.1.C.3.b": {
+      "id": "C.1.C.3.b",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "We can provide a custom report highlighting your company's contributions and specific impact.",
+        "ar": "يمكننا تقديم تقرير مخصص.",
+        "hi": "हम आपकी कंपनी के योगदान को उजागर करती एक कस्टम रिपोर्ट प्रदान कर सकते हैं।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Request meeting",
+            "ar": "طلب اجتماع",
+            "hi": "बैठक का अनुरोध करें"
+          },
+          "next": "C.1.E"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1.C.3"
+        }
+      ],
+      "show_global": true
+    },
+    "C.0": {
+      "id": "C.0",
       "type": "info",
       "role": "company",
       "message": {
