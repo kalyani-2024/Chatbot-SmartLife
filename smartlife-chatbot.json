@@ -98,42 +98,50 @@
       "type": "menu",
       "role": "company",
       "message": {
-        "en": "Welcome! SmartLife partners with companies to create meaningful CSR impact. How would you like to collaborate?",
-        "ar": "مرحباً! تتعاون سمارت لايف مع الشركات لخلق تأثير مجتمعي هادف. كيف تودون التعاون؟",
-        "hi": "स्वागत है! स्मार्टलाइफ सार्थक सीएसआर प्रभाव बनाने के लिए कंपनियों के साथ भागीदारी करता है। आप कैसे सहयोग करना चाहेंगे?"
+        "en": "Welcome to SmartLife's corporate engagement portal! How can I assist your company today?",
+        "ar": "مرحباً ببوابة المشاركة المؤسسية لسمارت لايف! كيف يمكنني مساعدة شركتكم اليوم؟",
+        "hi": "स्मार्टलाइफ के कॉर्पोरेट एंगेजमेंट पोर्टल में आपका स्वागत है! आज मैं आपकी कंपनी की कैसे सहायता कर सकता हूं?"
       },
       "options": [
         {
           "text": {
-            "en": "CSR Partnership",
-            "ar": "شراكة المسؤولية الاجتماعية",
-            "hi": "सीएसआर साझेदारी"
+            "en": "CSR / Sponsorship",
+            "ar": "المسؤولية المجتمعية / الرعاية",
+            "hi": "सीएसआर / प्रायोजन"
           },
-          "next": "C.2.A"
+          "next": "C.CSR_MENU"
         },
         {
           "text": {
-            "en": "Sponsor an Event",
-            "ar": "رعاية حدث",
-            "hi": "एक कार्यक्रम प्रायोजित करें"
+            "en": "Employee Engagement",
+            "ar": "مشاركة الموظفين",
+            "hi": "कर्मचारी सहभागिता"
           },
-          "next": "C.2.B"
+          "next": "C.EMPLOYEE_MENU"
         },
         {
           "text": {
-            "en": "Employee Volunteering",
-            "ar": "تطوع الموظفين",
-            "hi": "कर्मचारी स्वयंसेवा"
+            "en": "Impact",
+            "ar": "التأثير",
+            "hi": "प्रभाव"
           },
-          "next": "C.2.C"
+          "next": "C.IMPACT_MENU"
         },
         {
           "text": {
-            "en": "Contact Corporate Team",
-            "ar": "اتصل بفريق الشركات",
-            "hi": "कॉर्पोरेट टीम से संपर्क करें"
+            "en": "Download Deck",
+            "ar": "تحميل العرض",
+            "hi": "डेक डाउनलोड करें"
           },
-          "next": "C.3.FORM"
+          "next": "C.DOWNLOAD_DECK"
+        },
+        {
+          "text": {
+            "en": "Request Meeting",
+            "ar": "طلب اجتماع",
+            "hi": "बैठक का अनुरोध करें"
+          },
+          "next": "C.REQUEST_MEETING"
         },
         {
           "text": {
@@ -143,25 +151,249 @@
           },
           "next": "M.1"
         }
-      ]
+      ],
+      "show_global": true
     },
-    "C.2.A": {
-      "id": "C.2.A",
-      "type": "info",
+    "C.CSR_MENU": {
+      "id": "C.CSR_MENU",
+      "type": "menu",
       "role": "company",
       "message": {
-        "en": "CSR Partnerships: We offer tailored programs aligning with your ESG goals. Support education (Smart English), health camps, or vocational training for workers.",
-        "ar": "شراكات المسؤولية الاجتماعية: نقدم برامج مخصصة تتوافق مع أهدافكم البيئية والاجتماعية. ادعموا التعليم (سمارت إنجليش)، المخيمات الطبية، أو التدريب المهني للعمال.",
-        "hi": "सीएसआर साझेदारी: हम आपके ईएसजी लक्ष्यों के अनुरूप अनुरूप कार्यक्रम प्रदान करते हैं। शिक्षा (स्मार्ट इंग्लिश), स्वास्थ्य शिविर, या श्रमिकों के लिए व्यावसायिक प्रशिक्षण का समर्थन करें।"
+        "en": "How can your company support SmartLife? Here are some questions to guide you.",
+        "ar": "كيف يمكن لشركتكم دعم سمارت لايف؟",
+        "hi": "आपकी कंपनी स्मार्टलाइफ का समर्थन कैसे कर सकती है?"
       },
       "options": [
         {
           "text": {
-            "en": "Request a Meeting",
+            "en": "General CSR opportunities",
+            "ar": "فرص المسؤولية المجتمعية العامة",
+            "hi": "सामान्य सीएसआर अवसर"
+          },
+          "next": "C.CSR_GENERAL"
+        },
+        {
+          "text": {
+            "en": "Sponsor a specific project",
+            "ar": "رعاية مشروع محدد",
+            "hi": "एक विशिष्ट परियोजना प्रायोजित करें"
+          },
+          "next": "C.CSR_PROJECT"
+        },
+        {
+          "text": {
+            "en": "Branding & visibility options",
+            "ar": "خيارات العلامة التجارية والظهور",
+            "hi": "ब्रांडिंग और दृश्यता विकल्प"
+          },
+          "next": "C.CSR_BRANDING"
+        },
+        {
+          "text": {
+            "en": "Employee participation",
+            "ar": "مشاركة الموظفين",
+            "hi": "कर्मचारी भागीदारी"
+          },
+          "next": "C.CSR_EMPLOYEE"
+        },
+        {
+          "text": {
+            "en": "Certificates & recognition",
+            "ar": "الشهادات والتقدير",
+            "hi": "प्रमाणपत्र और मान्यता"
+          },
+          "next": "C.CSR_CERTIFICATES"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1"
+        }
+      ],
+      "show_global": true
+    },
+    "C.EMPLOYEE_MENU": {
+      "id": "C.EMPLOYEE_MENU",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Employee Engagement - Select a question:",
+        "ar": "مشاركة الموظفين - اختر سؤالاً:",
+        "hi": "कर्मचारी सहभागिता - एक प्रश्न चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "How can employees participate in volunteering or workshops?",
+            "ar": "كيف يمكن للموظفين المشاركة في التطوع أو ورش العمل؟",
+            "hi": "कर्मचारी स्वयंसेवा या कार्यशालाओं में कैसे भाग ले सकते हैं?"
+          },
+          "next": "C.EMPLOYEE_MENU"
+        },
+        {
+          "text": {
+            "en": "Are team-based activities available?",
+            "ar": "هل الأنشطة الجماعية متاحة؟",
+            "hi": "क्या टीम आधारित गतिविधियाँ उपलब्ध हैं?"
+          },
+          "next": "C.EMPLOYEE_MENU"
+        },
+        {
+          "text": {
+            "en": "Can activities be scheduled on weekdays or weekends?",
+            "ar": "هل يمكن جدولة الأنشطة في أيام الأسبوع أو عطلات نهاية الأسبوع؟",
+            "hi": "क्या सप्ताह के दिनों या सप्ताहांत में गतिविधियों को शेड्यूल किया जा सकता है?"
+          },
+          "next": "C.EMPLOYEE_MENU"
+        },
+        {
+          "text": {
+            "en": "Are remote employees included?",
+            "ar": "هل الموظفون عن بُعد مشمولون؟",
+            "hi": "क्या दूरस्थ कर्मचारी शामिल हैं?"
+          },
+          "next": "C.EMPLOYEE_MENU"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1"
+        }
+      ],
+      "show_global": true
+    },
+    "C.IMPACT_MENU": {
+      "id": "C.IMPACT_MENU",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "SmartLife Impact - Select a question:",
+        "ar": "تأثير سمارت لايف - اختر سؤالاً:",
+        "hi": "स्मार्टलाइफ प्रभाव - एक प्रश्न चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "How many people have been impacted by SmartLife?",
+            "ar": "كم عدد الأشخاص الذين تأثروا بسمارت لايف؟",
+            "hi": "स्मार्टलाइफ से कितने लोग प्रभावित हुए हैं?"
+          },
+          "next": "C.IMPACT_MENU"
+        },
+        {
+          "text": {
+            "en": "Can we see success stories of corporate partnerships?",
+            "ar": "هل يمكننا رؤية قصص نجاح الشراكات المؤسسية؟",
+            "hi": "क्या हम कॉर्पोरेट साझेदारी की सफलता की कहानियां देख सकते हैं?"
+          },
+          "next": "C.IMPACT_MENU"
+        },
+        {
+          "text": {
+            "en": "Can we download the annual corporate impact report?",
+            "ar": "هل يمكننا تنزيل التقرير السنوي للتأثير المؤسسي؟",
+            "hi": "क्या हम वार्षिक कॉर्पोरेट प्रभाव रिपोर्ट डाउनलोड कर सकते हैं?"
+          },
+          "next": "C.IMPACT_MENU"
+        },
+        {
+          "text": {
+            "en": "Can a custom report show our company's contributions?",
+            "ar": "هل يمكن لتقرير مخصص إظهار مساهمات شركتنا؟",
+            "hi": "क्या एक कस्टम रिपोर्ट हमारी कंपनी के योगदान को दिखा सकती है?"
+          },
+          "next": "C.IMPACT_MENU"
+        },
+        {
+          "text": {
+            "en": "Are impact numbers verified and tracked?",
+            "ar": "هل يتم التحقق من أرقام التأثير وتتبعها؟",
+            "hi": "क्या प्रभाव संख्याओं की पुष्टि और ट्रैकिंग की जाती है?"
+          },
+          "next": "C.IMPACT_MENU"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1"
+        }
+      ],
+      "show_global": true
+    },
+    "C.CSR_GENERAL": {
+      "id": "C.CSR_GENERAL",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "General CSR Opportunities - Select a question:",
+        "ar": "فرص المسؤولية المجتمعية العامة - اختر سؤالاً:",
+        "hi": "सामान्य सीएसआर अवसर - एक प्रश्न चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "What types of CSR programs can we participate in?",
+            "ar": "ما أنواع برامج المسؤولية المجتمعية؟",
+            "hi": "हम किस प्रकार के सीएसआर कार्यक्रमों में भाग ले सकते हैं?"
+          },
+          "next": "C.CSR_GENERAL"
+        },
+        {
+          "text": {
+            "en": "Can we do a one-time donation or long-term partnership?",
+            "ar": "هل يمكننا التبرع مرة واحدة أو الشراكة طويلة الأمد؟",
+            "hi": "क्या हम एकमुश्त दान या दीर्घकालिक साझेदारी कर सकते हैं?"
+          },
+          "next": "C.CSR_GENERAL"
+        },
+        {
+          "text": {
+            "en": "Are CSR programs suitable for small or medium companies?",
+            "ar": "هل البرامج مناسبة للشركات الصغيرة والمتوسطة؟",
+            "hi": "क्या सीएसआर कार्यक्रम छोटी या मध्यम कंपनियों के लिए उपयुक्त हैं?"
+          },
+          "next": "C.CSR_GENERAL"
+        },
+        {
+          "text": {
+            "en": "How do we decide which CSR program fits our company goals?",
+            "ar": "كيف نقرر أي برنامج يناسب أهدافنا؟",
+            "hi": "हम कैसे तय करें कि कौन सा सीएसआर कार्यक्रम हमारी कंपनी के लक्ष्यों के अनुरूप है?"
+          },
+          "next": "C.CSR_GENERAL"
+        },
+        {
+          "text": {
+            "en": "Can we get guidance on where our contribution is most needed?",
+            "ar": "هل يمكننا الحصول على إرشادات؟",
+            "hi": "क्या हमें मार्गदर्शन मिल सकता है?"
+          },
+          "next": "C.CSR_GENERAL"
+        },
+        {
+          "text": {
+            "en": "Download corporate deck",
+            "ar": "تحميل العرض المؤسسي",
+            "hi": "कॉर्पोरेट डेक डाउनलोड करें"
+          },
+          "next": "C.DOWNLOAD_DECK"
+        },
+        {
+          "text": {
+            "en": "Request a meeting",
             "ar": "طلب اجتماع",
             "hi": "बैठक का अनुरोध करें"
           },
-          "next": "C.3.FORM"
+          "next": "C.REQUEST_MEETING"
         },
         {
           "text": {
@@ -169,27 +401,84 @@
             "ar": "رجوع",
             "hi": "वापस"
           },
-          "next": "C.1"
+          "next": "C.CSR_MENU"
         }
-      ]
+      ],
+      "show_global": true
     },
-    "C.2.B": {
-      "id": "C.2.B",
-      "type": "info",
+    "C.CSR_PROJECT": {
+      "id": "C.CSR_PROJECT",
+      "type": "menu",
       "role": "company",
       "message": {
-        "en": "Event Sponsorship: Gain brand visibility by sponsoring our major annual events like 'Smart Idol' (Talent Show) or 'Smart Cup' (Sports), reaching thousands of workers.",
-        "ar": "رعاية الفعاليات: احصلوا على ظهور للعلامة التجارية من خلال رعاية فعالياتنا السنوية الكبرى مثل 'سمارت أيدول' (عرض المواهب) أو 'كأس سمارت' (الرياضة)، للوصول إلى آلاف العمال.",
-        "hi": "इवेंट प्रायोजन: हमारे प्रमुख वार्षिक कार्यक्रमों जैसे 'स्मार्ट आइडल' (टैलेंट शो) या 'स्मार्ट कप' (खेल) को प्रायोजित करके ब्रांड दृश्यता प्राप्त करें, जो हजारों श्रमिकों तक पहुंचता है।"
+        "en": "Sponsor a Specific Project - Select a question or project type:",
+        "ar": "رعاية مشروع محدد - اختر سؤالاً أو نوع المشروع:",
+        "hi": "एक विशिष्ट परियोजना प्रायोजित करें - एक प्रश्न या परियोजना प्रकार चुनें:"
       },
       "options": [
         {
           "text": {
-            "en": "Inquire about Sponsorship",
-            "ar": "استفسر عن الرعاية",
-            "hi": "प्रायोजन के बारे में पूछताछ करें"
+            "en": "Can we sponsor education programs only?",
+            "ar": "هل يمكننا رعاية برامج التعليم فقط؟",
+            "hi": "क्या हम केवल शिक्षा कार्यक्रमों को प्रायोजित कर सकते हैं?"
           },
-          "next": "C.3.FORM"
+          "next": "C.CSR_PROJECT"
+        },
+        {
+          "text": {
+            "en": "Are skill development or livelihood programs available?",
+            "ar": "هل برامج تطوير المهارات متاحة؟",
+            "hi": "क्या कौशल विकास कार्यक्रम उपलब्ध हैं?"
+          },
+          "next": "C.CSR_PROJECT"
+        },
+        {
+          "text": {
+            "en": "Can we fund health and wellness initiatives?",
+            "ar": "هل يمكننا تمويل مبادرات الصحة؟",
+            "hi": "क्या हम स्वास्थ्य पहल को वित्तपोषित कर सकते हैं?"
+          },
+          "next": "C.CSR_PROJECT"
+        },
+        {
+          "text": {
+            "en": "Is it possible to sponsor the Smart Hub community center?",
+            "ar": "هل يمكن رعاية مركز سمارت هاب؟",
+            "hi": "क्या स्मार्ट हब सामुदायिक केंद्र को प्रायोजित करना संभव है?"
+          },
+          "next": "C.CSR_PROJECT"
+        },
+        {
+          "text": {
+            "en": "Can we choose multiple projects at the same time?",
+            "ar": "هل يمكننا اختيار عدة مشاريع؟",
+            "hi": "क्या हम एक साथ कई परियोजनाएं चुन सकते हैं?"
+          },
+          "next": "C.CSR_PROJECT"
+        },
+        {
+          "text": {
+            "en": "Education Programs",
+            "ar": "برامج التعليم",
+            "hi": "शिक्षा कार्यक्रम"
+          },
+          "next": "C.CSR_EDU"
+        },
+        {
+          "text": {
+            "en": "Skills & livelihood Programs",
+            "ar": "برامج المهارات وسبل العيش",
+            "hi": "कौशल और आजीविका कार्यक्रम"
+          },
+          "next": "C.CSR_SKILLS"
+        },
+        {
+          "text": {
+            "en": "Health & wellness Programs",
+            "ar": "برامج الصحة والعافية",
+            "hi": "स्वास्थ्य और कल्याण कार्यक्रम"
+          },
+          "next": "C.CSR_HEALTH"
         },
         {
           "text": {
@@ -197,27 +486,490 @@
             "ar": "رجوع",
             "hi": "वापस"
           },
-          "next": "C.1"
+          "next": "C.CSR_MENU"
         }
-      ]
+      ],
+      "show_global": true
     },
-    "C.2.C": {
-      "id": "C.2.C",
-      "type": "info",
+    "C.CSR_EDU": {
+      "id": "C.CSR_EDU",
+      "type": "menu",
       "role": "company",
       "message": {
-        "en": "Corporate Volunteering: Engage your employees in meaningful team-building. We organize 'Day of Giving' events where your team distributes kits or mentors workers.",
-        "ar": "تطوع الشركات: أشرك موظفيك في بناء فريق هادف. ننظم فعاليات 'يوم العطاء' حيث يقوم فريقك بتوزيع الحقائب أو توجيه العمال.",
-        "hi": "कॉर्पोरेट स्वयंसेवा: अपने कर्मचारियों को सार्थक टीम-बिल्डिंग में संलग्न करें। हम 'डे ऑफ गिविंग' कार्यक्रमों का आयोजन करते हैं जहां आपकी टीम किट वितरित करती है या श्रमिकों को सलाह देती है।"
+        "en": "Education Programs - Select a question:",
+        "ar": "برامج التعليم - اختر سؤالاً:",
+        "hi": "शिक्षा कार्यक्रम - एक प्रश्न चुनें:"
       },
       "options": [
         {
           "text": {
-            "en": "Plan a Volunteer Day",
-            "ar": "خطط ليوم تطوعي",
-            "hi": "एक स्वयंसेवक दिवस की योजना बनाएं"
+            "en": "What programs are included under education?",
+            "ar": "ما البرامج المشمولة تحت التعليم؟",
+            "hi": "शिक्षा के तहत कौन से कार्यक्रम शामिल हैं?"
           },
-          "next": "C.3.FORM"
+          "next": "C.CSR_EDU"
+        },
+        {
+          "text": {
+            "en": "Can we support specific skill development workshops?",
+            "ar": "هل يمكننا دعم ورش عمل محددة؟",
+            "hi": "क्या हम विशिष्ट कौशल विकास कार्यशालाओं का समर्थन कर सकते हैं?"
+          },
+          "next": "C.CSR_EDU"
+        },
+        {
+          "text": {
+            "en": "Are there options for digital learning support?",
+            "ar": "هل هناك خيارات لدعم التعلم الرقمي؟",
+            "hi": "क्या डिजिटल लर्निंग सपोर्ट के विकल्प हैं?"
+          },
+          "next": "C.CSR_EDU"
+        },
+        {
+          "text": {
+            "en": "Can employees participate in education programs?",
+            "ar": "هل يمكن للموظفين المشاركة في برامج التعليم؟",
+            "hi": "क्या कर्मचारी शिक्षा कार्यक्रमों में भाग ले सकते हैं?"
+          },
+          "next": "C.CSR_EDU"
+        },
+        {
+          "text": {
+            "en": "Download deck",
+            "ar": "تحميل العرض",
+            "hi": "डेक डाउनलोड करें"
+          },
+          "next": "C.DOWNLOAD_DECK"
+        },
+        {
+          "text": {
+            "en": "Request meeting",
+            "ar": "طلب اجتماع",
+            "hi": "बैठक का अनुरोध करें"
+          },
+          "next": "C.REQUEST_MEETING"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.CSR_PROJECT"
+        }
+      ],
+      "show_global": true
+    },
+    "C.CSR_SKILLS": {
+      "id": "C.CSR_SKILLS",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Skills & Livelihood Programs - Select a question:",
+        "ar": "برامج المهارات وسبل العيش - اختر سؤالاً:",
+        "hi": "कौशल और आजीविका कार्यक्रम - एक प्रश्न चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Which skills are offered in vocational programs?",
+            "ar": "ما المهارات المقدمة في البرامج المهنية؟",
+            "hi": "व्यावसायिक कार्यक्रमों में कौन से कौशल दिए जाते हैं?"
+          },
+          "next": "C.CSR_SKILLS"
+        },
+        {
+          "text": {
+            "en": "Can our company fund training for construction, welding, or HVAC?",
+            "ar": "هل يمكننا تمويل التدريب على البناء واللحام؟",
+            "hi": "क्या हम निर्माण, वेल्डिंग या HVAC के लिए प्रशिक्षण का वित्तपोषण कर सकते हैं?"
+          },
+          "next": "C.CSR_SKILLS"
+        },
+        {
+          "text": {
+            "en": "Are programs open for long-term or one-time support?",
+            "ar": "هل البرامج مفتوحة للدعم طويل الأمد أو لمرة واحدة؟",
+            "hi": "क्या कार्यक्रम दीर्घकालिक या एकमुश्त समर्थन के लिए खुले हैं?"
+          },
+          "next": "C.CSR_SKILLS"
+        },
+        {
+          "text": {
+            "en": "Can employees engage as mentors or trainers?",
+            "ar": "هل يمكن للموظفين المشاركة كموجهين أو مدربين؟",
+            "hi": "क्या कर्मचारी मेंटर या ट्रेनर के रूप में भाग ले सकते हैं?"
+          },
+          "next": "C.CSR_SKILLS"
+        },
+        {
+          "text": {
+            "en": "Download deck",
+            "ar": "تحميل العرض",
+            "hi": "डेक डाउनलोड करें"
+          },
+          "next": "C.DOWNLOAD_DECK"
+        },
+        {
+          "text": {
+            "en": "Request meeting",
+            "ar": "طلب اجتماع",
+            "hi": "बैठक का अनुरोध करें"
+          },
+          "next": "C.REQUEST_MEETING"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.CSR_PROJECT"
+        }
+      ],
+      "show_global": true
+    },
+    "C.CSR_HEALTH": {
+      "id": "C.CSR_HEALTH",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Health & Wellness Programs - Select a question:",
+        "ar": "برامج الصحة والعافية - اختر سؤالاً:",
+        "hi": "स्वास्थ्य और कल्याण कार्यक्रम - एक प्रश्न चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "What health and wellness programs can we sponsor?",
+            "ar": "ما برامج الصحة والعافية التي يمكننا رعايتها؟",
+            "hi": "हम किन स्वास्थ्य और कल्याण कार्यक्रमों को प्रायोजित कर सकते हैं?"
+          },
+          "next": "C.CSR_HEALTH"
+        },
+        {
+          "text": {
+            "en": "Are mental health workshops included?",
+            "ar": "هل تشمل ورش الصحة النفسية؟",
+            "hi": "क्या मानसिक स्वास्थ्य कार्यशालाएं शामिल हैं?"
+          },
+          "next": "C.CSR_HEALTH"
+        },
+        {
+          "text": {
+            "en": "Can we support health camps for employees or beneficiaries?",
+            "ar": "هل يمكننا دعم المخيمات الصحية؟",
+            "hi": "क्या हम कर्मचारियों या लाभार्थियों के लिए स्वास्थ्य शिविर का समर्थन कर सकते हैं?"
+          },
+          "next": "C.CSR_HEALTH"
+        },
+        {
+          "text": {
+            "en": "Can employees volunteer during wellness programs?",
+            "ar": "هل يمكن للموظفين التطوع خلال برامج العافية؟",
+            "hi": "क्या कर्मचारी कल्याण कार्यक्रमों के दौरान स्वयंसेवा कर सकते हैं?"
+          },
+          "next": "C.CSR_HEALTH"
+        },
+        {
+          "text": {
+            "en": "Download deck",
+            "ar": "تحميل العرض",
+            "hi": "डेक डाउनलोड करें"
+          },
+          "next": "C.DOWNLOAD_DECK"
+        },
+        {
+          "text": {
+            "en": "Request meeting",
+            "ar": "طلب اجتماع",
+            "hi": "बैठक का अनुरोध करें"
+          },
+          "next": "C.REQUEST_MEETING"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.CSR_PROJECT"
+        }
+      ],
+      "show_global": true
+    },
+    "C.CSR_BRANDING": {
+      "id": "C.CSR_BRANDING",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Branding & Visibility - Select a question:",
+        "ar": "العلامة التجارية والظهور - اختر سؤالاً:",
+        "hi": "ब्रांडिंग और दृश्यता - एक प्रश्न चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Can our company logo appear on digital communication, events?",
+            "ar": "هل يمكن لشعار شركتنا الظهور على الاتصالات الرقمية؟",
+            "hi": "क्या हमारी कंपनी का लोगो डिजिटल संचार, कार्यक्रमों पर दिखाई दे सकता है?"
+          },
+          "next": "C.CSR_BRANDING"
+        },
+        {
+          "text": {
+            "en": "Will branding be visible in workshops and campaigns?",
+            "ar": "هل ستكون العلامة التجارية مرئية في ورش العمل؟",
+            "hi": "क्या कार्यशालाओं और अभियानों में ब्रांडिंग दिखाई देगी?"
+          },
+          "next": "C.CSR_BRANDING"
+        },
+        {
+          "text": {
+            "en": "Can our story appear in newsletters or reports?",
+            "ar": "هل يمكن لقصتنا الظهور في النشرات أو التقارير؟",
+            "hi": "क्या हमारी कहानी न्यूज़लेटर या रिपोर्ट में दिखाई दे सकती है?"
+          },
+          "next": "C.CSR_BRANDING"
+        },
+        {
+          "text": {
+            "en": "Are there digital visibility options for our brand?",
+            "ar": "هل هناك خيارات ظهور رقمي لعلامتنا التجارية؟",
+            "hi": "क्या हमारे ब्रांड के लिए डिजिटल दृश्यता विकल्प हैं?"
+          },
+          "next": "C.CSR_BRANDING"
+        },
+        {
+          "text": {
+            "en": "Download deck",
+            "ar": "تحميل العرض",
+            "hi": "डेक डाउनलोड करें"
+          },
+          "next": "C.DOWNLOAD_DECK"
+        },
+        {
+          "text": {
+            "en": "Request meeting",
+            "ar": "طلب اجتماع",
+            "hi": "बैठक का अनुरोध करें"
+          },
+          "next": "C.REQUEST_MEETING"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.CSR_MENU"
+        }
+      ],
+      "show_global": true
+    },
+    "C.CSR_EMPLOYEE": {
+      "id": "C.CSR_EMPLOYEE",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Employee Participation in CSR - Select a question:",
+        "ar": "مشاركة الموظفين في المسؤولية المجتمعية - اختر سؤالاً:",
+        "hi": "सीएसआर में कर्मचारी भागीदारी - एक प्रश्न चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Can employees volunteer as teams?",
+            "ar": "هل يمكن للموظفين التطوع كفرق؟",
+            "hi": "क्या कर्मचारी टीम के रूप में स्वयंसेवा कर सकते हैं?"
+          },
+          "next": "C.CSR_EMPLOYEE"
+        },
+        {
+          "text": {
+            "en": "Are workshops available for employee skill-building?",
+            "ar": "هل هناك ورش عمل لبناء مهارات الموظفين؟",
+            "hi": "क्या कर्मचारी कौशल-निर्माण के लिए कार्यशालाएं उपलब्ध हैं?"
+          },
+          "next": "C.CSR_EMPLOYEE"
+        },
+        {
+          "text": {
+            "en": "Can team-building activities be scheduled through SmartLife?",
+            "ar": "هل يمكن جدولة أنشطة بناء الفريق من خلال سمارت لايف؟",
+            "hi": "क्या स्मार्टलाइफ के माध्यम से टीम-बिल्डिंग गतिविधियां शेड्यूल की जा सकती हैं?"
+          },
+          "next": "C.CSR_EMPLOYEE"
+        },
+        {
+          "text": {
+            "en": "Can remote or international employees participate?",
+            "ar": "هل يمكن للموظفين البعيدين أو الدوليين المشاركة؟",
+            "hi": "क्या दूरस्थ या अंतर्राष्ट्रीय कर्मचारी भाग ले सकते हैं?"
+          },
+          "next": "C.CSR_EMPLOYEE"
+        },
+        {
+          "text": {
+            "en": "Download deck",
+            "ar": "تحميل العرض",
+            "hi": "डेक डाउनलोड करें"
+          },
+          "next": "C.DOWNLOAD_DECK"
+        },
+        {
+          "text": {
+            "en": "Request meeting",
+            "ar": "طلب اجتماع",
+            "hi": "बैठक का अनुरोध करें"
+          },
+          "next": "C.REQUEST_MEETING"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.CSR_MENU"
+        }
+      ],
+      "show_global": true
+    },
+    "C.CSR_CERTIFICATES": {
+      "id": "C.CSR_CERTIFICATES",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Certificates & Recognition - Select a question:",
+        "ar": "الشهادات والتقدير - اختر سؤالاً:",
+        "hi": "प्रमाणपत्र और मान्यता - एक प्रश्न चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Do you provide recognition certificates for CSR contributions?",
+            "ar": "هل تقدمون شهادات تقدير لمساهمات المسؤولية المجتمعية؟",
+            "hi": "क्या आप सीएसआर योगदान के लिए मान्यता प्रमाणपत्र प्रदान करते हैं?"
+          },
+          "next": "C.CSR_CERTIFICATES"
+        },
+        {
+          "text": {
+            "en": "Are certificates issued for sponsoring specific programs?",
+            "ar": "هل تُصدر شهادات لرعاية برامج محددة؟",
+            "hi": "क्या विशिष्ट कार्यक्रमों को प्रायोजित करने के लिए प्रमाणपत्र जारी किए जाते हैं?"
+          },
+          "next": "C.CSR_CERTIFICATES"
+        },
+        {
+          "text": {
+            "en": "Are employees' volunteering hours certified?",
+            "ar": "هل يتم توثيق ساعات تطوع الموظفين؟",
+            "hi": "क्या कर्मचारियों के स्वयंसेवी घंटे प्रमाणित हैं?"
+          },
+          "next": "C.CSR_CERTIFICATES"
+        },
+        {
+          "text": {
+            "en": "Can certificates be used for internal reporting?",
+            "ar": "هل يمكن استخدام الشهادات للتقارير الداخلية؟",
+            "hi": "क्या प्रमाणपत्र आंतरिक रिपोर्टिंग के लिए उपयोग किए जा सकते हैं?"
+          },
+          "next": "C.CSR_CERTIFICATES"
+        },
+        {
+          "text": {
+            "en": "Are digital versions of certificates available?",
+            "ar": "هل النسخ الرقمية من الشهادات متاحة؟",
+            "hi": "क्या प्रमाणपत्रों के डिजिटल संस्करण उपलब्ध हैं?"
+          },
+          "next": "C.CSR_CERTIFICATES"
+        },
+        {
+          "text": {
+            "en": "Download deck",
+            "ar": "تحميل العرض",
+            "hi": "डेक डाउनलोड करें"
+          },
+          "next": "C.DOWNLOAD_DECK"
+        },
+        {
+          "text": {
+            "en": "Request meeting",
+            "ar": "طلب اجتماع",
+            "hi": "बैठक का अनुरोध करें"
+          },
+          "next": "C.REQUEST_MEETING"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.CSR_MENU"
+        }
+      ],
+      "show_global": true
+    },
+    "C.DOWNLOAD_DECK": {
+      "id": "C.DOWNLOAD_DECK",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Corporate Deck - Select an option:",
+        "ar": "العرض المؤسسي - اختر خياراً:",
+        "hi": "कॉर्पोरेट डेक - एक विकल्प चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Does the deck include past CSR impact data?",
+            "ar": "هل يتضمن العرض بيانات التأثير السابقة؟",
+            "hi": "क्या डेक में पिछले सीएसआर प्रभाव डेटा शामिल है?"
+          },
+          "next": "C.DOWNLOAD_DECK"
+        },
+        {
+          "text": {
+            "en": "Are sponsorship models explained in the deck?",
+            "ar": "هل نماذج الرعاية موضحة في العرض؟",
+            "hi": "क्या प्रायोजन मॉडल डेक में समझाए गए हैं?"
+          },
+          "next": "C.DOWNLOAD_DECK"
+        },
+        {
+          "text": {
+            "en": "Can we request a customized version?",
+            "ar": "هل يمكننا طلب نسخة مخصصة؟",
+            "hi": "क्या हम अनुकूलित संस्करण का अनुरोध कर सकते हैं?"
+          },
+          "next": "C.DOWNLOAD_DECK"
+        },
+        {
+          "text": {
+            "en": "Is there visual content or case studies?",
+            "ar": "هل يوجد محتوى مرئي أو دراسات حالة؟",
+            "hi": "क्या दृश्य सामग्री या केस स्टडी हैं?"
+          },
+          "next": "C.DOWNLOAD_DECK"
+        },
+        {
+          "text": {
+            "en": "Download PDF",
+            "ar": "تحميل PDF",
+            "hi": "PDF डाउनलोड करें"
+          },
+          "next": "C.DECK_PDF"
+        },
+        {
+          "text": {
+            "en": "Customized version",
+            "ar": "نسخة مخصصة",
+            "hi": "अनुकूलित संस्करण"
+          },
+          "next": "C.DECK_CUSTOM"
         },
         {
           "text": {
@@ -227,28 +979,148 @@
           },
           "next": "C.1"
         }
-      ]
+      ],
+      "show_global": true
     },
-    "C.3.FORM": {
-      "id": "C.3.FORM",
+    "C.DECK_PDF": {
+      "id": "C.DECK_PDF",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "Here's the corporate deck. Suitable for CSR committee reviews or management approvals.",
+        "ar": "إليكم العرض المؤسسي. مناسب لمراجعات لجنة المسؤولية المجتمعية.",
+        "hi": "यहां कॉर्पोरेट डेक है। सीएसआर समिति की समीक्षा के लिए उपयुक्त।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.DOWNLOAD_DECK"
+        }
+      ],
+      "show_global": true
+    },
+    "C.DECK_CUSTOM": {
+      "id": "C.DECK_CUSTOM",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "Our team can create a tailored version highlighting specific programs or impact areas.",
+        "ar": "يمكن لفريقنا إنشاء نسخة مخصصة تسلط الضوء على برامج محددة.",
+        "hi": "हमारी टीम विशिष्ट कार्यक्रमों को उजागर करते हुए एक अनुकूलित संस्करण बना सकती है।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Request meeting",
+            "ar": "طلب اجتماع",
+            "hi": "बैठक का अनुरोध करें"
+          },
+          "next": "C.REQUEST_MEETING"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.DOWNLOAD_DECK"
+        }
+      ],
+      "show_global": true
+    },
+    "C.REQUEST_MEETING": {
+      "id": "C.REQUEST_MEETING",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Meeting & Inquiries - Select a topic:",
+        "ar": "الاجتماعات والاستفسارات - اختر موضوعاً:",
+        "hi": "बैठक और पूछताछ - एक विषय चुनें:"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Can we schedule a meeting with your CSR team?",
+            "ar": "هل يمكننا جدولة اجتماع مع فريق المسؤولية المجتمعية؟",
+            "hi": "क्या हम आपकी सीएसआर टीम के साथ मीटिंग शेड्यूल कर सकते हैं?"
+          },
+          "next": "C.REQUEST_MEETING"
+        },
+        {
+          "text": {
+            "en": "Is it possible to include multiple programs in one session?",
+            "ar": "هل يمكن تضمين عدة برامج في جلسة واحدة؟",
+            "hi": "क्या एक सत्र में कई कार्यक्रम शामिल करना संभव है?"
+          },
+          "next": "C.REQUEST_MEETING"
+        },
+        {
+          "text": {
+            "en": "How many people can join from our company?",
+            "ar": "كم عدد الأشخاص الذين يمكنهم الانضمام من شركتنا؟",
+            "hi": "हमारी कंपनी से कितने लोग जुड़ सकते हैं?"
+          },
+          "next": "C.REQUEST_MEETING"
+        },
+        {
+          "text": {
+            "en": "Can the meeting be virtual if we're outside UAE?",
+            "ar": "هل يمكن أن يكون الاجتماع افتراضياً؟",
+            "hi": "क्या बैठक आभासी हो सकती है?"
+          },
+          "next": "C.REQUEST_MEETING"
+        },
+        {
+          "text": {
+            "en": "Can you provide a demo or proposal presentation?",
+            "ar": "هل يمكنكم تقديم عرض توضيحي أو مقترح؟",
+            "hi": "क्या आप डेमो या प्रस्ताव प्रस्तुति प्रदान कर सकते हैं?"
+          },
+          "next": "C.REQUEST_MEETING"
+        },
+        {
+          "text": {
+            "en": "Proceed to Request Form",
+            "ar": "المتابعة لنموذج الطلب",
+            "hi": "अनुरोध प्रपत्र पर आगे बढ़ें"
+          },
+          "next": "C.MEETING_FORM"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1"
+        }
+      ],
+      "show_global": true
+    },
+    "C.MEETING_FORM": {
+      "id": "C.MEETING_FORM",
       "type": "form",
       "role": "company",
       "title": {
-        "en": "Corporate Inquiry",
-        "ar": "استفسار الشركات",
-        "hi": "कॉर्पोरेट पूछताछ"
+        "en": "Request Meeting",
+        "ar": "طلب اجتماع",
+        "hi": "बैठक का अनुरोध"
       },
       "message": {
-        "en": "Please provide your details so our Corporate Relations team can contact you:",
-        "ar": "يرجى تقديم تفاصيلكم حتى يتمكن فريق علاقات الشركات لدينا من الاتصال بكم:",
-        "hi": "कृपया अपना विवरण प्रदान करें ताकि हमारी कॉर्पोरेट संबंध टीम आपसे संपर्क कर सके:"
+        "en": "Please provide your details to request a meeting:",
+        "ar": "يرجى تقديم تفاصيلكم لطلب اجتماع:",
+        "hi": "कृपया बैठक का अनुरोध करने के लिए अपना विवरण प्रदान करें:"
       },
       "fields": [
         {
           "name": "company_name",
           "type": "text",
           "question": {
-            "en": "Company Name:",
+            "en": "Company name:",
             "ar": "اسم الشركة:",
             "hi": "कंपनी का नाम:"
           },
@@ -258,8 +1130,8 @@
           "name": "contact_person",
           "type": "text",
           "question": {
-            "en": "Contact Person Name:",
-            "ar": "اسم الشخص المسؤول:",
+            "en": "Contact person name:",
+            "ar": "اسم المسؤول:",
             "hi": "संपर्क व्यक्ति का नाम:"
           },
           "required": true
@@ -268,44 +1140,293 @@
           "name": "email",
           "type": "email",
           "question": {
-            "en": "Official Email Address:",
-            "ar": "البريد الإلكتروني الرسمي:",
-            "hi": "आधिकारिक ईमेल पता:"
+            "en": "Email:",
+            "ar": "البريد الإلكتروني:",
+            "hi": "ईमेल:"
           },
           "required": true
         },
         {
-          "name": "interest",
-          "type": "select",
+          "name": "preferred_date",
+          "type": "text",
           "question": {
-            "en": "Area of Interest:",
-            "ar": "مجال الاهتمام:",
-            "hi": "रुचि का क्षेत्र:"
+            "en": "Preferred date & time:",
+            "ar": "التاريخ والوقت المفضل:",
+            "hi": "पसंदीदा तिथि और समय:"
           },
-          "choices": [
-            { "value": "csr", "text": { "en": "CSR Partnership", "ar": "شراكة", "hi": "साझेदारी" } },
-            { "value": "sponsorship", "text": { "en": "Event Sponsorship", "ar": "رعاية", "hi": "प्रायोजन" } },
-            { "value": "volunteering", "text": { "en": "Employee Volunteering", "ar": "تطوع", "hi": "स्वयंसेवा" } }
-          ],
           "required": true
+        },
+        {
+          "name": "attendees",
+          "type": "text",
+          "question": {
+            "en": "Number of attendees:",
+            "ar": "عدد الحضور:",
+            "hi": "उपस्थित लोगों की संख्या:"
+          },
+          "required": true
+        },
+        {
+          "name": "timezone",
+          "type": "text",
+          "question": {
+            "en": "Time zone (if outside UAE):",
+            "ar": "المنطقة الزمنية:",
+            "hi": "समय क्षेत्र:"
+          },
+          "required": false
         }
       ],
       "confirmation": {
-        "en": "Thank you. We have received your inquiry for {company_name}. Our team will email you at {email} shortly.",
-        "ar": "شكراً لكم. لقد تلقينا استفساركم عن {company_name}. سيرسل فريقنا بريداً إلكترونياً إلى {email} قريباً.",
-        "hi": "धन्यवाद। हमें {company_name} के लिए आपकी पूछताछ प्राप्त हुई है। हमारी टीम जल्द ही आपको {email} पर ईमेल करेगी।"
+        "en": "Thank you! We have received your meeting request. Our team will contact you shortly.",
+        "ar": "شكراً! تم استلام طلب الاجتماع.",
+        "hi": "धन्यवाद! आपका मीटिंग अनुरोध प्राप्त हुआ।"
       },
       "completion_options": [
         {
           "text": {
-            "en": "Back to Main Menu",
-            "ar": "العودة للقائمة الرئيسية",
-            "hi": "मुख्य मेनू पर वापस जाएं"
+            "en": "Back to Company Menu",
+            "ar": "العودة لقائمة الشركات",
+            "hi": "कंपनी मेनू पर वापस जाएं"
           },
-          "next": "M.1"
+          "next": "C.1"
         }
       ],
-      "webhook": "/api/company/inquiry"
+      "webhook": "/api/company/meeting"
+    },
+    "C.MEETING_FOLLOWUP": {
+      "id": "C.MEETING_FOLLOWUP",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "Follow-up meetings can be scheduled as needed.",
+        "ar": "يمكن جدولة اجتماعات المتابعة حسب الحاجة.",
+        "hi": "आवश्यकतानुसार अनुवर्ती बैठकें निर्धारित की जा सकती हैं।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.REQUEST_MEETING"
+        }
+      ],
+      "show_global": true
+    },
+    "C.MEETING_DEMO": {
+      "id": "C.MEETING_DEMO",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "We can provide a virtual demo or present a detailed proposal aligned with your CSR goals.",
+        "ar": "يمكننا تقديم عرض توضيحي افتراضي.",
+        "hi": "हम आपके सीएसआर लक्ष्यों के अनुरूप एक वर्चुअल डेमो प्रस्तुत कर सकते हैं।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.REQUEST_MEETING"
+        }
+      ],
+      "show_global": true
+    },
+    "C.EMPLOYEE_BENEFITS": {
+      "id": "C.EMPLOYEE_BENEFITS",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "Employee Benefits:\n\n• How does engagement improve employee satisfaction?\n• Can CSR participation enhance teamwork?\n• Will employee engagement improve brand visibility?\n• Does volunteering impact corporate social responsibility scores?\n• Can we track measurable employee impact?",
+        "ar": "فوائد الموظفين",
+        "hi": "कर्मचारी लाभ"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.EMPLOYEE_MENU"
+        }
+      ],
+      "show_global": true
+    },
+    "C.EMPLOYEE_SCHEDULING": {
+      "id": "C.EMPLOYEE_SCHEDULING",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "Scheduling Options:\n\n• Can activities be scheduled flexibly on weekdays?\n• Are weekend activities available for employees?\n• Can we organize sessions during company events?\n• Are remote or international employees included?\n• Can activities be customized based on company needs?",
+        "ar": "خيارات الجدولة",
+        "hi": "शेड्यूलिंग विकल्प"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.EMPLOYEE_MENU"
+        }
+      ],
+      "show_global": true
+    },
+    "C.EMPLOYEE_RECOGNITION": {
+      "id": "C.EMPLOYEE_RECOGNITION",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "Employee Recognition:\n\n• Are certificates provided for employee participation?\n• Are volunteering hours documented?\n• Can we get measurable impact reports?\n• Are digital certificates available?\n• Can recognition be shared in company internal newsletters?",
+        "ar": "تقدير الموظفين",
+        "hi": "कर्मचारी मान्यता"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.EMPLOYEE_MENU"
+        }
+      ],
+      "show_global": true
+    },
+    "C.IMPACT_NUMBERS": {
+      "id": "C.IMPACT_NUMBERS",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "Over 1 million lives touched, 5,000+ transformed, 20,000+ volunteers engaged.",
+        "ar": "أكثر من مليون حياة تأثرت، 5000+ تحولوا، 20000+ متطوع.",
+        "hi": "10 लाख से अधिक जीवन प्रभावित, 5,000+ रूपांतरित, 20,000+ स्वयंसेवक।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.IMPACT_MENU"
+        }
+      ],
+      "show_global": true
+    },
+    "C.IMPACT_STORIES": {
+      "id": "C.IMPACT_STORIES",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "Success stories highlight how corporate partners and volunteers have created meaningful change.",
+        "ar": "تسلط قصص النجاح الضوء على التغيير الهادف.",
+        "hi": "सफलता की कहानियां सार्थक बदलाव दर्शाती हैं।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.IMPACT_MENU"
+        }
+      ],
+      "show_global": true
+    },
+    "C.IMPACT_REPORT": {
+      "id": "C.IMPACT_REPORT",
+      "type": "menu",
+      "role": "company",
+      "message": {
+        "en": "Annual Report:\n\n• Can we download the latest annual report PDF?\n• Is the report suitable for CSR audits?\n• Can a custom report be prepared for our company?\n• Are older reports available for download?",
+        "ar": "التقرير السنوي",
+        "hi": "वार्षिक रिपोर्ट"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Download latest report",
+            "ar": "تحميل أحدث تقرير",
+            "hi": "नवीनतम रिपोर्ट डाउनलोड करें"
+          },
+          "next": "C.REPORT_PDF"
+        },
+        {
+          "text": {
+            "en": "Request custom report for my company",
+            "ar": "طلب تقرير مخصص",
+            "hi": "मेरी कंपनी के लिए कस्टम रिपोर्ट"
+          },
+          "next": "C.REPORT_CUSTOM"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.IMPACT_MENU"
+        }
+      ],
+      "show_global": true
+    },
+    "C.REPORT_PDF": {
+      "id": "C.REPORT_PDF",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "Here's the latest annual report PDF. Suitable for CSR audits and internal presentations.",
+        "ar": "إليكم أحدث تقرير سنوي PDF.",
+        "hi": "यहां नवीनतम वार्षिक रिपोर्ट PDF है।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.IMPACT_REPORT"
+        }
+      ],
+      "show_global": true
+    },
+    "C.REPORT_CUSTOM": {
+      "id": "C.REPORT_CUSTOM",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "We can provide a custom report highlighting your company's contributions and specific impact.",
+        "ar": "يمكننا تقديم تقرير مخصص.",
+        "hi": "हम आपकी कंपनी के योगदान को उजागर करती एक कस्टम रिपोर्ट प्रदान कर सकते हैं।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Request meeting",
+            "ar": "طلب اجتماع",
+            "hi": "बैठक का अनुरोध करें"
+          },
+          "next": "C.REQUEST_MEETING"
+        },
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.IMPACT_REPORT"
+        }
+      ],
+      "show_global": true
     },
     "W.1": {
       "id": "W.1",
@@ -359,88 +1480,6 @@
         }
       ],
       "show_global": true
-    },
-    "W.2.C": {
-      "id": "W.2.C",
-      "type": "menu",
-      "role": "worker",
-      "message": {
-        "en": "Welcome to SmartJobs! We help you find better job opportunities and improve your skills.",
-        "ar": "مرحباً بك في سمارت جوبز! نحن نساعدك في العثور على فرص عمل أفضل وتحسين مهاراتك.",
-        "hi": "स्मार्टजॉब्स में आपका स्वागत है! हम आपको बेहतर नौकरी के अवसर खोजने और अपने कौशल में सुधार करने में मदद करते हैं।"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Find a Job (Download App)",
-            "ar": "ابحث عن وظيفة (حمل التطبيق)",
-            "hi": "नौकरी खोजें (ऐप डाउनलोड करें)"
-          },
-          "action": "link:https://smart-jobs.org/app",
-          "next": "W.1"
-        },
-        {
-          "text": {
-            "en": "SmartJobs Helpline",
-            "ar": "خط مساعدة سمارت جوبز",
-            "hi": "स्मार्टजॉब्स हेल्पलाइन"
-          },
-          "action": "call:+971509292079",
-          "next": "W.1"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "W.1"
-        }
-      ]
-    },
-    "W.2.D": {
-      "id": "W.2.D",
-      "type": "menu",
-      "role": "worker",
-      "message": {
-        "en": "Join us for fun and talent! Here are our upcoming events for 2026.",
-        "ar": "انضم إلينا للمرح والموهبة! إليك فعالياتنا القادمة لعام 2026.",
-        "hi": "मौज-मस्ती और प्रतिभा के लिए हमसे जुड़ें! 2026 के लिए हमारे आगामी कार्यक्रम यहां दिए गए हैं।"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Smart Idol (March 21)",
-            "ar": "سمارت أيدول (21 مارس)",
-            "hi": "स्मार्ट आइडल (21 मार्च)"
-          },
-          "next": "W.1"
-        },
-        {
-          "text": {
-            "en": "Smart Chef (June 07)",
-            "ar": "سمارت شيف (07 يونيو)",
-            "hi": "स्मार्ट शेफ (07 जून)"
-          },
-          "next": "W.1"
-        },
-        {
-          "text": {
-            "en": "Smart Cup (Nov 14)",
-            "ar": "كأس سمارت (14 نوفمبر)",
-            "hi": "स्मार्ट कप (14 नवंबर)"
-          },
-          "next": "W.1"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "W.1"
-        }
-      ]
     },
     "W.2.A": {
       "id": "W.2.A",
@@ -496,6 +1535,68 @@
       "show_global": true,
       "back": "W.1"
     },
+    "W.2.B": {
+      "id": "W.2.B",
+      "type": "menu",
+      "role": "worker",
+      "message": {
+        "en": "What kind of help do you need?",
+        "ar": "ما نوع المساعدة التي تحتاجها؟",
+        "hi": "आपको किस प्रकार की सहायता चाहिए?"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Emergency help (urgent)",
+            "ar": "مساعدة طارئة (عاجلة)",
+            "hi": "आपातकालीन सहायता (तत्काल)"
+          },
+          "next": "W.3.B.1"
+        },
+        {
+          "text": {
+            "en": "Health or medical problem",
+            "ar": "مشكلة صحية أو طبية",
+            "hi": "स्वास्थ्य या चिकित्सा समस्या"
+          },
+          "next": "W.3.B.2"
+        },
+        {
+          "text": {
+            "en": "Problem at work",
+            "ar": "مشكلة في العمل",
+            "hi": "काम पर समस्या"
+          },
+          "next": "W.3.B.3"
+        },
+        {
+          "text": {
+            "en": "Need money advice",
+            "ar": "أحتاج إلى نصيحة مالية",
+            "hi": "पैसे की सलाह चाहिए"
+          },
+          "next": "W.3.B.4"
+        },
+        {
+          "text": {
+            "en": "Feeling sad or stressed (mental health)",
+            "ar": "أشعر بالحزن أو التوتر (الصحة النفسية)",
+            "hi": "उदास या तनावग्रस्त महसूस कर रहे हैं (मानसिक स्वास्थ्य)"
+          },
+          "next": "W.3.B.5"
+        },
+        {
+          "text": {
+            "en": "Other problem",
+            "ar": "مشكلة أخرى",
+            "hi": "अन्य समस्या"
+          },
+          "next": "W.3.B.6"
+        }
+      ],
+      "show_global": true,
+      "back": "W.1"
+    },
     "W.3.A.1": {
       "id": "W.3.A.1",
       "type": "menu",
@@ -541,446 +1642,6 @@
       ],
       "show_global": true,
       "back": "W.2.A"
-    },
-    "W.3.A.2": {
-      "id": "W.3.A.2",
-      "type": "menu",
-      "role": "worker",
-      "message": {
-        "en": "Which health initiative would you like to know more about?",
-        "ar": "أي مبادرة صحية تود معرفة المزيد عنها؟",
-        "hi": "आप किस स्वास्थ्य पहल के बारे में अधिक जानना चाहेंगे?"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Medical Check-ups",
-            "ar": "الفحوصات الطبية",
-            "hi": "चिकित्सा जांच"
-          },
-          "next": "W.4.B.2.c"
-        },
-        {
-          "text": {
-            "en": "Mental Health Support",
-            "ar": "دعم الصحة النفسية",
-            "hi": "मानसिक स्वास्थ्य सहायता"
-          },
-          "next": "W.3.B.5"
-        },
-        {
-          "text": {
-            "en": "Fitness Programs",
-            "ar": "برامج اللياقة البدنية",
-            "hi": "फिटनेस कार्यक्रम"
-          },
-          "next": "W.3.A.5"
-        },
-        {
-          "text": {
-            "en": "Go back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "W.2.A"
-        }
-      ]
-    },
-    "W.3.A.3": {
-      "id": "W.3.A.3",
-      "type": "menu",
-      "role": "worker",
-      "message": {
-        "en": "Which initiative would you like to know more about?",
-        "ar": "أي مبادرة تود معرفة المزيد عنها؟",
-        "hi": "आप किस पहल के बारे में अधिक जानना चाहेंगे?"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Educational Support",
-            "ar": "الدعم التعليمي",
-            "hi": "शैक्षिक सहायता"
-          },
-          "next": "W.4.A.3.a"
-        },
-        {
-          "text": {
-            "en": "Camp Visits",
-            "ar": "زيارات المخيم",
-            "hi": "कैंप का दौरा"
-          },
-          "next": "W.4.A.3.b"
-        },
-        {
-          "text": {
-            "en": "Recreational Activities",
-            "ar": "الأنشطة الترفيهية",
-            "hi": "मनोरंजक गतिविधियां"
-          },
-          "next": "W.4.A.3.c"
-        },
-        {
-          "text": {
-            "en": "Financial Literacy",
-            "ar": "محو الأمية المالية",
-            "hi": "वित्तीय साक्षरता"
-          },
-          "next": "W.4.A.3.d"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "W.2.A"
-        }
-      ]
-    },
-    "W.4.A.3.a": {
-      "id": "W.4.A.3.a",
-      "type": "info",
-      "role": "worker",
-      "message": {
-        "en": "We support children of blue-collar workers with scholarships and educational materials.",
-        "ar": "نحن ندعم أطفال العمال ذوي الياقات الزرقاء بالمنح الدراسية والمواد التعليمية.",
-        "hi": "हम स्कॉलरशिप और शैक्षिक सामग्री के साथ श्रमिकों के बच्चों का समर्थन करते हैं."
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "W.3.A.3"
-        }
-      ]
-    },
-    "W.4.A.3.b": {
-      "id": "W.4.A.3.b",
-      "type": "info",
-      "role": "worker",
-      "message": {
-        "en": "Our team visits labor camps regularly to distribute hygiene kits and food supplies.",
-        "ar": "يقوم فريقنا بزيارة مخيمات العمال بانتظام لتوزيع مستلزمات النظافة والمواد الغذائية.",
-        "hi": "हमारी टीम स्वच्छता किट और खाद्य आपूर्ति वितरित करने के लिए नियमित रूप से लेबर कैंपों का दौरा करती है."
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "W.3.A.3"
-        }
-      ]
-    },
-    "W.4.A.3.c": {
-      "id": "W.4.A.3.c",
-      "type": "info",
-      "role": "worker",
-      "message": {
-        "en": "We organize movie nights, yoga sessions, and picnics for workers.",
-        "ar": "ننظم ليالي سينمائية وجلسات يوغا ونزهات للعمال.",
-        "hi": "हम श्रमिकों के लिए मूवी नाइट्स, योग सत्र और पिकनिक का आयोजन करते हैं."
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "W.3.A.3"
-        }
-      ]
-    },
-    "W.4.A.3.d": {
-      "id": "W.4.A.3.d",
-      "type": "info",
-      "role": "worker",
-      "message": {
-        "en": "Learn how to save money and avoid debt through our financial literacy workshops.",
-        "ar": "تعلم كيفية توفير المال وتجنب الديون من خلال ورش عمل محو الأمية المالية لدينا.",
-        "hi": "हमारी वित्तीय साक्षरता कार्यशालाओं के माध्यम से पैसे बचाने और कर्ज से बचने का तरीका जानें."
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "W.3.A.3"
-        }
-      ]
-    },
-    "W.3.A.4": {
-      "id": "W.3.A.4",
-      "type": "menu",
-      "role": "worker",
-      "message": {
-        "en": "Which focused group would you like to know more about?",
-        "ar": "أي مجموعة مركزة تود معرفة المزيد عنها؟",
-        "hi": "आप किस विशेष समूह के बारे में अधिक जानना चाहेंगे?"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Smart Senior Citizen and Single Parent",
-            "ar": "كبار السن والآباء العازبين",
-            "hi": "वरिष्ठ नागरिक और एकल माता-पिता"
-          },
-          "next": "W.4.A.4.a"
-        },
-        {
-          "text": {
-            "en": "Smart Buddy",
-            "ar": "الرفيق الذكي",
-            "hi": "स्मार्ट बडी"
-          },
-          "next": "W.4.A.4.b"
-        },
-        {
-          "text": {
-            "en": "Smart Elder",
-            "ar": "الشيخ الذكي",
-            "hi": "स्मार्ट एल्डर"
-          },
-          "next": "W.4.A.4.c"
-        },
-        {
-          "text": {
-            "en": "Family Support",
-            "ar": "دعم الأسرة",
-            "hi": "पारिवारिक सहायता"
-          },
-          "next": "W.4.A.4.d"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "W.2.A"
-        }
-      ]
-    },
-    "W.4.A.4.a": {
-      "id": "W.4.A.4.a",
-      "type": "info",
-      "role": "worker",
-      "message": {
-        "en": "Special support programs for senior workers and single parents including medical aid.",
-        "ar": "برامج دعم خاصة للعمال المسنين والآباء العازبين تشمل المساعدة الطبية.",
-        "hi": "वरिष्ठ श्रमिकों और एकल माता-पिता के लिए चिकित्सा सहायता सहित विशेष सहायता कार्यक्रम."
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "W.3.A.4"
-        }
-      ]
-    },
-    "W.4.A.4.b": {
-      "id": "W.4.A.4.b",
-      "type": "info",
-      "role": "worker",
-      "message": {
-        "en": "Smart Buddy pairs workers with mentors for guidance and support.",
-        "ar": "يجمع برنامج الرفيق الذكي بين العمال والموجهين للتوجيه والدعم.",
-        "hi": "स्मार्ट बडी मार्गदर्शन और सहायता के लिए श्रमिकों को मेंटर्स के साथ जोड़ता है."
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "W.3.A.4"
-        }
-      ]
-    },
-    "W.4.A.4.c": {
-      "id": "W.4.A.4.c",
-      "type": "info",
-      "role": "worker",
-      "message": {
-        "en": "A program dedicated to the well-being and respect of elderly workers in camps.",
-        "ar": "برنامج مخصص لرفاهية واحترام العمال المسنين في المخيمات.",
-        "hi": "शिविरों में बुजुर्ग श्रमिकों की भलाई और सम्मान के लिए समर्पित एक कार्यक्रम."
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "W.3.A.4"
-        }
-      ]
-    },
-    "W.4.A.4.d": {
-      "id": "W.4.A.4.d",
-      "type": "info",
-      "role": "worker",
-      "message": {
-        "en": "Assistance for workers facing family emergencies back home.",
-        "ar": "مساعدة العمال الذين يواجهون حالات طوارئ عائلية في وطنهم.",
-        "hi": "घर वापस पारिवारिक आपात स्थिति का सामना कर रहे श्रमिकों के लिए सहायता."
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "W.3.A.4"
-        }
-      ]
-    },
-    "W.3.A.5": {
-      "id": "W.3.A.5",
-      "type": "menu",
-      "role": "worker",
-      "message": {
-        "en": "Which annual event would you like to know more about?",
-        "ar": "أي حدث سنوي تود معرفة المزيد عنه؟",
-        "hi": "आप किस वार्षिक कार्यक्रम के बारे में अधिक जानना चाहेंगे?"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "SmartLife Idol",
-            "ar": "سمارت لايف أيدول",
-            "hi": "स्मार्टलाइफ आइडल"
-          },
-          "next": "W.4.A.5.a"
-        },
-        {
-          "text": {
-            "en": "Sports Tournaments",
-            "ar": "البطولات الرياضية",
-            "hi": "खेल टूर्नामेंट"
-          },
-          "next": "W.4.A.5.b"
-        },
-        {
-          "text": {
-            "en": "Cultural Celebrations",
-            "ar": "الاحتفالات الثقافية",
-            "hi": "सांस्कृतिक उत्सव"
-          },
-          "next": "W.4.A.5.c"
-        },
-        {
-          "text": {
-            "en": "Recognition Ceremonies",
-            "ar": "حفلات التكريم",
-            "hi": "सम्मान समारोह"
-          },
-          "next": "W.4.A.5.d"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "W.2.A"
-        }
-      ]
-    },
-    "W.4.A.5.a": {
-      "id": "W.4.A.5.a",
-      "type": "info",
-      "role": "worker",
-      "message": {
-        "en": "SmartLife Idol is our biggest talent hunt for singing and dancing. Next event: March 21, 2026.",
-        "ar": "سمارت لايف أيدول هو أكبر بحث عن المواهب في الغناء والرقص. الحدث القادم: 21 مارس 2026.",
-        "hi": "स्मार्टलाइफ आइडल गायन और नृत्य के लिए हमारा सबसे बड़ा टैलेंट हंट है। अगला कार्यक्रम: 21 मार्च, 2026."
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "W.3.A.5"
-        }
-      ]
-    },
-    "W.4.A.5.b": {
-      "id": "W.4.A.5.b",
-      "type": "info",
-      "role": "worker",
-      "message": {
-        "en": "We host cricket, football, and volleyball tournaments throughout the year.",
-        "ar": "نستضيف بطولات الكريكيت وكرة القدم والكرة الطائرة على مدار العام.",
-        "hi": "हम साल भर क्रिकेट, फुटबॉल और वॉलीबॉल टूर्नामेंट आयोजित करते हैं."
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "W.3.A.5"
-        }
-      ]
-    },
-    "W.4.A.5.c": {
-      "id": "W.4.A.5.c",
-      "type": "info",
-      "role": "worker",
-      "message": {
-        "en": "Celebrating festivals like Eid, Diwali, and Christmas together.",
-        "ar": "الاحتفال بالمهرجانات مثل العيد وديوالي وعيد الميلاد معاً.",
-        "hi": "ईद, दिवाली और क्रिसमस जैसे त्योहार एक साथ मनाना."
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "W.3.A.5"
-        }
-      ]
-    },
-    "W.4.A.5.d": {
-      "id": "W.4.A.5.d",
-      "type": "info",
-      "role": "worker",
-      "message": {
-        "en": "Awards to recognize hardworking and inspiring workers in the community.",
-        "ar": "جوائز لتكريم العمال المجتهدين والملهمين في المجتمع.",
-        "hi": "समुदाय में मेहनती और प्रेरक श्रमिकों को पहचानने के लिए पुरस्कार."
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "W.3.A.5"
-        }
-      ]
     },
     "W.4.A.1.a": {
       "id": "W.4.A.1.a",
@@ -1616,68 +2277,6 @@
       "show_global": true,
       "back": "W.3.A.1"
     },
-    "W.2.B": {
-      "id": "W.2.B",
-      "type": "menu",
-      "role": "worker",
-      "message": {
-        "en": "What kind of help do you need?",
-        "ar": "ما نوع المساعدة التي تحتاجها؟",
-        "hi": "आपको किस प्रकार की सहायता चाहिए?"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Emergency help (urgent)",
-            "ar": "مساعدة طارئة (عاجلة)",
-            "hi": "आपातकालीन सहायता (तत्काल)"
-          },
-          "next": "W.3.B.1"
-        },
-        {
-          "text": {
-            "en": "Health or medical problem",
-            "ar": "مشكلة صحية أو طبية",
-            "hi": "स्वास्थ्य या चिकित्सा समस्या"
-          },
-          "next": "W.3.B.2"
-        },
-        {
-          "text": {
-            "en": "Problem at work",
-            "ar": "مشكلة في العمل",
-            "hi": "काम पर समस्या"
-          },
-          "next": "W.3.B.3"
-        },
-        {
-          "text": {
-            "en": "Need money advice",
-            "ar": "أحتاج إلى نصيحة مالية",
-            "hi": "पैसे की सलाह चाहिए"
-          },
-          "next": "W.3.B.4"
-        },
-        {
-          "text": {
-            "en": "Feeling sad or stressed (mental health)",
-            "ar": "أشعر بالحزن أو التوتر (الصحة النفسية)",
-            "hi": "उदास या तनावग्रस्त महसूस कर रहे हैं (मानसिक स्वास्थ्य)"
-          },
-          "next": "W.3.B.5"
-        },
-        {
-          "text": {
-            "en": "Other problem",
-            "ar": "مشكلة أخرى",
-            "hi": "अन्य समस्या"
-          },
-          "next": "W.3.B.6"
-        }
-      ],
-      "show_global": true,
-      "back": "W.1"
-    },
     "W.3.B.1": {
       "id": "W.3.B.1",
       "type": "action",
@@ -1707,48 +2306,6 @@
       ],
       "show_global": true,
       "back": "W.2.B"
-    },
-    "W.4.B.1.a": {
-      "id": "W.4.B.1.a",
-      "type": "form",
-      "role": "worker",
-      "title": {
-        "en": "Request Callback",
-        "ar": "طلب مكالمة",
-        "hi": "कॉल बैक अनुरोध"
-      },
-      "message": {
-        "en": "Please leave your number, and we will call you back urgently.",
-        "ar": "يرجى ترك رقمك، وسنعاود الاتصال بك بشكل عاجل.",
-        "hi": "कृपया अपना नंबर छोड़ें, और हम आपको तत्काल वापस कॉल करेंगे।"
-      },
-      "fields": [
-        {
-          "name": "mobile",
-          "type": "phone",
-          "question": {
-            "en": "Mobile Number:",
-            "ar": "رقم الهاتف المحمول:",
-            "hi": "मोबाइल नंबर:"
-          },
-          "required": true
-        }
-      ],
-      "confirmation": {
-        "en": "Received. We will call {mobile} shortly.",
-        "ar": "تم الاستلام. سنتصل بـ {mobile} قريباً.",
-        "hi": "प्राप्त हुआ। हम जल्द ही {mobile} पर कॉल करेंगे।"
-      },
-      "completion_options": [
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "W.1"
-        }
-      ]
     },
     "W.3.B.2": {
       "id": "W.3.B.2",
@@ -1860,34 +2417,6 @@
         }
       ],
       "webhook": "/api/worker/support/medical"
-    },
-    "W.3.B.3": {
-      "id": "W.3.B.3",
-      "type": "info",
-      "role": "worker",
-      "message": {
-        "en": "If you are facing issues at work, we can guide you to the correct legal authorities or support channels.",
-        "ar": "إذا كنت تواجه مشاكل في العمل، يمكننا توجيهك إلى السلطات القانونية أو قنوات الدعم الصحيحة.",
-        "hi": "यदि आप काम पर समस्याओं का सामना कर रहे हैं, तो हम आपको सही कानूनी अधिकारियों या सहायता चैनलों के लिए मार्गदर्शन कर सकते हैं।"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Request a callback",
-            "ar": "طلب معاودة الاتصال",
-            "hi": "कॉल बैक का अनुरोध करें"
-          },
-          "next": "W.4.B.1.a"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "W.2.B"
-        }
-      ]
     },
     "W.3.B.4": {
       "id": "W.3.B.4",
@@ -2038,67 +2567,14 @@
       ],
       "webhook": "/api/worker/support/counseling"
     },
-    "W.3.B.6": {
-      "id": "W.3.B.6",
-      "type": "form",
-      "role": "worker",
-      "title": {
-        "en": "General Support",
-        "ar": "دعم عام",
-        "hi": "सामान्य सहायता"
-      },
-      "message": {
-        "en": "Please describe your issue so we can help you:",
-        "ar": "يرجى وصف مشكلتك حتى نتمكن من مساعدتك:",
-        "hi": "कृपया अपनी समस्या का वर्णन करें ताकि हम आपकी सहायता कर सकें:"
-      },
-      "fields": [
-        {
-          "name": "issue_description",
-          "type": "textarea",
-          "question": {
-            "en": "What is the problem?",
-            "ar": "ما هي المشكلة؟",
-            "hi": "क्या समस्या है?"
-          },
-          "required": true
-        },
-        {
-          "name": "mobile",
-          "type": "phone",
-          "question": {
-            "en": "Your mobile number?",
-            "ar": "رقم هاتفك المحمول؟",
-            "hi": "आपका मोबाइल नंबर?"
-          },
-          "required": true
-        }
-      ],
-      "confirmation": {
-        "en": "Thank you. We will contact you at {mobile} soon.",
-        "ar": "شكراً لك. سنتصل بك على {mobile} قريباً.",
-        "hi": "धन्यवाद। हम जल्द ही आपसे {mobile} पर संपर्क करेंगे।"
-      },
-      "completion_options": [
-        {
-          "text": {
-            "en": "Back to main menu",
-            "ar": "العودة إلى القائمة الرئيسية",
-            "hi": "मुख्य मेनू पर वापस जाएं"
-          },
-          "next": "W.1"
-        }
-      ],
-      "webhook": "/api/worker/support/counseling"
-    },
     "D.1": {
       "id": "D.1",
       "type": "menu",
       "role": "donor",
       "message": {
-        "en": "Welcome Donor! Thank you for supporting frontline workers. How can we help you today?",
-        "ar": "مرحباً متبرع! شكراً لدعمك. كيف يمكننا مساعدتك اليوم?",
-        "hi": "दाता को स्वागत है! धन्यवाद देने के लिए धन्यवाद। हम आपकी आज कैसे मदद कर सकते हैं?"
+        "en": "Welcome! Thank you for your interest in supporting frontline workers. How can we help you today?",
+        "ar": "مرحباً! شكراً لاهتمامك بدعم عمال الخطوط الأمامية. كيف يمكننا مساعدتك اليوم؟",
+        "hi": "स्वागत है! फ्रंटलाइन कर्मचारियों का समर्थन करने में आपकी रुचि के लिए धन्यवाद। हम आज आपकी कैसे मदद कर सकते हैं?"
       },
       "options": [
         {
@@ -2107,39 +2583,47 @@
             "ar": "تبرع الآن",
             "hi": "अभी दान करें"
           },
-          "next": "D.2.A"
+          "next": "D.DONATE"
         },
         {
           "text": {
-            "en": "Know more about SmartLife",
-            "ar": "معرفة المزيد عن SmartLife",
-            "hi": "SmartLife के बारे में जानें"
-          },
-          "next": "D.2.B"
-        },
-        {
-          "text": {
-            "en": "See projects & impact",
+            "en": "See Projects & Impact",
             "ar": "شاهد المشاريع والتأثير",
             "hi": "परियोजनाएं और प्रभाव देखें"
           },
-          "next": "D.2.C"
+          "next": "D.PROJECTS"
         },
         {
           "text": {
-            "en": "Media / press kit",
-            "ar": "وسائل الإعلام / خطة الصحافة",
-            "hi": "मीडिया / प्रेस किट"
+            "en": "Media / Press / Logo Use",
+            "ar": "وسائل الإعلام / الصحافة",
+            "hi": "मीडिया / प्रेस"
           },
-          "next": "D.2.D"
+          "next": "D.MEDIA"
         },
         {
           "text": {
-            "en": "Contact us",
-            "ar": "اتصل بنا",
-            "hi": "हमसे संपर्क करें"
+            "en": "Contact / Visit Us",
+            "ar": "اتصل بنا / زيارة",
+            "hi": "संपर्क करें / हमसे मिलें"
           },
-          "next": "D.2.E"
+          "next": "D.CONTACT"
+        },
+        {
+          "text": {
+            "en": "Newsletter / Updates",
+            "ar": "النشرة الإخبارية",
+            "hi": "न्यूज़लेटर / अपडेट"
+          },
+          "next": "D.NEWSLETTER"
+        },
+        {
+          "text": {
+            "en": "Other Questions",
+            "ar": "أسئلة أخرى",
+            "hi": "अन्य प्रश्न"
+          },
+          "next": "D.FAQ"
         },
         {
           "text": {
@@ -2149,7 +2633,8 @@
           },
           "next": "M.1"
         }
-      ]
+      ],
+      "show_global": true
     },
     "D.2.A": {
       "id": "D.2.A",
@@ -3858,75 +4343,6 @@
         }
       ]
     },
-    "D.1": {
-      "id": "D.1",
-      "type": "menu",
-      "role": "donor",
-      "message": {
-        "en": "Welcome! Thank you for your interest in supporting frontline workers. How can we help you today?",
-        "ar": "مرحباً! شكراً لاهتمامك بدعم عمال الخطوط الأمامية. كيف يمكننا مساعدتك اليوم؟",
-        "hi": "स्वागत है! फ्रंटलाइन कर्मचारियों का समर्थन करने में आपकी रुचि के लिए धन्यवाद। हम आज आपकी कैसे मदद कर सकते हैं?"
-      },
-      "options": [
-        {
-          "text": {
-            "en": "Donate Now",
-            "ar": "تبرع الآن",
-            "hi": "अभी दान करें"
-          },
-          "next": "D.DONATE"
-        },
-        {
-          "text": {
-            "en": "See Projects & Impact",
-            "ar": "شاهد المشاريع والتأثير",
-            "hi": "परियोजनाएं और प्रभाव देखें"
-          },
-          "next": "D.PROJECTS"
-        },
-        {
-          "text": {
-            "en": "Media / Press / Logo Use",
-            "ar": "وسائل الإعلام / الصحافة",
-            "hi": "मीडिया / प्रेस"
-          },
-          "next": "D.MEDIA"
-        },
-        {
-          "text": {
-            "en": "Contact / Visit Us",
-            "ar": "اتصل بنا / زيارة",
-            "hi": "संपर्क करें / हमसे मिलें"
-          },
-          "next": "D.CONTACT"
-        },
-        {
-          "text": {
-            "en": "Newsletter / Updates",
-            "ar": "النشرة الإخبارية",
-            "hi": "न्यूज़लेटर / अपडेट"
-          },
-          "next": "D.NEWSLETTER"
-        },
-        {
-          "text": {
-            "en": "Other Questions",
-            "ar": "أسئلة أخرى",
-            "hi": "अन्य प्रश्न"
-          },
-          "next": "D.FAQ"
-        },
-        {
-          "text": {
-            "en": "Back",
-            "ar": "رجوع",
-            "hi": "वापस"
-          },
-          "next": "M.1"
-        }
-      ],
-      "show_global": true
-    },
     "D.DONATE": {
       "id": "D.DONATE",
       "type": "action",
@@ -4868,6 +5284,27 @@
           "next": "M.1"
         }
       ]
+    },
+    "C.QUESTION_NOTED": {
+      "id": "C.QUESTION_NOTED",
+      "type": "info",
+      "role": "company",
+      "message": {
+        "en": "Thank you for your question. Please contact us or request a meeting for detailed information.",
+        "ar": "شكراً لسؤالك. يرجى الاتصال بنا أو طلب اجتماع للحصول على معلومات مفصلة.",
+        "hi": "आपके प्रश्न के लिए धन्यवाद। विस्तृत जानकारी के लिए कृपया हमसे संपर्क करें।"
+      },
+      "options": [
+        {
+          "text": {
+            "en": "Back",
+            "ar": "رجوع",
+            "hi": "वापस"
+          },
+          "next": "C.1"
+        }
+      ],
+      "show_global": true
     }
   },
   "global_options": [
