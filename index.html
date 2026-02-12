@@ -1,410 +1,305 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>SmartLife Chatbot</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<title>SmartLife Chatbot</title>
 
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(135deg, #2c5364 0%, #203a43 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-        .chat {
-            width: 100%;
-            max-width: 500px;
-            height: 700px;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.5);
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-        }
+<style>
+:root {
+    --blue-main: #001f54;
+    --blue-deep: #001840;
+    --gold-accent: #c9a961;
+    --gold-light: #d4b56f;
+    --charcoal-bg: #2c5364;
+    --offwhite: #f5f5f5;
+    --border: #e0e0e0;
+}
 
-        .header {
-            background: linear-gradient(135deg, #001f54 0%, #000d2b 100%);
-            color: white;
-            padding: 30px 24px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .header::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><pattern id="islamic-pattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse"><g opacity="0.15"><circle cx="100" cy="100" r="3" fill="%23c9a961"/><circle cx="100" cy="100" r="20" fill="none" stroke="%23c9a961" stroke-width="1"/><circle cx="100" cy="100" r="35" fill="none" stroke="%23c9a961" stroke-width="0.8"/><circle cx="100" cy="100" r="50" fill="none" stroke="%23c9a961" stroke-width="0.6"/><circle cx="100" cy="100" r="65" fill="none" stroke="%23c9a961" stroke-width="0.5"/><circle cx="100" cy="100" r="80" fill="none" stroke="%23c9a961" stroke-width="0.4"/></g><g opacity="0.2"><path d="M100,40 L115,70 L100,100 L85,70 Z" fill="none" stroke="%23c9a961" stroke-width="1.2"/><path d="M100,40 L115,70 L100,100 L85,70 Z" fill="none" stroke="%23c9a961" stroke-width="1.2" transform="rotate(45 100 100)"/><path d="M100,40 L115,70 L100,100 L85,70 Z" fill="none" stroke="%23c9a961" stroke-width="1.2" transform="rotate(90 100 100)"/><path d="M100,40 L115,70 L100,100 L85,70 Z" fill="none" stroke="%23c9a961" stroke-width="1.2" transform="rotate(135 100 100)"/><path d="M100,40 L115,70 L100,100 L85,70 Z" fill="none" stroke="%23c9a961" stroke-width="1.2" transform="rotate(180 100 100)"/><path d="M100,40 L115,70 L100,100 L85,70 Z" fill="none" stroke="%23c9a961" stroke-width="1.2" transform="rotate(225 100 100)"/><path d="M100,40 L115,70 L100,100 L85,70 Z" fill="none" stroke="%23c9a961" stroke-width="1.2" transform="rotate(270 100 100)"/><path d="M100,40 L115,70 L100,100 L85,70 Z" fill="none" stroke="%23c9a961" stroke-width="1.2" transform="rotate(315 100 100)"/></g><g opacity="0.25"><path d="M100,60 L130,100 L100,140 L70,100 Z" fill="none" stroke="%23c9a961" stroke-width="1"/><path d="M100,60 L130,100 L100,140 L70,100 Z" fill="none" stroke="%23c9a961" stroke-width="1" transform="rotate(45 100 100)"/></g><g opacity="0.18"><path d="M60,60 L140,60 L140,140 L60,140 Z" fill="none" stroke="%23c9a961" stroke-width="0.8" transform="rotate(45 100 100)"/><circle cx="100" cy="100" r="42" fill="none" stroke="%23c9a961" stroke-width="0.6" stroke-dasharray="3,3"/></g><g opacity="0.22"><polygon points="100,30 110,50 130,55 115,70 118,90 100,80 82,90 85,70 70,55 90,50" fill="none" stroke="%23c9a961" stroke-width="0.8"/><polygon points="100,30 110,50 130,55 115,70 118,90 100,80 82,90 85,70 70,55 90,50" fill="none" stroke="%23c9a961" stroke-width="0.8" transform="rotate(90 100 100)"/><polygon points="100,30 110,50 130,55 115,70 118,90 100,80 82,90 85,70 70,55 90,50" fill="none" stroke="%23c9a961" stroke-width="0.8" transform="rotate(180 100 100)"/><polygon points="100,30 110,50 130,55 115,70 118,90 100,80 82,90 85,70 70,55 90,50" fill="none" stroke="%23c9a961" stroke-width="0.8" transform="rotate(270 100 100)"/></g><g opacity="0.15"><line x1="100" y1="20" x2="100" y2="180" stroke="%23c9a961" stroke-width="0.5"/><line x1="20" y1="100" x2="180" y2="100" stroke="%23c9a961" stroke-width="0.5"/><line x1="35" y1="35" x2="165" y2="165" stroke="%23c9a961" stroke-width="0.5"/><line x1="165" y1="35" x2="35" y2="165" stroke="%23c9a961" stroke-width="0.5"/></g></pattern></defs><rect width="200" height="200" fill="url(%23islamic-pattern)"/></svg>');
-            background-size: 200px 200px;
-            opacity: 0.8;
-            z-index: 0;
-            animation: patternMove 0s linear infinite;
-        }
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #2c5364 0%, #203a43 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+}
 
-        @keyframes patternMove {
-            0% {
-                background-position: 0 0;
-            }
-            100% {
-                background-position: 200px 200px;
-            }
-        }
+/* CHAT CONTAINER */
+.chat {
+    width: 100%;
+    max-width: 680px;
+    height: 680px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
 
-        .header-content {
-            position: relative;
-            z-index: 1;
-        }
+/* HEADER */
+.header {
+    position: relative;
+    padding: 30px 24px;
+    background: linear-gradient(135deg, #001f54 0%, #000d2b 100%);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
 
-        .header h1 {
-            margin: 0 0 8px 0;
-            font-size: 26px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-        }
+/* ISLAMIC PATTERN */
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><pattern id="islamic-pattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse"><g opacity="0.15"><circle cx="100" cy="100" r="3" fill="%23c9a961"/><circle cx="100" cy="100" r="20" fill="none" stroke="%23c9a961" stroke-width="1"/><circle cx="100" cy="100" r="35" fill="none" stroke="%23c9a961" stroke-width="0.8"/><circle cx="100" cy="100" r="50" fill="none" stroke="%23c9a961" stroke-width="0.6"/><circle cx="100" cy="100" r="65" fill="none" stroke="%23c9a961" stroke-width="0.5"/><circle cx="100" cy="100" r="80" fill="none" stroke="%23c9a961" stroke-width="0.4"/></g><g opacity="0.2"><path d="M100,40 L115,70 L100,100 L85,70 Z" fill="none" stroke="%23c9a961" stroke-width="1.2"/><path d="M100,40 L115,70 L100,100 L85,70 Z" fill="none" stroke="%23c9a961" stroke-width="1.2" transform="rotate(45 100 100)"/><path d="M100,40 L115,70 L100,100 L85,70 Z" fill="none" stroke="%23c9a961" stroke-width="1.2" transform="rotate(90 100 100)"/><path d="M100,40 L115,70 L100,100 L85,70 Z" fill="none" stroke="%23c9a961" stroke-width="1.2" transform="rotate(135 100 100)"/><path d="M100,40 L115,70 L100,100 L85,70 Z" fill="none" stroke="%23c9a961" stroke-width="1.2" transform="rotate(180 100 100)"/><path d="M100,40 L115,70 L100,100 L85,70 Z" fill="none" stroke="%23c9a961" stroke-width="1.2" transform="rotate(225 100 100)"/><path d="M100,40 L115,70 L100,100 L85,70 Z" fill="none" stroke="%23c9a961" stroke-width="1.2" transform="rotate(270 100 100)"/><path d="M100,40 L115,70 L100,100 L85,70 Z" fill="none" stroke="%23c9a961" stroke-width="1.2" transform="rotate(315 100 100)"/></g><g opacity="0.25"><path d="M100,60 L130,100 L100,140 L70,100 Z" fill="none" stroke="%23c9a961" stroke-width="1"/><path d="M100,60 L130,100 L100,140 L70,100 Z" fill="none" stroke="%23c9a961" stroke-width="1" transform="rotate(45 100 100)"/></g><g opacity="0.18"><path d="M60,60 L140,60 L140,140 L60,140 Z" fill="none" stroke="%23c9a961" stroke-width="0.8" transform="rotate(45 100 100)"/><circle cx="100" cy="100" r="42" fill="none" stroke="%23c9a961" stroke-width="0.6" stroke-dasharray="3,3"/></g><g opacity="0.22"><polygon points="100,30 110,50 130,55 115,70 118,90 100,80 82,90 85,70 70,55 90,50" fill="none" stroke="%23c9a961" stroke-width="0.8"/><polygon points="100,30 110,50 130,55 115,70 118,90 100,80 82,90 85,70 70,55 90,50" fill="none" stroke="%23c9a961" stroke-width="0.8" transform="rotate(90 100 100)"/><polygon points="100,30 110,50 130,55 115,70 118,90 100,80 82,90 85,70 70,55 90,50" fill="none" stroke="%23c9a961" stroke-width="0.8" transform="rotate(180 100 100)"/><polygon points="100,30 110,50 130,55 115,70 118,90 100,80 82,90 85,70 70,55 90,50" fill="none" stroke="%23c9a961" stroke-width="0.8" transform="rotate(270 100 100)"/></g><g opacity="0.15"><line x1="100" y1="20" x2="100" y2="180" stroke="%23c9a961" stroke-width="0.5"/><line x1="20" y1="100" x2="180" y2="100" stroke="%23c9a961" stroke-width="0.5"/><line x1="35" y1="35" x2="165" y2="165" stroke="%23c9a961" stroke-width="0.5"/><line x1="165" y1="35" x2="35" y2="165" stroke="%23c9a961" stroke-width="0.5"/></g></pattern></defs><rect width="200" height="200" fill="url(%23islamic-pattern)"/></svg>');
+    background-size: 200px 200px;
+    background-position: center;
+    opacity: 0.8;
+    z-index: 0;
+}
 
-        .header p {
-            margin: 0;
-            opacity: 0.95;
-            font-size: 14px;
-            font-weight: 300;
-            letter-spacing: 0.3px;
-        }
+/* HEADER CONTENT */
+.header-content {
+    position: relative;
+    z-index: 1;
+}
 
-        .messages {
-            flex: 1;
-            padding: 24px;
-            overflow-y: auto;
-            background: linear-gradient(to bottom, #f5f5f5 0%, #ffffff 100%);
-        }
+.header h1 {
+    margin: 0 0 8px 0;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+}
 
-        .messages::-webkit-scrollbar {
-            width: 6px;
-        }
+.header p {
+    margin: 0;
+    opacity: 0.95;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
 
-        .messages::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
+.badge {
+    display: inline-block;
+    background: rgba(201, 169, 97, 0.25);
+    color: #c9a961;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-top: 8px;
+    backdrop-filter: blur(10px);
+    font-weight: 500;
+}
 
-        .messages::-webkit-scrollbar-thumb {
-            background: #c9a961;
-            border-radius: 3px;
-        }
+/* MESSAGES AREA */
+.messages {
+    flex: 1;
+    padding: 28px;
+    background: linear-gradient(to bottom, #f5f5f5 0%, #ffffff 100%);
+    overflow-y: auto;
+}
 
-        .messages::-webkit-scrollbar-thumb:hover {
-            background: #b8955a;
-        }
+.messages::-webkit-scrollbar {
+    width: 6px;
+}
 
-        .message {
-            margin-bottom: 20px;
-            display: flex;
-            animation: slideIn 0.3s ease-out;
-        }
+.messages::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
 
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+.messages::-webkit-scrollbar-thumb {
+    background: #c9a961;
+    border-radius: 3px;
+}
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
+.messages::-webkit-scrollbar-thumb:hover {
+    background: #b8955a;
+}
 
-        .bot {
-            justify-content: flex-start;
-        }
+/* MESSAGE BLOCKS */
+.message {
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: column;
+}
 
-        .user {
-            justify-content: flex-end;
-            margin-bottom: 24px;
-        }
+.bot {
+    align-items: flex-start;
+}
 
-        .message-content {
-            width: 100%;
-            max-width: 85%;
-            padding: 14px 18px;
-            border-radius: 18px;
-            line-height: 1.5;
-            font-size: 15px;
-        }
+.user {
+    align-items: flex-end;
+}
 
-        .bot .message-content {
-            background: white;
-            color: #2c3e50;
-            border: 1px solid #e0e0e0;
-            border-bottom-left-radius: 4px;
-            box-shadow: 0 2px 10px rgba(44, 83, 100, 0.1);
-        }
+.message-content {
+    max-width: 75%;
+    padding: 14px 20px;
+    font-size: 14.5px;
+    line-height: 1.6;
+    border-radius: 18px;
+}
 
-        .user .message-content {
-            background: linear-gradient(135deg, #001f54 0%, #001840 100%);
-            color: white;
-            border-bottom-right-radius: 4px;
-            box-shadow: 0 2px 12px rgba(0, 31, 84, 0.3);
-            text-align: right;
-        }
+/* BOT MESSAGE */
+.bot .message-content {
+    background: white;
+    color: #2c3e50;
+    border: 1px solid #e0e0e0;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 2px 10px rgba(44, 83, 100, 0.1);
+}
 
-        .typing-indicator {
-            display: none;
-            padding: 14px 18px;
-            background: white;
-            border-radius: 18px;
-            border-bottom-left-radius: 4px;
-            max-width: 70px;
-            border: 1px solid #e0e0e0;
-            box-shadow: 0 2px 10px rgba(44, 83, 100, 0.1);
-        }
+/* USER MESSAGE */
+.user .message-content {
+    background: linear-gradient(135deg, #001f54 0%, #001840 100%);
+    color: white;
+    font-weight: 600;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0 2px 12px rgba(0, 31, 84, 0.3);
+}
 
-        .typing-indicator.active {
-            display: flex;
-            gap: 4px;
-            align-items: center;
-        }
+/* OPTIONS */
+.options {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: flex-start;
+}
 
-        .typing-dot {
-            width: 8px;
-            height: 8px;
-            background: #c9a961;
-            border-radius: 50%;
-            animation: typing 1.4s infinite;
-        }
+.option-btn {
+    background: #0b2540;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
 
-        .typing-dot:nth-child(2) {
-            animation-delay: 0s;
-        }
+.option-btn:hover {
+    background: #163a5f;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
 
-        .typing-dot:nth-child(3) {
-            animation-delay: 0s;
-        }
+.option-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(201, 169, 97, 0.3);
+}
 
-        @keyframes typing {
-            0%, 60%, 100% {
-                opacity: 0.3;
-                transform: translateY(0);
-            }
-            30% {
-                opacity: 1;
-                transform: translateY(-8px);
-            }
-        }
+/* FOOTER */
+.input-area {
+    padding: 22px;
+    background: white;
+    border-top: 1px solid var(--border);
+}
 
-        .options {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 12px;
-            width: 100%;
-            padding: 0;
-            animation: fadeIn 0.5s ease-out;
-        }
+input {
+    width: 100%;
+    padding: 14px 20px;
+    border: 2px solid var(--border);
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14.5px;
+    outline: none;
+    background: #f8f8f8;
+    transition: all 0.3s ease;
+}
 
-        .option-btn {
-            background: linear-gradient(135deg, #c9a961 0%, #d4b56f 100%);
-            color: white;
-            border: none;
-            padding: 11px 20px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            flex: 1 1 140px;
-            text-align: center;
-            box-shadow: 0 3px 8px rgba(201, 169, 97, 0.3);
-        }
+input:focus {
+    border-color: #c9a961;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(201, 169, 97, 0.15);
+}
 
-        .option-btn:hover {
-            background: linear-gradient(135deg, #d4b56f 0%, #c9a961 100%);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(201, 169, 97, 0.4);
-        }
-
-        .option-btn:active {
-            transform: translateY(0);
-            box-shadow: 0 2px 8px rgba(201, 169, 97, 0.3);
-        }
-
-        .input-area {
-            padding: 20px 24px;
-            background: white;
-            border-top: 1px solid #e0e0e0;
-        }
-
-        input {
-            width: 100%;
-            padding: 14px 20px;
-            border: 2px solid #e0e0e0;
-            border-radius: 25px;
-            font-size: 15px;
-            outline: none;
-            transition: all 0.3s ease;
-            background: #f8f8f8;
-        }
-
-        input:focus {
-            border-color: #c9a961;
-            background: white;
-            box-shadow: 0 0 0 3px rgba(201, 169, 97, 0.15);
-        }
-
-        input::placeholder {
-            color: #999;
-        }
-
-        .badge {
-            display: inline-block;
-            background: rgba(201, 169, 97, 0.25);
-            color: #c9a961;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            margin-top: 8px;
-            backdrop-filter: blur(10px);
-            font-weight: 500;
-        }
-    </style>
+input::placeholder {
+    color: #999;
+}
+</style>
 </head>
 
 <body>
-    <div class="chat" id="chat">
-        <div class="header">
-            <div class="header-content">
-                <h1>SmartLife Assistant</h1>
-                <p>Empowering Dubai Workers</p>
-                <div class="badge">Always Here to Help</div>
-            </div>
-        </div>
-        <div class="messages" id="messages">
-            <div class="typing-indicator" id="typingIndicator">
-                <div class="typing-dot"></div>
-                <div class="typing-dot"></div>
-                <div class="typing-dot"></div>
-            </div>
-        </div>
-        <div class="input-area">
-            <input type="text" id="input" placeholder="Type 1, 2, 3... or click buttons" />
+
+<div class="chat">
+    <div class="header">
+        <div class="header-content">
+            <h1>SmartLife Assistant</h1>
+            <p>Empowering Dubai Workers</p>
+            <div class="badge">Always Here to Help</div>
         </div>
     </div>
 
-    <script>
-        const ws = new WebSocket('ws://localhost:3000');
-        const messagesEl = document.getElementById('messages');
-        const inputEl = document.getElementById('input');
-        const typingIndicator = document.getElementById('typingIndicator');
+    <div class="messages" id="messages"></div>
 
-        ws.onopen = () => console.log('✅ Connected');
+    <div class="input-area">
+        <input id="input" placeholder="Type 1, 2, 3… or select an option" />
+    </div>
+</div>
 
-        inputEl.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                const text = inputEl.value.trim();
-                if (text) {
-                    addMessage(text, 'user');
-                    ws.send(text);
-                    inputEl.value = '';
-                    showTypingIndicator();
-                }
-            }
+<script>
+const ws = new WebSocket('ws://localhost:3000');
+const messagesEl = document.getElementById('messages');
+const inputEl = document.getElementById('input');
+
+inputEl.addEventListener('keypress', e => {
+    if (e.key === 'Enter' && inputEl.value.trim()) {
+        addMessage(inputEl.value, 'user');
+        ws.send(inputEl.value);
+        inputEl.value = '';
+    }
+});
+
+function addMessage(text, sender, options = []) {
+    const div = document.createElement('div');
+    div.className = `message ${sender}`;
+
+    let html = `<div class="message-content">${text}</div>`;
+
+    if (options.length) {
+        html += `<div class="options">`;
+        options.forEach(o => {
+            html += `<button class="option-btn" onclick="selectOption(${o.index})">${o.text}</button>`;
         });
+        html += `</div>`;
+    }
 
-        function showTypingIndicator() {
-            typingIndicator.classList.add('active');
-            messagesEl.scrollTop = messagesEl.scrollHeight;
-        }
+    div.innerHTML = html;
+    messagesEl.appendChild(div);
+    messagesEl.scrollTop = messagesEl.scrollHeight;
+}
 
-        function hideTypingIndicator() {
-            typingIndicator.classList.remove('active');
-        }
+function selectOption(i) {
+    addMessage(i.toString(), 'user');
+    ws.send(i.toString());
+}
 
-        function addMessage(text, sender, options = []) {
-            hideTypingIndicator();
-            
-            const div = document.createElement('div');
-            div.className = `message ${sender}`;
+ws.onmessage = e => {
+    const data = JSON.parse(e.data);
+    addMessage(data.message, 'bot', data.options);
+};
+</script>
 
-            // Create message text block
-            const msgBlock = document.createElement('div');
-            msgBlock.className = 'message-content';
-            msgBlock.innerText = text;
-            div.appendChild(msgBlock);
-
-            // If there are options, create a separate options block below the message
-            if (options.length) {
-                const opts = document.createElement('div');
-                opts.className = 'options';
-                options.forEach(option => {
-                    const btn = document.createElement('button');
-                    btn.className = 'option-btn';
-                    btn.innerText = option.text;
-                    btn.onclick = () => selectOption(option.index);
-                    opts.appendChild(btn);
-                });
-                div.appendChild(opts);
-            }
-
-            messagesEl.appendChild(div);
-            // Scroll to the start of the newly added message
-            const targetTop = Math.max(0, div.offsetTop - 8);
-            messagesEl.scrollTop = targetTop;
-        }
-
-        function selectOption(index) {
-            addMessage(index.toString(), 'user');
-            ws.send(index.toString());
-            showTypingIndicator();
-        }
-
-        // Handle URL actions from bot responses
-        function handleAction(action) {
-            if (!action) return;
-
-            if (action.type === 'open_url' && action.url) {
-                window.open(action.url, '_blank');
-            } else if (action.type === 'open_email' && action.email) {
-                window.location.href = 'mailto:' + action.email;
-            } else if (action.type === 'open_phone' && action.phone) {
-                window.location.href = 'tel:' + action.phone;
-            } else if (action.type === 'open_map' && action.url) {
-                window.open(action.url, '_blank');
-            }
-        }
-
-        ws.onmessage = (event) => {
-            const data = JSON.parse(event.data);
-            addMessage(data.message, 'bot', data.options);
-            if (data.action) {
-                // Delay action by 1.5 seconds so user can see the message first
-                setTimeout(() => handleAction(data.action), 1500);
-            }
-        };
-    </script>
 </body>
-
 </html>
