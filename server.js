@@ -88,7 +88,7 @@ function sendMessage(clientId) {
 function getNodeOptions(client, node) {
   let options = [];
 
-
+  // Language selection node: always show English labels for language options
   if (client.currentNode === 'L.1' && node.options) {
     options = node.options.map((opt, index) => ({
       index: index + 1,
@@ -97,7 +97,7 @@ function getNodeOptions(client, node) {
     return options;
   }
 
-
+  // Build node's own options from the JSON
   if (node.options) {
     options = node.options.map((opt, index) => ({
       index: index + 1,
@@ -105,16 +105,26 @@ function getNodeOptions(client, node) {
     }));
   }
 
-
+  // Only add auto-generated "Go Back" if node has `back` property
+  // AND the node's own options don't already contain a "Back" option
+  // to prevent duplicate Back buttons
   if (node.back && client.currentNode !== 'L.1') {
-    options.push({
-      index: options.length + 1,
-      text: getBackText(client.language),
-      action: 'back'
+    const hasBackInOptions = node.options && node.options.some(opt => {
+      const text = (opt.text[client.language] || opt.text.en || '').toLowerCase().trim();
+      return text === 'back' || text === 'go back' || text === '⬅️ go back'
+        || text === 'رجوع' || text === 'वापस';
     });
+
+    if (!hasBackInOptions) {
+      options.push({
+        index: options.length + 1,
+        text: getBackText(client.language),
+        action: 'back'
+      });
+    }
   }
 
-
+  // Add global options (Main Menu, Change Language, End Chat) if node has show_global
   if (node.show_global && client.currentNode !== 'L.1' && chatbotData.global_options) {
     chatbotData.global_options.forEach(globalOpt => {
       options.push({
@@ -142,7 +152,7 @@ function handleMessage(clientId, message) {
 
   const node = chatbotData.nodes[client.currentNode];
 
-
+  // Handle form input first
   if (client.formState) {
     handleFormInput(clientId, message);
     return;
@@ -151,11 +161,9 @@ function handleMessage(clientId, message) {
   // Handle simple input nodes (like newsletter name/email)
   if (client.inputState) {
     console.log(`📝 [${clientId}] Input received: ${message}`);
-    // Store the input if needed (for future API calls)
     if (!client.collectedData) client.collectedData = {};
     client.collectedData[client.inputState.nodeId] = message;
 
-    // Move to next node
     client.currentNode = client.inputState.next;
     client.inputState = null;
     sendMessage(clientId);
@@ -164,7 +172,7 @@ function handleMessage(clientId, message) {
 
   const optionIndex = parseInt(message);
 
-
+  // Language selection node: special handling
   if (client.currentNode === 'L.1' && !isNaN(optionIndex) && node.options[optionIndex - 1]) {
     const option = node.options[optionIndex - 1];
     client.language = option.action.split(':')[1];
@@ -174,53 +182,126 @@ function handleMessage(clientId, message) {
     return;
   }
 
-
   if (!isNaN(optionIndex)) {
-    let handled = false;
+    // Build the same flat option list that was displayed to the user
+    // so we can correctly map the chosen number to the right action
+    const displayedOptions = getDisplayedOptionsMeta(client, node);
 
+    if (optionIndex >= 1 && optionIndex <= displayedOptions.length) {
+      const chosen = displayedOptions[optionIndex - 1];
 
-    if (node.options && node.options[optionIndex - 1]) {
-      const option = node.options[optionIndex - 1];
-      handled = true;
+      if (chosen.source === 'node') {
+        // This is a regular node option from the JSON
+        const option = node.options[chosen.originalIndex];
 
-      if (option.action?.startsWith('set_language:')) {
-        client.language = option.action.split(':')[1];
-      } else if (option.action === 'back' && node.back) {
+        if (option.action && option.action.startsWith('set_language:')) {
+          client.language = option.action.split(':')[1];
+        }
+
+        // Navigate to next node if it has one
+        if (option.next) {
+          client.currentNode = option.next;
+        }
+        // If action is call: or link:, send action to client and stay or navigate
+        if (option.action && (option.action.startsWith('call:') || option.action.startsWith('link:'))) {
+          const actionResponse = {
+            message: node.message[client.language] || node.message.en,
+            options: getNodeOptions(client, node),
+            action: option.action
+          };
+          client.ws.send(JSON.stringify(actionResponse));
+          return;
+        }
+
+      } else if (chosen.source === 'back') {
+        // Auto-generated "Go Back" button
         client.currentNode = node.back;
-      } else if (option.next) {
-        client.currentNode = option.next;
-      }
-    }
 
-
-    if (!handled && chatbotData.global_options) {
-      const globalIndex = optionIndex - (node.options?.length || 0);
-      if (chatbotData.global_options[globalIndex]) {
-        const globalOpt = chatbotData.global_options[globalIndex];
-        handled = true;
+      } else if (chosen.source === 'global') {
+        // Global option
+        const globalOpt = chatbotData.global_options[chosen.originalIndex];
 
         if (globalOpt.action === 'end') {
-          client.ws.send(JSON.stringify({ message: "Thank you! Goodbye! 🙏", options: [] }));
+          const endMsg = {
+            en: "Thank you for using SmartLife! Goodbye! 🙏",
+            ar: "شكراً لاستخدامك سمارت لايف! مع السلامة! 🙏",
+            hi: "स्मार्टलाइफ उपयोग करने के लिए धन्यवाद! अलविदा! 🙏"
+          };
+          client.ws.send(JSON.stringify({
+            message: endMsg[client.language] || endMsg.en,
+            options: []
+          }));
           return;
+        } else if (globalOpt.action === 'goto_role_menu') {
+          // "Main Menu" / "Home" → go to M.1
+          client.currentNode = 'M.1';
         } else if (globalOpt.next) {
           client.currentNode = globalOpt.next;
         }
       }
-    }
 
-    if (handled) {
       sendMessage(clientId);
     } else {
+      // Invalid option number, re-display current node
       sendMessage(clientId);
     }
   } else {
+    // Non-numeric input, re-display current node
     sendMessage(clientId);
   }
 }
 
+/**
+ * Build metadata list matching exactly what getNodeOptions() displays.
+ * Each entry tells us the source (node / back / global) and the original index
+ * so handleMessage() can correctly resolve the user's selection.
+ */
+function getDisplayedOptionsMeta(client, node) {
+  const meta = [];
+
+  if (client.currentNode === 'L.1') {
+    // Language node — handled separately
+    return node.options ? node.options.map((_, i) => ({ source: 'node', originalIndex: i })) : [];
+  }
+
+  // 1. Node's own options
+  if (node.options) {
+    node.options.forEach((opt, i) => {
+      meta.push({ source: 'node', originalIndex: i });
+    });
+  }
+
+  // 2. Auto-generated Back button (only if node has `back` AND options don't already have one)
+  if (node.back && client.currentNode !== 'L.1') {
+    const hasBackInOptions = node.options && node.options.some(opt => {
+      const text = (opt.text[client.language] || opt.text.en || '').toLowerCase().trim();
+      return text === 'back' || text === 'go back' || text === '⬅️ go back'
+        || text === 'رجوع' || text === 'वापس';
+    });
+
+    if (!hasBackInOptions) {
+      meta.push({ source: 'back', originalIndex: -1 });
+    }
+  }
+
+  // 3. Global options
+  if (node.show_global && client.currentNode !== 'L.1' && chatbotData.global_options) {
+    chatbotData.global_options.forEach((_, i) => {
+      meta.push({ source: 'global', originalIndex: i });
+    });
+  }
+
+  return meta;
+}
+
 function handleFormNode(client, node) {
   if (!client.formState) {
-    client.formState = { nodeId: node.id, step: 0, data: {} };
+    client.formState = {
+      nodeId: node.id,
+      step: 0,
+      data: {},
+      completionOptions: node.completion_options || []
+    };
   }
 
   return {
@@ -234,9 +315,44 @@ function handleFormNode(client, node) {
 
 function handleFormInput(clientId, input) {
   const client = clients.get(clientId);
-  client.formState = null;
-  client.currentNode = 'W.1';
+  const formNode = chatbotData.nodes[client.formState.nodeId];
+
+  // Check if user picked a completion option by number
+  const optionIndex = parseInt(input);
+  const completionOptions = formNode?.completion_options || client.formState.completionOptions || [];
+
+  if (!isNaN(optionIndex) && optionIndex >= 1 && optionIndex <= completionOptions.length) {
+    const chosen = completionOptions[optionIndex - 1];
+    client.formState = null;
+    if (chosen.next) {
+      client.currentNode = chosen.next;
+    } else {
+      // Fallback: go to role-appropriate menu
+      client.currentNode = getRoleMenu(client);
+    }
+  } else {
+    // Not a valid selection, clear form and go to role menu
+    client.formState = null;
+    client.currentNode = getRoleMenu(client);
+  }
+
   sendMessage(clientId);
+}
+
+/**
+ * Determine the correct menu node based on the current role context.
+ * Falls back to M.1 if role is unknown.
+ */
+function getRoleMenu(client) {
+  const node = chatbotData.nodes[client.currentNode];
+  const role = node?.role;
+  switch (role) {
+    case 'worker': return 'W.1';
+    case 'volunteer': return 'V.1';
+    case 'company': return 'C.1';
+    case 'donor': return 'D.1';
+    default: return 'M.1';
+  }
 }
 
 server.listen(3000, () => {
